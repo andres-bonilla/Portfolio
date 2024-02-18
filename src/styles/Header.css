@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  width: 100%;
+  left: 0;
+  top: 0;
+  justify-content: space-around;
+  transition: 0.7s;
+}
+
+.without-color {
+  position: absolute;
+  z-index: 2;
+  background-color: none;
+  height: 100vh;
+}
+
+.with-color {
+  background-color: #00122e;
+  position: fixed;
+  height: 64px;
+}

@@ -1,0 +1,30 @@
+#hello {
+  display: flex;
+  justify-content: center;
+  scrollbar-gutter: unset;
+}
+
+.hello3 {
+  height: 100vh;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.hello2 {
+  height: 80vh;
+  align-items: flex-end;
+  transition: 0.7s;
+}
+
+#hello-text-box {
+  width: 80%;
+  min-width: 360px;
+  height: 22vh;
+}
+
+#hello-text {
+  font-size: 20px;
+  padding: 8px;
+  margin: 15px 0px;
+  color: #00122e;
+}

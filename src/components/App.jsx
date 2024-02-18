@@ -1,4 +1,5 @@
 import "../styles/App.css";
+import { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { Hello } from "./Hello";
 import { Techs } from "./Techs";
@@ -8,11 +9,23 @@ import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 
 export const App = () => {
+  const [headerClass, setHeaderClass] = useState("without-color");
+
+  const listenScroll = () => {
+    if (window.scrollY > 150) setHeaderClass("with-color");
+    else setHeaderClass("without-color");
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScroll);
+
+    return () => window.removeEventListener("scroll", listenScroll);
+  }, []);
   return (
     <>
-      <Header />
+      <Header headerClass={headerClass} />
       <main>
-        <Hello />
+        <Hello hello2={headerClass === "without-color" ? "hello3" : "hello2"} />
         <Techs />
         <Projects />
         <About />
