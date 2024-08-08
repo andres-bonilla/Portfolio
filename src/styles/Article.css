@@ -1,0 +1,25 @@
+section {
+  background-color: rgb(42, 165, 112);
+  width: 100%;
+  margin: 8px;
+}
+
+.grid-list {
+  background-color: rgb(42, 138, 165);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: max(90%, 304px);
+  margin: 0 auto;
+  gap: 20px;
+}
+
+article {
+  background-color: brown;
+  width: max(30%, 304px);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
