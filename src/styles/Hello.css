@@ -1,19 +1,24 @@
-/*#hello {
+.hello {
   display: flex;
+  height: 50vh;
   justify-content: center;
   scrollbar-gutter: unset;
-}
-
-.hello3 {
-  height: 100vh;
   align-items: center;
   transition: 0.7s;
 }
 
 .hello2 {
-  height: 80vh;
+  display: flex;
+  justify-content: center;
+  scrollbar-gutter: unset;
+  background-color: blueviolet;
+  height: 164px;
   align-items: flex-end;
   transition: 0.7s;
+}
+
+.hello2 #hello-text-box {
+  display: none;
 }
 
 #hello-text-box {
@@ -27,4 +32,4 @@
   padding: 8px;
   margin: 15px 0px;
   color: #00122e;
-}*/
+}

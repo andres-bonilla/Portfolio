@@ -1,4 +1,4 @@
-/*header {
+header {
   display: flex;
   width: 100%;
   left: 0;
@@ -11,11 +11,11 @@
   position: absolute;
   z-index: 2;
   background-color: none;
-  height: 100vh;
+  height: 50vh;
 }
 
 .with-color {
   background-color: #00122e;
   position: fixed;
   height: 64px;
-}*/
+}

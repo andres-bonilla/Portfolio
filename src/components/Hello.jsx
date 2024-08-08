@@ -1,8 +1,8 @@
 import "../styles/Hello.css";
 
-export const Hello = ({ hello2 }) => {
+export const Hello = ({ hello }) => {
   return (
-    <section id="hello" className={hello2}>
+    <section className={hello}>
       <div id="hello-text-box">
         <p id="hello-text">
           As a full-stack developer, I feel prepared and excited to take my
