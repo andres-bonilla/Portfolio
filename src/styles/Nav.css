@@ -72,13 +72,14 @@ li {
 }
 
 .no-wrap {
+  padding-top: 32px;
   flex-direction: column;
-  gap: 23vh;
+  gap: calc(50vh - 160px);
   transition: 1s;
 }
 
 @media (max-width: 768px) {
-  #title-box {
+  .wrap #title-box {
     display: none;
   }
 }

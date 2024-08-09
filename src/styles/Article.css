@@ -8,14 +8,14 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: max(90%, 304px);
+  width: max(90%, 344px);
   margin: 0 auto;
   gap: 20px;
 }
 
 article {
   background-color: brown;
-  width: max(30%, 304px);
+  width: max(30%, 344px);
 }
 
 .project-img {

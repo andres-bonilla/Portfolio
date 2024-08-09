@@ -25,7 +25,11 @@ export const App = () => {
     <>
       <Header headerClass={headerClass} />
       <main>
-        <Hello hello={headerClass === "without-color" ? "hello" : "hello2"} />
+        <Hello
+          helloClass={
+            headerClass === "without-color" ? "expand-hello" : "contract-hello"
+          }
+        />
         <Techs />
         <Projects />
         <About />
