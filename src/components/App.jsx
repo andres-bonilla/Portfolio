@@ -9,11 +9,11 @@ import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 
 export const App = () => {
-  const [headerClass, setHeaderClass] = useState("without-color");
+  const [headerClass, setHeaderClass] = useState("head-without-color");
 
   const listenScroll = () => {
-    if (window.scrollY > 64) setHeaderClass("with-color");
-    else setHeaderClass("without-color");
+    if (window.scrollY > 64) setHeaderClass("head-with-color");
+    else setHeaderClass("head-without-color");
   };
 
   useEffect(() => {
@@ -27,7 +27,9 @@ export const App = () => {
       <main>
         <Hello
           helloClass={
-            headerClass === "without-color" ? "expand-hello" : "contract-hello"
+            headerClass === "head-with-color"
+              ? "contract-hello"
+              : "expand-hello"
           }
         />
         <Techs />

@@ -1,4 +1,4 @@
-header {
-  display: flex;
-  align-items: center;
+section {
+  background-color: rgb(42, 165, 112);
+  width: 100%;
 }

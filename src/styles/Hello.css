@@ -3,18 +3,24 @@
   height: 50vh;
   padding-top: 32px;
   justify-content: center;
-  scrollbar-gutter: unset;
   align-items: center;
+  scrollbar-gutter: unset;
   transition: 0.7s;
 }
 
-.contract-hello {
+.expand-hello #hello-text-box {
   display: flex;
-  justify-content: center;
-  scrollbar-gutter: unset;
+  width: max(78%, 344px);
+  height: 22vh;
+}
+
+.contract-hello {
   background-color: blueviolet;
+  display: flex;
   height: 64px;
+  justify-content: center;
   align-items: flex-end;
+  scrollbar-gutter: unset;
   transition: 0.7s;
 }
 
@@ -22,16 +28,10 @@
   display: none;
 }
 
-#hello-text-box {
-  display: flex;
-  width: 80%;
-  min-width: 360px;
-  height: 22vh;
-}
-
 #hello-text {
   align-self: center;
-  font-size: 20px;
+  font-size: 1.3em;
+  text-align: justify;
   padding: 8px;
   margin: 15px 0px;
   color: #00122e;

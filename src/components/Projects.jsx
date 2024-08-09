@@ -1,10 +1,11 @@
+import "../styles/Projects.css";
 import { Article } from "../commons/Article";
 
 export const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <ul className="grid-list">
+      <ul className="project-grid">
         <Article />
         <Article />
         <Article />

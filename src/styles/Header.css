@@ -3,19 +3,20 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 3;
   justify-content: space-around;
+  align-items: center;
   transition: 0.7s;
 }
 
-.without-color {
+.head-without-color {
   position: absolute;
-  z-index: 2;
   background-color: none;
   height: 50vh;
 }
 
-.with-color {
-  background-color: #00122e;
+.head-with-color {
   position: fixed;
+  background-color: #00122e;
   height: 64px;
 }
