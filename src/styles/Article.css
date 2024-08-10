@@ -2,7 +2,7 @@ article {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: brown;
+  /*background-color: brown;*/
   align-items: center;
   position: relative;
 }
@@ -14,12 +14,16 @@ article {
   position: absolute;
   top: 64px;
   left: 0;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .project-info {
-  background-color: rgb(42, 58, 165);
   width: 80%;
+  height: max(27vw, 344px);
+  border-radius: 16px;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .project-info h2 {

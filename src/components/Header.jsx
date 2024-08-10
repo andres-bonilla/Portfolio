@@ -1,15 +1,20 @@
 import "../styles/Header.css";
 import { Nav } from "./Nav";
+import { ReactComponent as LightLogo } from "../assets/logo-white.svg";
+import { ReactComponent as DarkLogo } from "../assets/logo-dark.svg";
 
 export const Header = ({ headerClass }) => {
   return (
     <header className={headerClass}>
-      <Nav
-        color={headerClass === "head-with-color" ? "#fffaf2" : "#00122e"}
-        navClass={
-          headerClass === "head-with-color" ? "wrap-nav" : "no-wrap-nav"
-        }
-      />
+      <a href="#hello" id="logo-title-link" className="cancel-link-style">
+        {headerClass === "head-with-color" ? (
+          <LightLogo id="logo" />
+        ) : (
+          <DarkLogo id="logo" />
+        )}
+        <h1 id="title">Andrés Bonilla</h1>
+      </a>
+      <Nav />
     </header>
   );
 };

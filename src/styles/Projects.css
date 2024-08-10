@@ -1,5 +1,5 @@
 .project-grid {
-  background-color: rgb(42, 138, 165);
+  /*background-color: rgb(42, 138, 165);*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

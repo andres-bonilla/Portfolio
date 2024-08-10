@@ -7,7 +7,7 @@ export const Article = () => {
       <article>
         <div className="project-info">
           <h2 className="project-title">Titulo</h2>
-          <p>
+          <p className="project-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             explicabo sed suscipit quasi tenetur veritatis pariatur aut minus
             eos ipsum. Qui cumque perspiciatis aliquid atque! Ipsa expedita illo

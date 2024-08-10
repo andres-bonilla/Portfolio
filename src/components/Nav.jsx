@@ -1,32 +1,24 @@
 import "../styles/Nav.css";
-import { ReactComponent as LightLogo } from "../assets/logo-white.svg";
-import { ReactComponent as DarkLogo } from "../assets/logo-dark.svg";
 
-export const Nav = ({ color, navClass }) => {
+export const Nav = () => {
   return (
-    <nav className={navClass}>
-      <a href="#hello" id="logo-link-box" className="cancel-link-style">
-        {navClass === "wrap-nav" ? (
-          <LightLogo id="logo" />
-        ) : (
-          <DarkLogo id="logo" />
-        )}
-        <div id="title-box">
-          <h1 id="title" style={{ color: color }}>
-            ANDRÉS BONILLA
-          </h1>
-        </div>
-      </a>
+    <nav>
       <ul id="nav-link-list">
-        <a href="#projects" className="cancel-link-style">
-          <li className="nav-link">Projects</li>
-        </a>
-        <a href="#about" className="cancel-link-style">
-          <li className="nav-link">About</li>
-        </a>
-        <a href="#contact" className="cancel-link-style">
-          <li className="nav-link">Contact</li>
-        </a>
+        <li className="nav-link">
+          <a href="#projects" className="cancel-link-style">
+            Projects
+          </a>
+        </li>
+        <li className="nav-link">
+          <a href="#about" className="cancel-link-style">
+            About
+          </a>
+        </li>
+        <li className="nav-link">
+          <a href="#contact" className="cancel-link-style">
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );
