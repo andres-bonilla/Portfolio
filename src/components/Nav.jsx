@@ -4,18 +4,18 @@ export const Nav = () => {
   return (
     <nav>
       <ul id="nav-link-list">
-        <li className="nav-link">
-          <a href="#projects" className="cancel-link-style">
+        <li>
+          <a href="#projects" className="nav-link cancel-link-style">
             Projects
           </a>
         </li>
-        <li className="nav-link">
-          <a href="#about" className="cancel-link-style">
+        <li>
+          <a href="#about" className="nav-link cancel-link-style">
             About
           </a>
         </li>
-        <li className="nav-link">
-          <a href="#contact" className="cancel-link-style">
+        <li>
+          <a href="#contact" className="nav-link cancel-link-style">
             Contact
           </a>
         </li>

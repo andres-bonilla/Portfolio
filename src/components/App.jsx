@@ -12,7 +12,7 @@ export const App = () => {
   const [headerClass, setHeaderClass] = useState("head-without-color");
 
   const listenScroll = () => {
-    if (window.scrollY > 64) setHeaderClass("head-with-color");
+    if (window.scrollY > 1) setHeaderClass("head-with-color");
     else setHeaderClass("head-without-color");
   };
 

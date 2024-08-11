@@ -6,22 +6,14 @@ nav {
 
 #nav-link-list {
   display: flex;
-  align-self: flex-end;
-  height: 64px;
   gap: 8px;
 }
 
 .nav-link {
-  display: inline-block;
-  width: fit-content;
-  padding: 0px 10px;
-  font-size: 20px;
-  border-radius: 5px;
-  color: #fffaf2;
-}
-
-#nav-link-list a {
   display: inline-flex;
   align-items: center;
   height: 64px;
+  padding: 0px 10px;
+  font-size: 1.2em;
+  color: #fffaf2;
 }

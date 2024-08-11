@@ -2,58 +2,53 @@ header {
   display: flex;
   left: 0;
   top: 0;
-  z-index: 3;
-  justify-content: space-between;
-  align-items: center;
   width: max(100%, 360px);
-  padding-left: max(calc(12.5% - 36px), 8px);
-  padding-right: max(calc(12.5% - 36px), 8px);
-  transition: 0.7s;
+  gap: calc(70vw - 580px);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
   color: #fffaf2;
+  border-bottom: 3px solid #fafafa10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .head-without-color {
   position: absolute;
-  border-bottom: 3px solid #fafafa10;
   height: 375px;
-  padding-top: 5vh;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  /*glass effect
-*/
+  padding-top: 32px;
   background: #ffffff07;
+  transition: 0.5s;
 }
 
 .head-with-color {
   position: fixed;
-  background-color: #00122ee4;
-  border-bottom: 3px solid #fafafa10;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: 64px;
+  background-color: #00122ee4;
+  transition: 0.5s;
 }
 
 @media (max-width: 768px) {
+  header {
+    gap: calc(70vw - 337px);
+  }
   .head-with-color #logo-title-link #title {
     display: none;
   }
   .head-without-color #logo-title-link #title {
     position: absolute;
-    left: calc(max(calc(12.5% - 36px), 8px) + 72px);
+    padding-left: 72px;
   }
 }
 
 #logo-title-link {
   display: flex;
-  flex-wrap: nowrap;
   align-self: flex-start;
   gap: 8px;
 }
 
 #logo {
-  display: flex;
   width: 64px;
   height: 64px;
-  min-width: 64px;
-  min-height: 64px;
 }
 
 #title {

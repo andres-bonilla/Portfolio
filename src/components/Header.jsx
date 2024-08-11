@@ -1,7 +1,6 @@
 import "../styles/Header.css";
 import { Nav } from "./Nav";
 import { ReactComponent as LightLogo } from "../assets/logo-white.svg";
-/*import { ReactComponent as DarkLogo } from "../assets/logo-dark.svg";*/
 
 export const Header = ({ headerClass }) => {
   return (
