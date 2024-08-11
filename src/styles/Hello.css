@@ -8,9 +8,8 @@
 }
 
 .contract-hello {
-  background-color: #00122e;
   display: flex;
-  height: 64px;
+  height: 176px;
   justify-content: center;
   align-items: flex-end;
   scrollbar-gutter: unset;
@@ -26,12 +25,10 @@
 }
 
 #hello-text {
-  width: max(78%, 344px);
+  width: max(75vw, 344px);
+  font-size: max(1.3em, 2vw);
+  padding: 8px;
   margin: 0 auto;
   align-self: center;
-  font-size: 1.3em;
-  text-align: justify;
-  padding: 8px;
-  margin: 15px 0px;
-  color: #00122e;
+  z-index: 4;
 }

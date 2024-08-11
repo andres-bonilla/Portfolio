@@ -6,11 +6,21 @@ export const Projects = () => {
     <section id="projects">
       <h2>Projects</h2>
       <ul className="project-grid">
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+        <li>
+          <Article />
+        </li>
+        <li>
+          <Article />
+        </li>
+        <li>
+          <Article />
+        </li>
+        <li>
+          <Article />
+        </li>
+        <li>
+          <Article />
+        </li>
       </ul>
     </section>
   );

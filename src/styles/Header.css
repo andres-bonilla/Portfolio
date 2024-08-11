@@ -5,24 +5,29 @@ header {
   z-index: 3;
   justify-content: space-between;
   align-items: center;
-  width: max(100vw, 360px);
-  padding-left: max(calc(10vw - 36px), 8px);
-  padding-right: max(calc(10vw - 36px), 8px);
+  width: max(100%, 360px);
+  padding-left: max(calc(12.5% - 36px), 8px);
+  padding-right: max(calc(12.5% - 36px), 8px);
   transition: 0.7s;
+  color: #fffaf2;
 }
 
 .head-without-color {
   position: absolute;
-  background-color: none;
-  color: #00122e;
+  border-bottom: 3px solid #fafafa10;
   height: 375px;
   padding-top: 5vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /*glass effect
+*/
+  background: #ffffff07;
 }
 
 .head-with-color {
   position: fixed;
-  background-color: #00122e;
-  color: #fffaf2;
+  background-color: #00122ee4;
+  border-bottom: 3px solid #fafafa10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: 64px;
 }
 
@@ -32,7 +37,7 @@ header {
   }
   .head-without-color #logo-title-link #title {
     position: absolute;
-    left: calc(max(calc(10vw - 36px), 8px) + 72px);
+    left: calc(max(calc(12.5% - 36px), 8px) + 72px);
   }
 }
 
