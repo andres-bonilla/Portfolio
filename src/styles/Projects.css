@@ -1,0 +1,11 @@
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 48px 24px;
+}
+
+.project-grid li {
+  width: min(max(calc(33% - 48px), 344px), 600px);
+}

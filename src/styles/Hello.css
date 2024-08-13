@@ -1,30 +1,26 @@
-#hello {
+.expand-hello {
   display: flex;
-  justify-content: center;
-  scrollbar-gutter: unset;
-}
-
-.hello3 {
-  height: 100vh;
-  align-items: center;
+  height: 375px;
   transition: 0.7s;
 }
 
-.hello2 {
-  height: 80vh;
-  align-items: flex-end;
-  transition: 0.7s;
+.contract-hello {
+  height: 164px;
+  transition: 0.5s;
 }
 
-#hello-text-box {
-  width: 80%;
-  min-width: 360px;
-  height: 22vh;
+.contract-hello #hello-text {
+  display: none;
+  transition: 0.5s;
+}
+
+#hello h2 {
+  display: none;
 }
 
 #hello-text {
-  font-size: 20px;
+  font-size: 1.3em;
   padding: 8px;
-  margin: 15px 0px;
-  color: #00122e;
+  align-self: center;
+  z-index: 4;
 }
