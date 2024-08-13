@@ -1,8 +1,20 @@
+import "../styles/Techs.css";
 export const Techs = () => {
   return (
     <section id="techs">
       <h2>Technologies</h2>
-      <p>A lot of icons of technologies</p>
+      <ul id="techs-list">
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+        <li className="redondo"></li>
+      </ul>
     </section>
   );
 };
