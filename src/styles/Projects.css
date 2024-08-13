@@ -1,14 +1,11 @@
 .project-grid {
-  /*background-color: rgb(42, 138, 165);*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: max(80vw, 344px);
-  margin: 0 auto;
+  width: 100%;
   gap: 48px 24px;
 }
 
 .project-grid li {
-  display: flex;
-  width: max(30%, 344px);
+  width: min(max(calc(33% - 48px), 344px), 600px);
 }

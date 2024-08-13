@@ -17,7 +17,7 @@ main {
 }
 
 section {
-  background-color: rgb(42, 165, 112);
+  /*background-color: rgb(42, 165, 112);*/
   width: max(70vw, 344px);
 }
 

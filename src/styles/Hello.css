@@ -1,34 +1,26 @@
 .expand-hello {
   display: flex;
   height: 375px;
-  padding-top: 32px;
-  justify-content: center;
-  scrollbar-gutter: unset;
   transition: 0.7s;
 }
 
 .contract-hello {
-  display: flex;
-  height: 176px;
-  justify-content: center;
-  align-items: flex-end;
-  scrollbar-gutter: unset;
-  transition: 0.7s;
+  height: 164px;
+  transition: 0.5s;
+}
+
+.contract-hello #hello-text {
+  display: none;
+  transition: 0.5s;
 }
 
 #hello h2 {
   display: none;
 }
 
-.contract-hello #hello-text {
-  display: none;
-}
-
 #hello-text {
-  width: max(75vw, 344px);
-  font-size: max(1.3em, 2vw);
+  font-size: 1.3em;
   padding: 8px;
-  margin: 0 auto;
   align-self: center;
   z-index: 4;
 }
