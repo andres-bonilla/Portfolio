@@ -4,8 +4,8 @@
     top: 0px;
     height: calc(100% - 80px);
   }
-  40%,
-  60% {
+  30%,
+  70% {
     top: 0px;
     height: 64px;
     color: transparent;
@@ -13,7 +13,6 @@
   50% {
     top: -12px;
     height: 64px;
-    color: transparent;
   }
 }
 
