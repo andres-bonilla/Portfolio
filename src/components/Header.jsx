@@ -1,5 +1,5 @@
 import "../styles/Header.css";
-import { Nav } from "./Nav";
+import { Social } from "./Social";
 import { ReactComponent as LightLogo } from "../assets/logo-white.svg";
 
 export const Header = ({ headerClass }) => {
@@ -9,7 +9,7 @@ export const Header = ({ headerClass }) => {
         <LightLogo id="logo" />
         <h1 id="title">Andrés Bonilla</h1>
       </a>
-      <Nav />
+      <Social />
     </header>
   );
 };

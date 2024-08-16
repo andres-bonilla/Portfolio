@@ -1,4 +1,31 @@
+/*#techs {
+  padding: 64px 0px;
+  border: 3px solid #fafafa10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: #ffffff07;
+  width: 100%;
+}
+#techs h2 {
+  margin-top: 0px;
+}
 #techs-list {
   display: flex;
   justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}*/
+
+#techs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tech {
+  height: 48px;
+  width: 48px;
+  border-radius: 10px;
+  border: 3px solid #fafafa10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: #ffffff07;
 }

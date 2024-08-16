@@ -1,0 +1,20 @@
+#social-menu {
+  display: flex;
+  width: fit-content;
+}
+
+#social-link-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+}
+
+.social-link:hover svg {
+  fill: #d8415a;
+  transition: fill 0.5s;
+}

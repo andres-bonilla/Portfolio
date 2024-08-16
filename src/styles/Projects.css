@@ -1,11 +1,21 @@
+#projects {
+  width: max(70%, 344px);
+  margin: 0 auto;
+}
+
+#projects h2 {
+  margin-top: 0;
+  font-size: 3em;
+  color: #d8415a;
+}
+
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  gap: 48px 24px;
+  gap: 48px;
 }
 
 .project-grid li {
-  width: min(max(calc(33% - 48px), 344px), 600px);
+  width: min(max(calc(50% - 24px), 344px), 500px);
 }
