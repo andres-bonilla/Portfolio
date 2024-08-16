@@ -1,26 +1,96 @@
-.expand-hello {
+#hello {
+  --color_gradient: linear-gradient(
+    -45deg,
+    /*rgba(35, 42, 86, 0.35) */ rgba(35, 37, 47, 0.35) 10%,
+    rgba(79, 48, 87, 0.35) 50%,
+    rgba(216, 65, 90, 0.35) 100%
+  );
+  --color_border: #fafafa10;
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px
+    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
+
   display: flex;
-  height: 375px;
-  transition: 0.7s;
-}
-
-.contract-hello {
-  height: 164px;
-  transition: 0.5s;
-}
-
-.contract-hello #hello-text {
-  display: none;
-  transition: 0.5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: var(--color_gradient);
+  border-bottom: 3px solid var(--color_border);
+  box-shadow: var(--shadow_large);
 }
 
 #hello h2 {
   display: none;
 }
 
-#hello-text {
-  font-size: 1.3em;
-  padding: 8px;
-  align-self: center;
-  z-index: 4;
+.hello-text {
+  margin: 0px auto;
+  text-align: center;
+  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
 }
+
+#name {
+  display: block;
+  white-space: nowrap;
+  color: #d8415a;
+  font-size: clamp(2.7rem, 9vw, 6rem);
+}
+
+#profession {
+  color: #d8415a;
+}
+#paragraph-1 {
+  width: max(70%, 328px);
+}
+#paragraph-2 {
+  width: max(55%, 280px);
+  text-wrap: balance;
+}
+
+#cv-button {
+  margin-top: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  background: white;
+  color: #d8415a;
+  border: 2px solid white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#cv-button:hover {
+  background: #d8415a;
+  border: 2px solid #d8415a;
+  color: white;
+  transition: 0.3s;
+}
+
+#cv-button:active {
+  background: transparent;
+  color: #d8415a;
+  border: 2px solid #d8415a;
+  transition: 0.3s;
+}
+/*
+
+   #FFFDED;
+  #EDF2F4
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #paragraph1 {
+    white-space: wrap;
+  }
+}
+
+
+
+
+*/

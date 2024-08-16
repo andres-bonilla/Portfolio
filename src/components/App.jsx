@@ -2,7 +2,6 @@ import "../styles/App.css";
 import { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { Hello } from "./Hello";
-import { Techs } from "./Techs";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import { Contact } from "./Contact";
@@ -21,23 +20,18 @@ export const App = () => {
 
     return () => window.removeEventListener("scroll", listenScroll);
   }, []);
+
   return (
     <>
-      <Header headerClass={headerClass} />
-      <main>
-        <Hello
-          helloClass={
-            headerClass === "head-with-color"
-              ? "contract-hello"
-              : "expand-hello"
-          }
-        />
-        <Techs />
-        <Projects />
+      {/*<div id="gradient-border"></div>
+      <Header headerClass={headerClass} />*/}
+      <main className="page-background">
+        <Hello />
+        {/*<Projects />
         <About />
-        <Contact />
+        <Contact />*/}
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };

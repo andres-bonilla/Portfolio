@@ -1,20 +1,18 @@
 import "../styles/Techs.css";
 export const Techs = () => {
   return (
-    <section id="techs">
-      <h2>Technologies</h2>
+    <article id="techs">
+      <h2 className="about-title">Techs</h2>
       <ul id="techs-list">
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
-        <li className="redondo"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
+        <li className="tech"></li>
       </ul>
-    </section>
+    </article>
   );
 };
