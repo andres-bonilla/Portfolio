@@ -27,8 +27,10 @@ export const App = () => {
       <Header headerClass={headerClass} />*/}
       <main className="page-background">
         <Hello />
-        {/*<Projects />
+        <Projects />
+        {/*
         <About />
+        <Work />
         <Contact />*/}
       </main>
       {/*<Footer />*/}

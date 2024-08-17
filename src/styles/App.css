@@ -4,7 +4,11 @@ main {
   flex-direction: column;
   color: #fffaf2;
   width: 100vw;
-}
+} /*
+
+   #FFFDED;
+  #EDF2F4
+*/
 
 .page-background {
   --s: 50px;
