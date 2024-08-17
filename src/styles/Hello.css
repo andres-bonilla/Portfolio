@@ -6,7 +6,7 @@
     rgba(216, 65, 90, 0.35) 100%
   );
   --color_border: #fafafa10;
-  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
     /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
 
@@ -17,7 +17,7 @@
   height: 70vh;
   background: var(--color_gradient);
   border-bottom: 3px solid var(--color_border);
-  box-shadow: var(--shadow_large);
+  box-shadow: var(--shadow_large) 4px;
 }
 
 #hello h2 {
@@ -73,24 +73,3 @@
   border: 2px solid #d8415a;
   transition: 0.3s;
 }
-/*
-
-   #FFFDED;
-  #EDF2F4
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  #paragraph1 {
-    white-space: wrap;
-  }
-}
-
-
-
-
-*/

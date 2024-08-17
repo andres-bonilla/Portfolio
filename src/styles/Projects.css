@@ -4,9 +4,14 @@
 }
 
 #projects h2 {
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
+    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
   margin-top: 0;
-  font-size: 3em;
+  margin-bottom: 48px;
+  font-size: clamp(2.1rem, 6vw, 3.8rem);
   color: #d8415a;
+  text-shadow: var(--shadow_large);
 }
 
 .project-grid {
@@ -16,6 +21,18 @@
   gap: 48px;
 }
 
-.project-grid li {
-  width: min(max(calc(50% - 24px), 344px), 500px);
+.project-grid-item {
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
+    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
+  box-shadow: var(--shadow_large) 4px;
+  width: clamp(344px, calc(50% - 24px), 500px);
+  height: clamp(
+    calc(344px * 3 / 4 + 72px),
+    calc(35vw * 3 / 4 - 18px + 72px),
+    calc(500px * 3 / 4 + 72px)
+  );
+  border-radius: 16px 16px 0px 0px;
+  position: relative;
+  overflow: hidden;
 }

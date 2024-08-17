@@ -10,13 +10,13 @@ export const Projects = () => {
         feedback!
       </p>*/}
       <ul className="project-grid">
-        <li>
+        <li className="project-grid-item">
           <Article />
         </li>
-        <li>
+        <li className="project-grid-item">
           <Article />
         </li>
-        <li>
+        <li className="project-grid-item">
           <Article />
         </li>
       </ul>
