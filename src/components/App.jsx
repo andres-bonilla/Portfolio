@@ -28,8 +28,8 @@ export const App = () => {
       <main className="page-background">
         <Hello />
         <Projects />
+        <About />{" "}
         {/*
-        <About />
         <Work />
         <Contact />*/}
       </main>
