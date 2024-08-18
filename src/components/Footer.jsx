@@ -1,3 +1,8 @@
+import "../styles/Footer.css";
 export const Footer = () => {
-  return <footer></footer>;
+  return (
+    <footer>
+      <p>by Andrés Bonilla</p>
+    </footer>
+  );
 };

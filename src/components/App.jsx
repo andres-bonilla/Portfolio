@@ -4,7 +4,7 @@ import { Header } from "./Header";
 import { Hello } from "./Hello";
 import { Projects } from "./Projects";
 import { About } from "./About";
-import { Contact } from "./Contact";
+import { Work } from "./Work";
 import { Footer } from "./Footer";
 
 export const App = () => {
@@ -23,17 +23,15 @@ export const App = () => {
 
   return (
     <>
-      {/*<div id="gradient-border"></div>
-      <Header headerClass={headerClass} />*/}
+      {/*<div id="gradient-border"></div>*/}
+      <Header headerClass={headerClass} />
       <main className="page-background">
         <Hello />
         <Projects />
-        <About />{" "}
-        {/*
-        <Work />
-        <Contact />*/}
+        <About />
+        {/*<Work />*/}
       </main>
-      {/*<Footer />*/}
+      <Footer />
     </>
   );
 };
