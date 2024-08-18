@@ -8,7 +8,6 @@ header {
   align-items: center;
   color: #fffaf2;
 }
-
 .head-without-color {
   z-index: 3;
   position: absolute;
@@ -21,11 +20,12 @@ header {
   z-index: 3;
   position: fixed;
   height: 64px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background-color: #23252f; /*#191b22; #00122ee4*/
   /*box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
   transition: 0.5s;
 }
-
+/*
 #gradient-border:has(+ .head-with-color) {
   content: "";
   position: fixed;
@@ -48,7 +48,7 @@ header {
   height: 128px;
   width: 0vw;
   transition: width 0.12s 0.17s;
-}
+}*/
 @media (max-width: 768px) {
   header {
     gap: calc(70vw - 230px);

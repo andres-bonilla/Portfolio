@@ -19,6 +19,9 @@ export const Projects = () => {
         <li className="project-grid-item">
           <Article />
         </li>
+        <li className="project-grid-item">
+          <Article />
+        </li>
       </ul>
     </section>
   );

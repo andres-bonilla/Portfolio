@@ -7,7 +7,7 @@ export const Header = ({ headerClass }) => {
     <header className={headerClass}>
       <a href="#hello" id="logo-title-link" className="cancel-link-style">
         <LightLogo id="logo" />
-        <h1 id="title">Andrés Bonilla</h1>
+        {/*<h1 id="title">Andrés Bonilla</h1>*/}
       </a>
       <Social />
     </header>

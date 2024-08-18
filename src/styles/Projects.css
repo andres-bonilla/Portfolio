@@ -1,16 +1,19 @@
 #projects {
   width: max(70%, 344px);
   margin: 0 auto;
+  padding-top: 0px;
 }
 
 #projects h2 {
   --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
     /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
-  margin-top: 0;
-  margin-bottom: 48px;
+  margin: 0 auto;
+  margin-bottom: 8px;
   font-size: clamp(2.1rem, 6vw, 3.8rem);
-  color: #d8415a;
+  text-align: center;
+  background-color: #d8415a;
+  padding: 0px 8px;
   text-shadow: var(--shadow_large);
 }
 
@@ -18,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
+  gap: 8px;
 }
 
 .project-grid-item {
@@ -32,7 +35,6 @@
     calc(35vw * 3 / 4 - 18px + 72px),
     calc(500px * 3 / 4 + 72px)
   );
-  border-radius: 16px 16px 0px 0px;
   position: relative;
   overflow: hidden;
 }

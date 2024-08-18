@@ -1,0 +1,16 @@
+footer {
+  --color_1: #d8415a;
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px;
+  width: 100%;
+  padding: 16px;
+  background-color: #23252f;
+  color: var(--color_1);
+
+  border-top: 2px solid var(--color_1);
+  box-shadow: var(--shadow_large) 4px;
+}
+
+footer p {
+  margin: 0;
+  text-align: end;
+}

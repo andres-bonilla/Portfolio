@@ -1,14 +1,103 @@
 #hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+#titles {
+  display: flex;
+}
+
+#full-name {
+  font-size: 6.18rem;
+  width: 328px;
+  background-color: white;
+  color: #d8415a;
+  margin: 0;
+  padding: 8px;
+  padding-bottom: 0;
+  white-space: wrap;
+  line-height: 1;
+  text-align: right;
+}
+
+#profession {
+  background-color: #d8415a;
+  font-size: 3.95rem;
+  white-space: wrap;
+  width: 178px;
+  line-height: 1;
+  margin: 0;
+  margin-left: 8px;
+  padding: 8px;
+}
+
+#hello p {
+  margin: 48px auto;
+  text-align: center;
+  font-size: 1.4rem /*clamp(1.15rem, 1.7vw, 2rem)*/;
+  width: 506px;
+  text-wrap: balance;
+}
+
+#cv-button {
+  padding: 12px;
+  font-size: 1.15rem;
+  background: transparent;
+  color: #d8415a;
+  border: 2px solid #d8415a;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#cv-button:hover {
+  background: #d8415a;
+  border: 2px solid #d8415a;
+  color: white;
+  transition: 0.3s;
+}
+
+#cv-button:active {
+  background: white;
+  color: #d8415a;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  #titles {
+    flex-direction: column;
+  }
+
+  #profession {
+    background-color: #d8415a;
+    font-size: 2.9rem;
+    width: 328px;
+    line-height: 1;
+    margin: 0;
+    margin-top: 8px;
+    padding: 8px;
+  }
+
+  #hello p {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1.4rem /*clamp(1.15rem, 1.7vw, 2rem)*/;
+    width: 328px;
+    text-wrap: balance;
+  }
+}
+/*#hello {
   --color_gradient: linear-gradient(
     -45deg,
-    /*rgba(35, 42, 86, 0.35) */ rgba(35, 37, 47, 0.35) 10%,
+    rgba(35, 37, 47, 0.35) 10%,
     rgba(79, 48, 87, 0.35) 50%,
     rgba(216, 65, 90, 0.35) 100%
   );
   --color_border: #fafafa10;
-  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
-    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px;
 
   display: flex;
   flex-direction: column;
@@ -73,3 +162,4 @@
   border: 2px solid #d8415a;
   transition: 0.3s;
 }
+*/
