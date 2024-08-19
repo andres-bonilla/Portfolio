@@ -1,16 +1,14 @@
 main {
   z-index: 0;
+  top: -64px;
   display: flex;
   flex-direction: column;
-  color: #fffaf2;
-  width: 100vw;
-} /*
+  width: 100%;
 
-   #FFFDED;
-  #EDF2F4
-*/
+  color: var(--text_color);
+}
 
-.page-background {
+.pattern-background {
   --s: 50px;
   --c: #191b22;
   --_s: calc(2 * var(--s)) calc(2 * var(--s));
@@ -27,12 +25,6 @@ main {
 }
 
 section {
-  /*background-color: rgb(42, 165, 112);*/
   width: 100%;
-  padding-bottom: 120px;
+  padding-bottom: 128px;
 }
-
-/*section h2 {
-  text-align: center;
-  margin: 0 0 32px 0;
-}*/

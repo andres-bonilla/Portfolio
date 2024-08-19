@@ -1,0 +1,31 @@
+.project-menu-box {
+  display: flex;
+  width: fit-content;
+  margin-right: 16px;
+}
+
+.project-menu-list {
+  display: flex;
+  gap: 16px;
+}
+
+.project-menu-list li {
+  display: flex;
+  align-items: center;
+}
+
+.project-menu-item {
+  display: inline-flex;
+  height: 30px;
+  width: 30px;
+}
+
+.project-menu-item svg {
+  fill: var(--main_color);
+  transition: fill 0.5s;
+}
+
+.project-menu-item:hover svg {
+  fill: var(--back_color);
+  transition: fill 0.5s;
+}

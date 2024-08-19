@@ -1,34 +1,16 @@
-/*#techs {
-  padding: 64px 0px;
-  border: 3px solid #fafafa10;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: #ffffff07;
-  width: 100%;
-}
-#techs h2 {
-  margin-top: 0px;
-}
-#techs-list {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: 0 auto;
-}*/
-
 #skills-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
-.skill-1 {
+.skill {
   height: 120px;
   width: 120px;
-  background-color: white;
+  background: var(--text_color);
 }
 
-.skill-2 {
-  height: 120px;
-  width: 120px;
-  background-color: #d8415a;
+.skill-alter {
+  background: var(--main_color);
 }
