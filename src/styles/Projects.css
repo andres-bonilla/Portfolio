@@ -1,20 +1,24 @@
 #projects {
-  width: max(70%, 344px);
+  width: max(70%, 328px);
   margin: 0 auto;
   padding-top: 0px;
 }
 
 #projects h2 {
-  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
-    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
-  margin: 0 auto;
+  /*--shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-shadow: var(--shadow_large);*/
+
+  margin: 0;
   margin-bottom: 8px;
-  font-size: clamp(2.1rem, 6vw, 3.8rem);
+  padding: 4px 0px 8px 0px;
+
+  font-size: clamp(2.9rem, 6vw, 3.95rem); /*clamp(2.1rem, 6vw, 3.8rem);*/
+  line-height: 1;
   text-align: center;
-  background-color: #d8415a;
-  padding: 0px 8px;
-  text-shadow: var(--shadow_large);
+
+  background: var(--main_color);
 }
 
 .project-grid {
@@ -24,15 +28,11 @@
   gap: 8px;
 }
 
-.project-grid-item {
-  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
-    /*rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px*/;
-  box-shadow: var(--shadow_large) 4px;
-  width: clamp(344px, calc(50% - 24px), 500px);
+.project-item {
+  width: clamp(328px, calc(50% - 4px), 500px);
   height: clamp(
-    calc(344px * 3 / 4 + 72px),
-    calc(35vw * 3 / 4 - 18px + 72px),
+    calc(328px * 3 / 4 + 72px),
+    calc(35vw * 3 / 4 - 3px + 72px),
     calc(500px * 3 / 4 + 72px)
   );
   position: relative;

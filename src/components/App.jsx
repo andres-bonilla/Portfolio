@@ -1,18 +1,18 @@
 import "../styles/App.css";
-import { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { Hello } from "./Hello";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import { Work } from "./Work";
 import { Footer } from "./Footer";
+import { useState, useEffect } from "react";
 
 export const App = () => {
-  const [headerClass, setHeaderClass] = useState("head-without-color");
+  const [headerClass, setHeaderClass] = useState("header-colorless");
 
   const listenScroll = () => {
-    if (window.scrollY > 1) setHeaderClass("head-with-color");
-    else setHeaderClass("head-without-color");
+    if (window.scrollY > 1) setHeaderClass("header-colorful");
+    else setHeaderClass("header-colorless");
   };
 
   useEffect(() => {
@@ -23,9 +23,8 @@ export const App = () => {
 
   return (
     <>
-      {/*<div id="gradient-border"></div>*/}
       <Header headerClass={headerClass} />
-      <main className="page-background">
+      <main className="pattern-background">
         <Hello />
         <Projects />
         <About />

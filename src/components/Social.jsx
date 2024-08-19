@@ -23,11 +23,11 @@ export const Social = () => {
             <GmailLogo />
           </a>
         </li>
-        <li>
+        {/*<li>
           <a href="" className="social-link cancel-link-style">
             <MenuLogo />
           </a>
-        </li>
+        </li>*/}
       </ul>
     </div>
   );

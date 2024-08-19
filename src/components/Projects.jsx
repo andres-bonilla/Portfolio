@@ -1,5 +1,5 @@
 import "../styles/Projects.css";
-import { Article } from "../commons/Article";
+import { ProjectItem } from "../commons/ProjectItem";
 
 export const Projects = () => {
   return (
@@ -10,17 +10,14 @@ export const Projects = () => {
         feedback!
       </p>*/}
       <ul className="project-grid">
-        <li className="project-grid-item">
-          <Article />
+        <li className="project-item">
+          <ProjectItem />
         </li>
-        <li className="project-grid-item">
-          <Article />
+        <li className="project-item">
+          <ProjectItem />
         </li>
-        <li className="project-grid-item">
-          <Article />
-        </li>
-        <li className="project-grid-item">
-          <Article />
+        <li className="project-item">
+          <ProjectItem />
         </li>
       </ul>
     </section>

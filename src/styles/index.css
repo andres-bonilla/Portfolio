@@ -1,41 +1,18 @@
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+@import url("general.css");
+@import url("themes.css");
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+@import url("App.css");
 
-body {
-  min-width: 360px;
-  margin: 0;
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(25, 27, 34); /* #100c1dff;  rgba(17, 23, 61);*/
-}
+@import url("Header.css");
+@import url("Social.css");
 
-#root {
-  width: 100%;
-  margin: 0px;
-}
+@import url("Hello.css");
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+@import url("Projects.css");
+@import url("ProjectItem.css");
+@import url("ProjectMenu.css");
 
-button {
-  all: unset;
-}
+@import url("About.css");
+@import url("Skills.css");
 
-button:focus {
-  outline: revert;
-}
+@import url("Footer.css");
