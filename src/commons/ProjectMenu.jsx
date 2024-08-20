@@ -1,7 +1,7 @@
 import "../styles/ProjectMenu.css";
-import { ReactComponent as LinkLogo } from "../assets/icon-link.svg";
-import { ReactComponent as CodeLogo } from "../assets/icon-code.svg";
-import { ReactComponent as InfoLogo } from "../assets/icon-plus.svg";
+import { ReactComponent as LinkLogo } from "../assets/icons/link.svg";
+import { ReactComponent as CodeLogo } from "../assets/icons/code.svg";
+import { ReactComponent as InfoLogo } from "../assets/icons/plus.svg";
 
 export const ProjectMenu = () => {
   return (
