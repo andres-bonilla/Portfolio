@@ -1,4 +1,5 @@
 import "../styles/Hello.css";
+import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";
 
 export const Hello = () => {
   return (
@@ -8,7 +9,10 @@ export const Hello = () => {
         <h2 id="profession">Full Stack Dev.</h2>
       </div>
       <p>I'm prepared and excited to have new adventures.</p>
-      <button id="cv-button">CV</button>
+      <button id="cv-button">
+        <DownloadLogo id="download-logo" />
+        <span>CV</span>
+      </button>
     </section>
   );
 };

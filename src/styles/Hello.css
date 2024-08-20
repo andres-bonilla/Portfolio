@@ -50,11 +50,15 @@
 }
 
 #cv-button {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 8px;
   margin-top: 64px;
-  padding: 12px;
+  padding: 8px;
 
-  font-size: 1.15rem;
-  font-weight: bold;
+  font-size: 1.25rem; /*1.15rem;*/
+  font-weight: 400;
 
   background: transparent;
   color: var(--main_color);
@@ -77,6 +81,23 @@
   border: 2px solid var(--text_color);
 
   transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#download-logo {
+  width: 24px;
+  height: 24px;
+  fill: var(--main_color);
+  transition: fill 0.3s;
+}
+
+#cv-button:hover #download-logo {
+  fill: var(--text_color);
+  transition: fill 0.3s;
+}
+
+#cv-button:active #download-logo {
+  fill: var(--main_color);
+  transition: fill 0.3s;
 }
 
 @media (max-width: 768px) {

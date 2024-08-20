@@ -3,6 +3,7 @@ footer {
   box-shadow: var(--shadow_large) 4px;
   width: 100vw;
   padding: 16px;
+  padding-right: 32px;
 
   background-color: var(--back_color);
   color: var(--main_color);
