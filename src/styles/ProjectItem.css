@@ -82,6 +82,7 @@ article:has(.more-info:active) .project-info {
   z-index: 2;
   width: 100%;
   height: auto;
+  transition: 0.5s ease-out;
 }
 
 .project-info-expose + .project-img {
@@ -96,4 +97,14 @@ article:has(.more-info:active) .project-info {
 .project-info-hide + .project-img {
   margin-top: 72px;
   transition: margin 0.18s;
+}
+
+.project-grid:has(.project-item:hover) .project-item:not(:hover) {
+  filter: grayscale(80%) brightness(50%) opacity(40%);
+  transition: filter 0.5s ease-out;
+}
+
+.project-grid:not(:has(.project-item:hover)) .project-item:not(:hover) {
+  filter: grayscale(0%) brightness(100%) opacity(100%);
+  transition: filter 0.5s ease-out;
 }
