@@ -2,11 +2,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: max(70%, 328px);
-  margin: 0 auto;
+  border: none;
 }
 
 #about-title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 4px 0px 8px 0px;
+
+  font-size: clamp(2.9rem, 6vw, 3.95rem); /*clamp(2.1rem, 6vw, 3.8rem);*/
+  line-height: 1;
+  text-align: center;
+
+  background: var(--main_color);
+}
+
+/*
+
   display: flex;
   margin: 0;
   font-size: clamp(2.9rem, 6vw, 3.95rem);
@@ -33,8 +46,10 @@
   background: var(--main_color);
 }
 
+*/
 #about-text {
-  margin: 48px 0;
+  margin: 0;
+  margin-bottom: 80px;
   font-size: clamp(1rem, 1.3vw, 1.3rem);
   line-height: 1.5;
 }

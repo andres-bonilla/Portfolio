@@ -1,31 +1,25 @@
-.project-menu-box {
+.project-menu {
   display: flex;
   width: fit-content;
   margin-right: 16px;
-}
-
-.project-menu-list {
-  display: flex;
   gap: 16px;
 }
-
-.project-menu-list li {
+.project-menu-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
-.project-menu-item {
-  display: inline-flex;
-  height: 30px;
-  width: 30px;
-}
-
-.project-menu-item svg {
+.project-menu-icon {
+  height: 32px;
+  width: 32px;
   fill: var(--main_color);
-  transition: fill 0.5s;
+  transition: 0.2s;
 }
 
-.project-menu-item:hover svg {
+.project-menu-icon:hover {
+  transform: scale(0.9);
   fill: var(--back_color);
-  transition: fill 0.5s;
+  transition: fill 0.2s, transform 0.2s;
 }

@@ -1,4 +1,8 @@
 :root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
   /*------------Colors--------------*/
 
   --main_color: #d8415a;

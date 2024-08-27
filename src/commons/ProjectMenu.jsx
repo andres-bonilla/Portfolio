@@ -1,28 +1,26 @@
 import "../styles/ProjectMenu.css";
-import { ReactComponent as LinkLogo } from "../assets/icons/link.svg";
-import { ReactComponent as CodeLogo } from "../assets/icons/code.svg";
-import { ReactComponent as InfoLogo } from "../assets/icons/plus.svg";
+import { ReactComponent as LinkLogo } from "../assets/icons/link2.svg";
+import { ReactComponent as CodeLogo } from "../assets/icons/code3.svg";
+import { ReactComponent as InfoLogo } from "../assets/icons/info.svg";
 
 export const ProjectMenu = () => {
   return (
-    <div className="project-menu-box">
-      <ul className="project-menu-list">
-        <li>
-          <a href="" className="project-menu-item cancel-link-style">
-            <LinkLogo />
-          </a>
-        </li>
-        <li>
-          <a href="" className="project-menu-item cancel-link-style">
-            <CodeLogo />
-          </a>
-        </li>
-        <li>
-          <a href="" className="project-menu-item more-info cancel-link-style">
-            <InfoLogo />
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul className="project-menu">
+      <li>
+        <a href="" className="project-menu-link cancel-link-style">
+          <LinkLogo className="project-menu-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="" className="project-menu-link cancel-link-style">
+          <CodeLogo className="project-menu-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="" className="project-menu-link cancel-link-style more-info">
+          <InfoLogo className="project-menu-icon" />
+        </a>
+      </li>
+    </ul>
   );
 };

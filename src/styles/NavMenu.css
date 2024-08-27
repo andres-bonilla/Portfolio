@@ -1,0 +1,45 @@
+/*nav {
+  display: flex;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+#nav-link-list {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  height: 64px;
+  padding: 0px 10px;
+
+  font-size: 1.2rem;
+
+  color: var(--text_color);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}*/
+
+#nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+
+  color: var(--text_color);
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--main_color);
+  transition: color 0.5s;
+}

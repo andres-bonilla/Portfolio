@@ -1,0 +1,83 @@
+#work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+/*
+#work {
+  --background: lightcoral;
+  height: 600px;
+  background: var(--background);
+}
+
+.arrow-icon {
+  --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  --duration: 0.5s;
+  --base_size: 480px;
+  display: flex;
+  align-items: center;
+  height: var(--base_size);
+  width: var(--base_size);
+  border: 2px solid black;
+}
+
+.left-bar,
+.right-bar {
+  position: relative;
+  display: block;
+  width: calc(0.5 * var(--base_size));
+  height: calc(0.1 * var(--base_size));
+
+  background-color: transparent;
+  border-radius: calc(0.025 * var(--base_size));
+}
+
+.left-bar {
+  left: calc(0.085 * var(--base_size));
+  transform: rotate(35deg);
+}
+
+.right-bar {
+  right: calc(0.085 * var(--base_size));
+  transform: rotate(-35deg);
+}
+
+.left-bar:after {
+  border-radius: calc(0.05 * var(--base_size)) calc(0.1 * var(--base_size))
+    calc(0.1 * var(--base_size)) calc(0.05 * var(--base_size));
+}
+
+.right-bar:after {
+  border-radius: calc(0.1 * var(--base_size)) calc(0.05 * var(--base_size))
+    calc(0.05 * var(--base_size)) calc(0.1 * var(--base_size));
+}
+
+.left-bar:after,
+.right-bar:after {
+  content: "";
+  z-index: -1;
+
+  display: block;
+  width: calc(0.5 * var(--base_size));
+  height: calc(0.1 * var(--base_size));
+
+  background-color: white;
+
+  transition: all var(--duration) var(--easing);
+}
+
+.arrow-icon:hover .left-bar:after {
+  background: var(--main_color);
+  transform-origin: center center;
+  transform: rotate(-70deg);
+}
+
+.arrow-icon:hover .right-bar:after {
+  background: var(--main_color);
+  transform-origin: center center;
+  transform: rotate(70deg);
+}
+*/

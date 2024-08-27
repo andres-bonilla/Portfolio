@@ -1,0 +1,23 @@
+import "../styles/NavMenu.css";
+
+export const NavMenu = () => {
+  return (
+    <ul id="nav-menu">
+      <li>
+        <a href="#projects" className="nav-link cancel-link-style">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#about" className="nav-link cancel-link-style">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#contact" className="nav-link cancel-link-style">
+          Works
+        </a>
+      </li>
+    </ul>
+  );
+};

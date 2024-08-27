@@ -9,8 +9,9 @@ main {
 }
 
 section {
-  width: 100%;
+  width: max(70%, 328px);
+  margin: 0 auto;
   padding-bottom: 128px;
   padding-top: 128px;
-  /*border-top: 2px solid var(--main_color);*/
+  border-bottom: 3px solid var(--back_color);
 }

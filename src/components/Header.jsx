@@ -1,14 +1,17 @@
 import "../styles/Header.css";
-import { Social } from "./Social";
+import { NavMenu } from "./NavMenu";
+import { SocialMenu } from "./SocialMenu";
 
 export const Header = ({ headerClass }) => {
   return (
     <header className={headerClass}>
       <div id="header-box">
-        <a href="#hello" id="logo" className="cancel-link-style">
+        <a href="#hello" className="cancel-link-style">
           <div id="logofic"></div>
         </a>
-        <Social />
+        <nav>
+          <SocialMenu />
+        </nav>
       </div>
     </header>
   );

@@ -4,6 +4,10 @@
   gap: 24px;
 }
 
+.social-link {
+  display: flex;
+}
+
 .social-logo {
   width: 32px;
   height: 32px;

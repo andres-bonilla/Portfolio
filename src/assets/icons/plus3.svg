@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs/>
+  <rect width="116" height="116" style="fill: none; stroke-width: 12px;" y="6" x="6"/>
+  <path d="M 128 0 L 128 128 L 0 128 L 0 0 Z M 12 116 L 116 116 L 116 12 L 12 12 Z" style=""/>
+  <path d="M 58 30 H 70 V 58 H 98 V 70 H 70 V 98 H 58 V 70 H 30 V 58 H 58 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;" bx:shape="cross 30 30 68 68 12 12 0.5 1@6000abee"/>
+</svg>

@@ -1,0 +1,38 @@
+#cv-button {
+  background: transparent;
+  color: var(--main_color);
+  border: 2px solid var(--main_color);
+
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#download-logo {
+  fill: var(--main_color);
+  transition: fill 0.3s;
+}
+
+#cv-button:hover {
+  background: var(--main_color);
+  color: var(--text_color);
+  border: 2px solid var(--main_color);
+
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#cv-button:active {
+  background: var(--text_color);
+  color: var(--main_color);
+  border: 2px solid var(--text_color);
+
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#cv-button:hover #download-logo {
+  fill: var(--text_color);
+  transition: fill 0.3s;
+}
+
+#cv-button:active #download-logo {
+  fill: var(--main_color);
+  transition: fill 0.3s;
+}

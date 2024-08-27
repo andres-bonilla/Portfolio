@@ -1,5 +1,6 @@
 import "../styles/Skills.css";
 import { ReactComponent as ReactLogo } from "../assets/tech-logos/react.svg";
+import { ReactComponent as NativeLogo } from "../assets/tech-logos/react-native.svg";
 import { ReactComponent as NodeLogo } from "../assets/tech-logos/node.svg";
 import { ReactComponent as ReduxLogo } from "../assets/tech-logos/redux.svg";
 import { ReactComponent as AxiosLogo } from "../assets/tech-logos/axios.svg";
@@ -47,7 +48,7 @@ export const Skills = () => {
       </li>
       <li>
         <figure className="skill">
-          <ReactLogo className="tech-logo" />
+          <NativeLogo className="tech-logo" />
           <figcaption className="tech-name">Tech Name</figcaption>
         </figure>
       </li>

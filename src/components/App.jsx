@@ -11,7 +11,7 @@ export const App = () => {
   const [headerClass, setHeaderClass] = useState("header-colorless");
 
   const listenScroll = () => {
-    if (window.scrollY > 1) setHeaderClass("header-colorful");
+    if (window.scrollY > 0) setHeaderClass("header-colorful");
     else setHeaderClass("header-colorless");
   };
 
@@ -24,7 +24,7 @@ export const App = () => {
   return (
     <>
       <Header headerClass={headerClass} />
-      <main className="pattern-background">
+      <main>
         <Hello />
         <Projects />
         <About />

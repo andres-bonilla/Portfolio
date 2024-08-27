@@ -1,0 +1,120 @@
+#full-name,
+#profession {
+  position: relative;
+  transition: transform 0.5s;
+}
+
+#full-name,
+#full-name:after,
+#full-name:before {
+  width: 328px;
+  margin: 0;
+  margin-right: 8px;
+  padding: 8px;
+  padding-bottom: 0;
+  border-radius: 3px;
+
+  font-size: 90px /* 6.12rem*/;
+  line-height: 1;
+  font-weight: 500;
+  white-space: wrap;
+  text-align: right;
+}
+
+#profession,
+#profession:after,
+#profession:before {
+  width: 184px;
+  height: fit-content;
+  max-height: 188px;
+  margin: 0;
+  padding: 7.4px;
+  padding-top: 8.4px;
+  border-radius: 3px;
+
+  font-size: 61px /*3.94rem*/;
+  line-height: 0.94;
+  font-weight: 500;
+  white-space: wrap;
+}
+
+#full-name:before,
+#full-name:after,
+#profession:before,
+#profession:after {
+  content: attr(data-attr);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#full-name:before {
+  background: var(--main_color);
+  color: var(--text_color);
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-50%);
+
+  transition: transform 0.5s;
+}
+#full-name:after {
+  background: var(--text_color);
+  color: var(--main_color);
+  transform-origin: bottom;
+  transform: rotateX(0deg) translateY(0%);
+
+  transition: transform 0.5s;
+}
+
+#profession:before {
+  background: var(--text_color);
+  color: var(--main_color);
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+
+  transition: transform 0.5s;
+}
+
+#profession:after {
+  background: var(--main_color);
+  color: var(--text_color);
+  transform-origin: top;
+  transform: rotateX(0deg) translateY(0%);
+
+  transition: transform 0.5s;
+}
+
+#hello-title:hover #full-name:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+#hello-title:hover #full-name:after {
+  transform: rotateX(90deg) translateY(50%);
+}
+
+#hello-title:hover #profession:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+#hello-title:hover #profession:after {
+  transform: rotateX(90deg) translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  #full-name,
+  #full-name:after,
+  #full-name:before {
+    margin-right: 0;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  #profession,
+  #profession:before,
+  #profession:after {
+    width: 328px;
+    margin: 0;
+    padding: 8px;
+    padding-bottom: 6px;
+    text-align: center;
+
+    font-size: 44.5px /* 2.97rem*/;
+  }
+}

@@ -9,16 +9,6 @@ header {
   align-items: center;
 }
 
-#header-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-  width: max(70%, 328px);
-
-  color: var(--text_color);
-}
-
 .header-colorless {
   height: 128px;
 
@@ -35,6 +25,16 @@ header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   transition: height 0.5s, background 0.5s, box-shadow 0.5s;
+}
+
+#header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: max(70%, 328px);
+
+  color: var(--text_color);
 }
 
 #logofic {

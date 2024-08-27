@@ -1,17 +1,11 @@
-#projects {
-  width: max(70%, 328px);
-  margin: 0 auto;
-  padding-top: 0px;
-}
-
-#projects h5 {
+#projects h2 {
   /*--shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px
     rgba(0, 0, 0, 0.16) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
   text-shadow: var(--shadow_large);*/
 
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 80px;
   padding: 4px 0px 8px 0px;
 
   font-size: clamp(2.9rem, 6vw, 3.95rem); /*clamp(2.1rem, 6vw, 3.8rem);*/
@@ -37,9 +31,10 @@
   );
   position: relative;
   overflow: hidden;
+  border-radius: 3px;
 }
 
-/*--------------------------------------------*/
+/*--------------------------------------------
 
 #project-title {
   display: flex;
@@ -74,3 +69,4 @@
   font-size: clamp(1rem, 1.3vw, 1.3rem);
   line-height: 1.5;
 }
+*/
