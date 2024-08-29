@@ -1,0 +1,18 @@
+@keyframes rolling {
+  0%,
+  100% {
+    top: 0px;
+    height: calc(var(--project_width) * 3 / 8 + 72px);
+  }
+  30%,
+  70% {
+    top: 0px;
+    height: 72px;
+    color: transparent;
+  }
+  50% {
+    top: -12px;
+    height: 72px;
+    color: transparent;
+  }
+}

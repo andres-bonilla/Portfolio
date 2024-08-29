@@ -20,6 +20,6 @@
 
 .project-menu-icon:hover {
   transform: scale(0.9);
-  fill: var(--back_color);
+  fill: var(--back_secondary_color);
   transition: fill 0.2s, transform 0.2s;
 }

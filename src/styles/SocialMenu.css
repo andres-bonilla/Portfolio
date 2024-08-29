@@ -11,14 +11,14 @@
 .social-logo {
   width: 32px;
   height: 32px;
-  margin: auto 0px;
+  margin: auto 0;
 
-  fill: var(--text_color);
+  fill: var(--secondary_color);
 
-  transition: fill 0.5s;
+  transition: fill 0.3s, transform 0.3s;
 }
 
 .social-logo:hover {
   fill: var(--main_color);
-  transition: fill 0.5s;
+  transform: scale(1.1);
 }

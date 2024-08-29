@@ -4,7 +4,7 @@ header {
   display: flex;
   left: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -34,11 +34,11 @@ header {
   height: fit-content;
   width: max(70%, 328px);
 
-  color: var(--text_color);
+  color: var(--secondary_color);
 }
 
 #logofic {
   width: 64px;
   height: 64px;
-  background: var(--text_color);
+  background: var(--secondary_color);
 }

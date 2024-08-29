@@ -1,3 +1,9 @@
+.info-button {
+  z-index: 2;
+  position: absolute;
+  left: calc(50% - 20px);
+}
+
 .arrow-icon {
   --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
   --duration: 0.3s 0.45s;
@@ -60,13 +66,13 @@
   transition: box-shadow 0.2s;
 }
 */
-.project-info-expose + .project-img + .more-info .left-bar:after {
+.project-info-expose + .project-img + .info-button .left-bar:after {
   transform-origin: center center;
   transform: rotate(-70deg);
   transition-delay: 0.75s;
 }
 
-.project-info-expose + .project-img + .more-info .right-bar:after {
+.project-info-expose + .project-img + .info-button .right-bar:after {
   transform-origin: center center;
   transform: rotate(70deg);
   transition-delay: 0.75s;

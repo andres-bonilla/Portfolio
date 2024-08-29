@@ -24,16 +24,14 @@ import { ReactComponent as RouterLogo } from "../assets/tech-logos/react-router.
 import { ReactComponent as ExpoLogo } from "../assets/tech-logos/expo.svg";
 import { ReactComponent as PassportLogo } from "../assets/tech-logos/passport.svg";
 import { ReactComponent as JwtLogo } from "../assets/tech-logos/jwt.svg";
+import { SkillCard } from "../commons/SkillCard";
 
 export const Skills = () => {
   return (
     <ul id="skills-list">
-      <li>
-        <figure className="skill">
-          <ReactLogo className="tech-logo" />
-          <figcaption className="tech-name">Tech Name</figcaption>
-        </figure>
-      </li>
+      {/*<li>
+        <SkillCard techName={"react"} />
+      </li>*/}
       <li>
         <figure className="skill">
           <ReduxLogo className="tech-logo" />

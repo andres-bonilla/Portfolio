@@ -6,19 +6,17 @@
   padding-top: 32px;
 }
 
-#hello-title {
-  display: flex;
-}
-
 #hello p {
   width: 524px;
   margin: 0 auto;
   margin-top: 48px;
 
-  font-size: 1.4rem /*clamp(1.15rem, 1.7vw, 2rem)*/;
+  font-size: 1.4rem /*clamp(1.15rem, 1.7vw, 2rem) */;
   line-height: 1.5;
   text-align: center;
   text-wrap: balance;
+
+  color: var(--secondary_color);
 }
 
 #cv-button {

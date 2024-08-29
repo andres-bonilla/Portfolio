@@ -4,6 +4,11 @@ export const NavMenu = () => {
   return (
     <ul id="nav-menu">
       <li>
+        <a href="#hello" className="nav-link cancel-link-style">
+          Hello
+        </a>
+      </li>
+      <li>
         <a href="#projects" className="nav-link cancel-link-style">
           Projects
         </a>
@@ -14,7 +19,7 @@ export const NavMenu = () => {
         </a>
       </li>
       <li>
-        <a href="#contact" className="nav-link cancel-link-style">
+        <a href="#works" className="nav-link cancel-link-style">
           Works
         </a>
       </li>

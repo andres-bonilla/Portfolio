@@ -1,5 +1,5 @@
 import "../styles/Projects.css";
-import { ProjectItem } from "../commons/ProjectItem";
+import { ProjectCard } from "../commons/ProjectCard";
 
 export const Projects = () => {
   return (
@@ -13,13 +13,13 @@ export const Projects = () => {
 
       <ul className="project-grid">
         <li className="project-item">
-          <ProjectItem />
+          <ProjectCard />
         </li>
         <li className="project-item">
-          <ProjectItem />
+          <ProjectCard />
         </li>
         <li className="project-item">
-          <ProjectItem />
+          <ProjectCard />
         </li>
       </ul>
     </section>
