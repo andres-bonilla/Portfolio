@@ -1,7 +1,7 @@
 import "../styles/Projects.css";
 import { ProjectCard } from "../commons/ProjectCard";
 
-export const Projects = () => {
+export const Projects = ({ projects, lang }) => {
   return (
     <section id="projects">
       <h2>Projects</h2>
@@ -12,15 +12,13 @@ export const Projects = () => {
       </p> */}
 
       <ul className="project-grid">
-        <li className="project-item">
-          <ProjectCard />
-        </li>
-        <li className="project-item">
-          <ProjectCard />
-        </li>
-        <li className="project-item">
-          <ProjectCard />
-        </li>
+        {projects.map((data, i) => {
+          return (
+            <li key={i * 15} className="project-item">
+              <ProjectCard projectData={data} lang={lang} />
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

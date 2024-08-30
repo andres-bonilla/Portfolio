@@ -6,6 +6,7 @@ import { About } from "./About";
 import { Work } from "./Work";
 import { Footer } from "./Footer";
 import { useState, useEffect } from "react";
+import textData from "../textData.json";
 
 export const App = () => {
   const [headerClass, setHeaderClass] = useState("header-colorless");
@@ -25,9 +26,9 @@ export const App = () => {
     <>
       <Header headerClass={headerClass} />
       <main>
-        <Hello />
-        <Projects />
-        <About />
+        <Hello slogan={textData.hello["esp"]} />
+        <Projects projects={textData.projects} lang={"esp"} />
+        <About aboutText={textData.about["esp"]} skills={textData.skills} />
       </main>
       <Footer />
     </>

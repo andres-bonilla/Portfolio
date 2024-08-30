@@ -38,9 +38,10 @@
 }
 
 */
-#about-text {
+.about-text {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 1rem;
+  width: calc(100% - 16px);
 
   font-size: clamp(1rem, 1.3vw, 1.3rem);
   line-height: 1.5;

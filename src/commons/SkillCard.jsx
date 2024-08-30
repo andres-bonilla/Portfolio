@@ -1,29 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ReactComponent as WaitingLogo } from "../assets/tech-logos/axios.svg";
+import { useSvgImport } from "../Utils/useSvgImport";
 
-export const SkillCard = ({ techName }) => {
-  const [TechLogo, setTechLogo] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+export const SkillCard = ({ techName, fileName }) => {
+  const { isLoading, SvgLogo } = useSvgImport(fileName);
 
-  useEffect(() => {
-    setIsLoading(true);
-    const loadLogo = async () => {
-      try {
-        const logo = await import(`../assets/tech-logos/react.svg`);
-        setTechLogo(logo.ReactComponent);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    loadLogo();
-    console.log(TechLogo);
-  }, []);
-
-  console.log(TechLogo);
   return (
     <figure className="skill">
-      {/*isLoading && !TechLogo ? <WaitingLogo /> : <TechLogo />*/}
-      <figcaption className="tech-name">techName</figcaption>
+      {isLoading && <WaitingLogo className="tech-logo" />}
+      {SvgLogo && <SvgLogo className="tech-logo" />}
+      <figcaption className="tech-name">{techName}</figcaption>
     </figure>
   );
 };

@@ -1,0 +1,79 @@
+{
+  "hello": {
+    "esp": "Estoy preparado y entusiasmado de tener nuevas aventuras",
+    "eng": "I'm prepared and excited to have new adventures."
+  },
+  "projects": [
+    {
+      "name": "Match Maker",
+      "company": "Ballon Group Argentina",
+      "text": {
+        "esp": "Aplicación Android para la organización de competencias, creación de ligas y gestión de puntajes.",
+        "eng": ""
+      },
+      "skills": [3, 4, 14, 17, 18]
+    },
+    {
+      "name": "Movie BASE",
+      "text": {
+        "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
+        "eng": ""
+      },
+      "skills": [1, 2, 3]
+    },
+    {
+      "name": "Guitar React",
+      "text": {
+        "esp": "Tienda online donde se ofrece como producto principal guitarras eléctricas.",
+        "eng": ""
+      },
+      "skills": [1, 2, 3]
+    }
+  ],
+  "skills": [
+    { "tech": "React", "file-name": "react" },
+    { "tech": "Redux", "file-name": "redux" },
+    { "tech": "React Router", "file-name": "react-router" },
+    { "tech": "React Native", "file-name": "react-native" },
+    { "tech": "Expo", "file-name": "expo" },
+    { "tech": "Node.js", "file-name": "node" },
+    { "tech": "Express", "file-name": "express" },
+    { "tech": "Axios", "file-name": "axios" },
+    { "tech": "Git", "file-name": "git" },
+    { "tech": "JS", "file-name": "js" },
+    { "tech": "TS", "file-name": "ts" },
+    { "tech": "HTML", "file-name": "html" },
+    { "tech": "CSS", "file-name": "css" },
+    { "tech": "Sass", "file-name": "sass" },
+    { "tech": "Sequelize", "file-name": "sequelize" },
+    { "tech": "SQLite", "file-name": "sqlite" },
+    { "tech": "PostgreSQL", "file-name": "postgresql" },
+    { "tech": "MongoDB", "file-name": "mongodb" },
+    { "tech": "Mongoose", "file-name": "mongoose" },
+    { "tech": "Passport.js", "file-name": "passport" },
+    { "tech": "JWT", "file-name": "jwt" },
+    { "tech": "Docker", "file-name": "docker" },
+    { "tech": "Socket.IO", "file-name": "socketio" },
+    { "tech": "Mocha", "file-name": "mocha" },
+    { "tech": "Svelte", "file-name": "svelte" }
+  ],
+  "about": {
+    "esp": {
+      "summary": [
+        "Soy un desarrollador full-stack capaz de trabajar tanto en ingles como en español.",
+        "El conjunto de tecnologías que componen mi stack actual fue logrado gracias a un curso intensivo de 12 semanas(+800 horas).",
+        "El curso no solo hacia énfasis en el uso de las herramientas técnicas, sino que también utilizaba un fuerte enfoque hacia el desarrollo de habilidades blandas y el uso de metodologías de trabajo como SCRUM.",
+        "Poseo una gran capacidad de adaptabilidad y estoy abierto al aprendizaje de nuevas tecnologías y/o metodologías de trabajo."
+      ],
+      "complete": [
+        "Gracias al auge en el area de deliveries, tuve la oportunidad de ser repartidor de 2 grandes companias orientadas al comercio online como Take Away y Delivery Hero.",
+        "Me mude a Nueva Zelanda con el fin de ampliar mis horizontes y aprender un nuevo idioma. Para mi sorpresa no solo aprendí ingles sino que enriquecí mi experiencia laboral al trabajar en diferentes áreas del mercado neozelandés. Fui parte de mas de 10 empresas, desempeñando variados puestos desde cosechar cerezas y polinizar arboles de pino, hasta ayudante directo del jefe de area en una fabrica de pasteles.",
+        "Como profesional de la educacion dicte clases de programación funcional, lógica computacional y matemáticas. Una grata experiencia donde fui parte del desarrollo humano y técnico de jóvenes con una fuerte orientación al area informática."
+      ]
+    },
+    "eng": {
+      "summary": "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
+      "complete": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr  rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+    }
+  }
+}

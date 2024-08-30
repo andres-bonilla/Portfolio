@@ -4,7 +4,7 @@ import example from "../assets/example-image.jpg";
 import { useState } from "react";
 import { ProjectMenu } from "./ProjectMenu";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ projectData, lang }) => {
   const [hideExposeClass, setHideExposeClass] = useState("project-info-hide");
 
   const handleClic = (e) => {
@@ -19,19 +19,15 @@ export const ProjectCard = () => {
   return (
     <article>
       <div className={`project-info ${hideExposeClass}`}>
-        <h3 className="project-title">Titulo</h3>
-        <p className="project-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          explicabo sed suscipit quasi tenetur veritatis pariatur aut minus eos
-          ipsum.
-        </p>
+        <h3 className="project-title">{projectData.name}</h3>
+        <p className="project-text">{projectData.text[lang]}</p>
       </div>
 
       <img src={example} alt={"ejemplo"} className="project-img" />
 
-      <button class="info-button arrow-icon" onClick={handleClic}>
-        <span class="left-bar"></span>
-        <span class="right-bar"></span>
+      <button className="info-button arrow-icon" onClick={handleClic}>
+        <span className="left-bar"></span>
+        <span className="right-bar"></span>
       </button>
     </article>
   );

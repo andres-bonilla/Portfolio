@@ -3,7 +3,7 @@ import "../styles/interactions/hello-title.css";
 import "../styles/interactions/cv-button.css";
 import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";
 
-export const Hello = () => {
+export const Hello = ({ slogan }) => {
   return (
     <section id="hello">
       <h1 id="hello-title">
@@ -15,7 +15,7 @@ export const Hello = () => {
         </span>
       </h1>
 
-      <p>I'm prepared and excited to have new adventures.</p>
+      <p>{slogan}</p>
 
       <button id="cv-button">
         <DownloadLogo id="download-logo" />
