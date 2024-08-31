@@ -17,8 +17,8 @@ article:has(.info-button:active) .project-info {
   margin: auto 0;
 
   line-height: 70px;
-  font-size: 1.7rem;
-  font-weight: 500;
+  font-size: var(--project_title);
+  font-weight: 400;
   text-align: center;
 
   color: var(--main_color) !important;
@@ -29,7 +29,7 @@ article:has(.info-button:active) .project-info {
   margin: 0;
   padding: 16px;
 
-  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  font-size: var(--project_text);
   line-height: 1.5;
 
   color: var(--back_secondary_color);

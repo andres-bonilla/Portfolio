@@ -1,6 +1,16 @@
 :root {
   /*------------------------------Sizes---------------------------------------*/
-  --project_width: clamp(328px, calc(35vw - 4px), 480px);
+  /*
+  h3
+  hover label
+  */
+  --section_title: clamp(2.8rem, 5.85vw, 3.82rem);
+  --about_text: clamp(1rem, 2.1vw, 1.4rem);
+  --project_title: clamp(1.9rem, 3.2vw, 2.5rem);
+  --project_text: clamp(1rem, 1.65vw, 1.25rem);
+
+  --content_width: clamp(328px, 70vw, 980px);
+  --project_width: clamp(328px, calc(var(--content_width) / 2 - 4px), 486px);
 
   /*------------------------------Colors--------------------------------------*/
   --main_color: #d8415a;
@@ -9,7 +19,7 @@
   --back_secondary_color: #20222a;
 
   /*------------------------------Background Patron---------------------------*/
-  --s: 48px;
+  --s: 48px; /*size*/
   --_s: calc(2 * var(--s)) calc(2 * var(--s));
   --_g: 35.36% 35.36% at;
   --_c: #0000 66%, var(--back_secondary_color) 68% 70%, #0000 72%;
@@ -29,13 +39,16 @@
     sans-serif;
 }
 
-@media (max-width: 949px) {
+@media (max-width: 950px) {
   :root {
-    --project_width: clamp(328px, 70vw, 440px);
+    --project_title: clamp(1.9rem, 6.4vw, 2.5rem);
+    --project_text: clamp(1rem, 3.3vw, 1.25rem);
+
+    --project_width: clamp(328px, var(--content_width), 486px);
   }
 }
-
-/* Originals backup
+/*
+ Originals backup
   --main_color: #d8415a;
   --secondary_color: hsl(350, 66%, 99%);
   --back_color: #191b22;

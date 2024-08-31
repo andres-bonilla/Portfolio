@@ -10,6 +10,7 @@ export const Hello = ({ slogan }) => {
         <span id="full-name" data-attr="Andrés Bonilla">
           Andrés Bonilla
         </span>
+        <span style={{ display: "none" }}> - </span>
         <span id="profession" data-attr="Full Stack Dev.">
           Full Stack Dev.
         </span>

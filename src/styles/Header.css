@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  width: max(70%, 328px);
+  width: var(--content_width) /*max(70%, 328px)*/;
 
   color: var(--secondary_color);
 }
