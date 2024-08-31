@@ -1,16 +1,14 @@
 :root {
   /*------------------------------Sizes---------------------------------------*/
-  /*
-  h3
-  hover label
-  */
   --section_title: clamp(2.8rem, 5.85vw, 3.82rem);
   --about_text: clamp(1rem, 2.1vw, 1.4rem);
-  --project_title: clamp(1.9rem, 3.2vw, 2.5rem);
+  --project_title: clamp(1.9rem, 3.2vw, 2.3rem);
   --project_text: clamp(1rem, 1.65vw, 1.25rem);
+  --text_label: clamp(1rem, 1vw, 1.1rem);
 
   --content_width: clamp(328px, 70vw, 980px);
   --project_width: clamp(328px, calc(var(--content_width) / 2 - 4px), 486px);
+  --project_title_height: calc(var(--project_title) * 1.7);
 
   /*------------------------------Colors--------------------------------------*/
   --main_color: #d8415a;
@@ -41,7 +39,7 @@
 
 @media (max-width: 950px) {
   :root {
-    --project_title: clamp(1.9rem, 6.4vw, 2.5rem);
+    --project_title: clamp(1.9rem, 6.4vw, 2.3rem);
     --project_text: clamp(1rem, 3.3vw, 1.25rem);
 
     --project_width: clamp(328px, var(--content_width), 486px);

@@ -17,16 +17,17 @@
 }
 
 .tech-logo {
-  width: 104px;
-  height: 104px;
+  width: 98px;
+  height: 98px;
   margin: 16px;
 
   fill: var(--back_secondary_color);
 }
 
 .tech-name {
-  padding: 8px 0px;
+  padding: 8px;
 
+  font-size: 17px;
   text-align: center;
   font-weight: 500;
 

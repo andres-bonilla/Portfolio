@@ -7,7 +7,8 @@
 
 .project-item {
   width: var(--project_width);
-  height: calc(var(--project_width) * 3 / 4 + 72px);
+  height: calc(var(--project_width) * 3 / 4 + var(--project_title_height))
+    /*72px*/;
 
   position: relative;
   overflow: hidden;

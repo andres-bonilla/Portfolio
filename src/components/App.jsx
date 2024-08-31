@@ -26,7 +26,7 @@ export const App = () => {
     <>
       <Header headerClass={headerClass} />
       <main>
-        <Hello slogan={textData.hello["esp"]} />
+        <Hello slogan={textData.hello["eng"]} />
         <Projects projects={textData.projects} lang={"esp"} />
         <About aboutText={textData.about["esp"]} skills={textData.skills} />
       </main>

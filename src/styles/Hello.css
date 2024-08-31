@@ -11,7 +11,7 @@
   margin: 0 auto;
   margin-top: 48px;
 
-  font-size: 1.4rem /*clamp(1.15rem, 1.7vw, 2rem) */;
+  font-size: 1.7rem /*1.4rem clamp(1.15rem, 1.7vw, 2rem) */;
   line-height: 1.5;
   text-align: center;
   text-wrap: balance;
