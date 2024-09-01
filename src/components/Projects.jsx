@@ -1,7 +1,16 @@
-import "../styles/Projects.css";
-import { ProjectCard } from "../commons/ProjectCard";
+import "../styles/components/projects.css";
+import { ProjectCard } from "./commons/ProjectCard";
 
 export const Projects = ({ projects, lang }) => {
+  const mapProjects = (list) =>
+    list.map((data, i) => {
+      return (
+        <li key={i * 15} className="project-item">
+          <ProjectCard data={data} lang={lang} />
+        </li>
+      );
+    });
+
   return (
     <section id="projects">
       <h2>Projects</h2>
@@ -11,15 +20,7 @@ export const Projects = ({ projects, lang }) => {
         feedback!
       </p> */}
 
-      <ul className="project-grid">
-        {projects.map((data, i) => {
-          return (
-            <li key={i * 15} className="project-item">
-              <ProjectCard projectData={data} lang={lang} />
-            </li>
-          );
-        })}
-      </ul>
+      <ul className="project-grid">{mapProjects(projects)}</ul>
     </section>
   );
 };

@@ -1,11 +1,11 @@
-import "../styles/SocialMenu.css";
+import "../styles/components/nav-social.css";
 import { ReactComponent as GithubLogo } from "../assets/social-logos/github.svg";
 import { ReactComponent as LinkedinLogo } from "../assets/social-logos/linkedin.svg";
 import { ReactComponent as GmailLogo } from "../assets/social-logos/gmail.svg";
 
-export const SocialMenu = () => {
+export const NavSocial = () => {
   return (
-    <ul id="social-menu">
+    <ul id="nav-social">
       <li>
         <a href="" className="social-link cancel-link-style">
           <GithubLogo className="social-logo" />

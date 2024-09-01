@@ -42,6 +42,50 @@ body {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*main:after {
+  content: "";
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: max(16px, calc(50vw - var(--content_width) / 2));
+  display: flex;
+  width: max(328px, var(--content_width));
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}*/
+
+section {
+  width: var(--content_width);
+  margin: 0 auto;
+  padding-bottom: 128px;
+  padding-top: 128px;
+  border-bottom: 2px solid var(--back_secondary_color);
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 80px;
+  border-radius: 3px;
+
+  font-size: var(--section_title); /*44.5px  61px clamp(2.1rem, 6vw, 3.8rem);*/
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 400;
+
+  background: var(--main_color);
+  color: var(--secondary_color);
+}
+
 ul {
   list-style-type: none;
   margin: 0;

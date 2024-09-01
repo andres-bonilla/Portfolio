@@ -17,7 +17,7 @@
   padding-bottom: 0;
   border-radius: 3px;
 
-  font-size: 90px /* 6.12rem*/;
+  font-size: 90px;
   line-height: 1;
   font-weight: 500;
   white-space: wrap;
@@ -37,7 +37,7 @@
   padding-top: 8.4px;
   border-radius: 3px;
 
-  font-size: 61px /*3.94rem*/;
+  font-size: 61px;
   line-height: 0.94;
   font-weight: 500;
   white-space: wrap;
@@ -119,6 +119,6 @@
     padding-bottom: 6px;
 
     text-align: center;
-    font-size: 44.5px /* 2.97rem*/;
+    font-size: 44.5px;
   }
 }

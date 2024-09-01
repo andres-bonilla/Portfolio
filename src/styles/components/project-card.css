@@ -1,8 +1,7 @@
 .project-info {
   position: absolute;
   width: 100%;
-  height: calc(var(--project_width) * 3 / 8 + var(--project_title_height))
-    /*72px*/;
+  height: calc(var(--project_width) * 3 / 8 + var(--project_title_height));
 
   background: var(--secondary_color);
 
@@ -14,11 +13,13 @@ article:has(.info-button:active) .project-info {
 }
 
 .project-title {
-  height: var(--project_title_height) /*72px*/;
+  height: var(--project_title_height);
   margin: auto 0;
   padding-top: 8px;
 
-  line-height: calc(var(--project_title_height) - 10px) /*70px*/;
+  line-height: calc(
+    var(--project_title_height) - 10px
+  ); /*10px = padding + border*/
   font-size: var(--project_title);
   font-weight: 400;
   text-align: center;
@@ -51,7 +52,7 @@ article:has(.info-button:active) .project-info {
 
 .project-info-hide + .project-img,
 .project-info-hide + .project-img + .info-button {
-  margin-top: var(--project_title_height) /*72px*/;
+  margin-top: var(--project_title_height);
   transition: margin 0.18s;
 }
 
@@ -62,8 +63,7 @@ article:has(.info-button:active) .project-info {
 
 .project-info-expose + .project-img,
 .project-info-expose + .project-img + .info-button {
-  margin-top: calc(var(--project_width) * 3 / 8 + var(--project_title_height))
-    /*72px*/;
+  margin-top: calc(var(--project_width) * 3 / 8 + var(--project_title_height));
   transition: margin 0.18s 0.42s;
 }
 

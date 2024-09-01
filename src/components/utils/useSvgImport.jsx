@@ -10,7 +10,7 @@ export const useSvgImport = (logoName) => {
     const importSvgLogo = async () => {
       try {
         logoRef.current = (
-          await import(`../assets/tech-logos/${logoName}.svg`)
+          await import(`../../assets/tech-logos/${logoName}.svg`)
         ).ReactComponent;
       } finally {
         setIsLoading(false);

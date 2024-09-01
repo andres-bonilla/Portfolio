@@ -1,6 +1,5 @@
-import "../styles/Header.css";
-import { NavMenu } from "./NavMenu";
-import { SocialMenu } from "./SocialMenu";
+import "../../styles/components/header.css";
+import { Nav } from "../Nav";
 
 export const Header = ({ headerClass }) => {
   return (
@@ -9,9 +8,7 @@ export const Header = ({ headerClass }) => {
         <a href="#hello" className="cancel-link-style">
           <div id="logofic"></div>
         </a>
-        <nav>
-          <SocialMenu />
-        </nav>
+        <Nav />
       </div>
     </header>
   );

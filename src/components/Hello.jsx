@@ -1,4 +1,4 @@
-import "../styles/Hello.css";
+import "../styles/components/hello.css";
 import "../styles/interactions/hello-title.css";
 import "../styles/interactions/cv-button.css";
 import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";
@@ -17,11 +17,11 @@ export const Hello = ({ slogan }) => {
       </h1>
 
       <p>{slogan}</p>
-
+      {/*
       <button id="cv-button">
         <DownloadLogo id="download-logo" />
         <span>CV</span>
-      </button>
+      </button>*/}
     </section>
   );
 };

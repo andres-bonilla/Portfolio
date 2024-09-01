@@ -1,8 +1,8 @@
-import "../styles/NavMenu.css";
+import "../styles/components/nav-section.css";
 
-export const NavMenu = () => {
+export const NavSection = () => {
   return (
-    <ul id="nav-menu">
+    <ul id="nav-section">
       <li>
         <a href="#hello" className="nav-link cancel-link-style">
           Hello

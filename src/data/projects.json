@@ -1,0 +1,29 @@
+{
+  "projectsData": [
+    {
+      "name": "Match Maker",
+      "company": "Ballon Group Argentina",
+      "text": {
+        "esp": "Aplicación Android para la organización de competencias, creación de ligas y gestión de puntajes.",
+        "eng": ""
+      },
+      "skills": [3, 4, 14, 17, 18]
+    },
+    {
+      "name": "Movie BASE",
+      "text": {
+        "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
+        "eng": ""
+      },
+      "skills": [1, 2, 3]
+    },
+    {
+      "name": "Guitar React",
+      "text": {
+        "esp": "Tienda online donde se ofrece como producto principal guitarras eléctricas.",
+        "eng": ""
+      },
+      "skills": [1, 2, 3]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "skillsData": [
+    { "tech": "React", "file-name": "react" },
+    { "tech": "Redux", "file-name": "redux" },
+    { "tech": "React Router", "file-name": "react-router" },
+    { "tech": "React Native", "file-name": "react-native" },
+    { "tech": "Expo", "file-name": "expo" },
+    { "tech": "Node.js", "file-name": "node" },
+    { "tech": "Express", "file-name": "express" },
+    { "tech": "Axios", "file-name": "axios" },
+    { "tech": "Git", "file-name": "git" },
+    { "tech": "JS", "file-name": "js" },
+    { "tech": "TS", "file-name": "ts" },
+    { "tech": "HTML", "file-name": "html" },
+    { "tech": "CSS", "file-name": "css" },
+    { "tech": "Sass", "file-name": "sass" },
+    { "tech": "Sequelize", "file-name": "sequelize" },
+    { "tech": "SQLite", "file-name": "sqlite" },
+    { "tech": "PostgreSQL", "file-name": "postgresql" },
+    { "tech": "MongoDB", "file-name": "mongodb" },
+    { "tech": "Mongoose", "file-name": "mongoose" },
+    { "tech": "Passport.js", "file-name": "passport" },
+    { "tech": "JWT", "file-name": "jwt" },
+    { "tech": "Docker", "file-name": "docker" },
+    { "tech": "Socket.IO", "file-name": "socketio" },
+    { "tech": "Mocha", "file-name": "mocha" },
+    { "tech": "Svelte", "file-name": "svelte" }
+  ]
+}
