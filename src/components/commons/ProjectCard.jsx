@@ -1,7 +1,7 @@
 import "../../styles/components/project-card.css";
 import "../../styles/interactions/info-button.css";
-import example from "../../assets/example-image.jpg";
-import { useState } from "react";
+import "../../styles/interactions/tooltip.css";
+import React, { useState } from "react";
 
 export const ProjectCard = ({ data, lang }) => {
   const [hideExposeClass, setHideExposeClass] = useState("project-info-hide");
@@ -22,9 +22,13 @@ export const ProjectCard = ({ data, lang }) => {
         <p className="project-text">{data.text[lang]}</p>
       </div>
 
-      <img src={example} alt={"ejemplo"} className="project-img" />
+      <img src={data.img} alt={"ejemplo"} className="project-img" />
 
-      <button className="info-button arrow-icon" onClick={handleClic}>
+      <button
+        className="info-button arrow-icon tooltip-hover"
+        onClick={handleClic}
+      >
+        <span className="info-button-tooltip tooltip">Info</span>
         <span className="left-bar"></span>
         <span className="right-bar"></span>
       </button>

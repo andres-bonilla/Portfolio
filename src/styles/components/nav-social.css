@@ -6,7 +6,7 @@
 
 .social-text {
   top: 38px;
-  left: 15px;
+  left: calc(50% - 4px);
   transform: translateX(-50%);
 }
 

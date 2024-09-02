@@ -4,6 +4,12 @@
   left: calc(50% - 20px);
 }
 
+.info-button-tooltip {
+  top: 40px;
+  left: calc(50% - 4px);
+  transform: translateX(-50%);
+}
+
 .arrow-icon {
   --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
   --duration: 0.3s 0.45s;

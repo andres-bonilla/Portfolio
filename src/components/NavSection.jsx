@@ -22,8 +22,6 @@ export const NavSection = () => {
     });
 
   return (
-    <ul id="nav-section">
-      {mapLinks(["hello", "projects", "about", "works"])}
-    </ul>
+    <ul id="nav-section">{mapLinks(["top", "projects", "about", "works"])}</ul>
   );
 };
