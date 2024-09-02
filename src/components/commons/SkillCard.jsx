@@ -5,7 +5,9 @@ import { ReactComponent as WaitingLogo } from "../../assets/tech-logos/axios.svg
 import { useSvgImport } from "../utils/useSvgImport";
 
 export const SkillCard = ({ skill }) => {
-  const { isLoading, SvgLogo } = useSvgImport(skill["file-name"]);
+  const { isLoading, SvgLogo } = useSvgImport(
+    `../../assets/tech-logos/${skill["file-name"]}.svg`
+  );
 
   return (
     <figure className="skill">

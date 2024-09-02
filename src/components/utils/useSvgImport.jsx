@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-export const useSvgImport = (logoName) => {
+export const useSvgImport = (logoPath) => {
   const logoRef = useRef();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -9,16 +9,14 @@ export const useSvgImport = (logoName) => {
 
     const importSvgLogo = async () => {
       try {
-        logoRef.current = (
-          await import(`../../assets/tech-logos/${logoName}.svg`)
-        ).ReactComponent;
+        logoRef.current = (await import(logoPath)).ReactComponent;
       } finally {
         setIsLoading(false);
       }
     };
 
     importSvgLogo();
-  }, [logoName]);
+  }, [logoPath]);
 
   return { isLoading, SvgLogo: logoRef.current };
 };

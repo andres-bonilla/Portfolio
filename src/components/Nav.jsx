@@ -5,6 +5,7 @@ export const Nav = () => {
   return (
     <nav>
       <NavSocial />
+      <NavSection />
     </nav>
   );
 };

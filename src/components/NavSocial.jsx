@@ -1,27 +1,26 @@
 import "../styles/components/nav-social.css";
-import { ReactComponent as GithubLogo } from "../assets/social-logos/github.svg";
-import { ReactComponent as LinkedinLogo } from "../assets/social-logos/linkedin.svg";
-import { ReactComponent as GmailLogo } from "../assets/social-logos/gmail.svg";
-
+import "../styles/interactions/spin-box.css";
+import "../styles/interactions/tooltip.css";
+import { socialData } from "../data/paths.json";
+import { useSvgImport } from "./utils/useSvgImport";
 export const NavSocial = () => {
-  return (
-    <ul id="nav-social">
-      <li>
-        <a href="" className="social-link cancel-link-style">
-          <GithubLogo className="social-logo" />
-        </a>
-      </li>
+  const mapSocialLinks = (list) =>
+    list.map((element, i) => {
+      /*
+      const { SvgLogo } = useSvgImport(element.path);*/
+      return (
+        <li key={i * 5} className="spin-hover">
+          <a
+            href={element.link}
+            className="social-link cancel-link-style spin-down spin-hover tooltip-hover"
+            style={{ "--url": `url(${element.path})` }}
+          >
+            <span className="social-text tooltip">{element.network}</span>
+            <span className="spin-down social-logo" />
+          </a>
+        </li>
+      );
+    });
 
-      <li>
-        <a href="" className="social-link cancel-link-style">
-          <LinkedinLogo className="social-logo" />
-        </a>
-      </li>
-      <li>
-        <a href="" className="social-link cancel-link-style">
-          <GmailLogo className="social-logo" />
-        </a>
-      </li>
-    </ul>
-  );
+  return <ul id="nav-social">{mapSocialLinks(socialData)}</ul>;
 };

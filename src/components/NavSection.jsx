@@ -1,28 +1,29 @@
 import "../styles/components/nav-section.css";
+import "../styles/interactions/nav-section-links.css";
+import "../styles/interactions/spin-box.css";
+import "../styles/interactions/tooltip.css";
 
 export const NavSection = () => {
+  const mapLinks = (list) =>
+    list.map((element, i) => {
+      return (
+        <li key={i * 5}>
+          <a
+            href={`#${element}`}
+            className="nav-link cancel-link-style tooltip-hover"
+          >
+            <span className="nav-text tooltip">{element}</span>
+            <span className="nav-square-box spin-hover">
+              <span className="nav-square spin-down" />
+            </span>
+          </a>
+        </li>
+      );
+    });
+
   return (
     <ul id="nav-section">
-      <li>
-        <a href="#hello" className="nav-link cancel-link-style">
-          Hello
-        </a>
-      </li>
-      <li>
-        <a href="#projects" className="nav-link cancel-link-style">
-          Projects
-        </a>
-      </li>
-      <li>
-        <a href="#about" className="nav-link cancel-link-style">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#works" className="nav-link cancel-link-style">
-          Works
-        </a>
-      </li>
+      {mapLinks(["hello", "projects", "about", "works"])}
     </ul>
   );
 };
