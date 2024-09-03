@@ -8,12 +8,12 @@ import React from "react";
 export const Hello = ({ slogan }) => {
   return (
     <section id="hello">
-      <h1 id="hello-title">
-        <span id="full-name" data-attr="Andrés Bonilla">
+      <h1 id="hello-title" className="spin-hover">
+        <span id="full-name" className="spin-down" data-attr="Andrés Bonilla">
           Andrés Bonilla
         </span>
         <span style={{ display: "none" }}> - </span>
-        <span id="profession" data-attr="Full Stack Dev.">
+        <span id="profession" className="spin-up" data-attr="Full Stack Dev.">
           Full Stack Dev.
         </span>
       </h1>

@@ -3,13 +3,8 @@
 }
 
 #full-name,
-#profession {
-  position: relative;
-}
-
-#full-name,
-#full-name:after,
-#full-name:before {
+#full-name:before,
+#full-name:after {
   width: 328px;
   margin: 0;
   margin-right: 8px;
@@ -22,13 +17,11 @@
   font-weight: 500;
   white-space: wrap;
   text-align: right;
-
-  transition: transform 0.5s;
 }
 
 #profession,
-#profession:after,
-#profession:before {
+#profession:before,
+#profession:after {
   width: 184px;
   height: fit-content;
   max-height: 188px;
@@ -41,8 +34,6 @@
   line-height: 0.94;
   font-weight: 500;
   white-space: wrap;
-
-  transition: transform 0.5s;
 }
 
 #full-name:before,
@@ -50,54 +41,6 @@
 #profession:before,
 #profession:after {
   content: attr(data-attr);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#full-name:before {
-  background: var(--main_color);
-  color: var(--secondary_color);
-
-  transform-origin: top;
-  transform: rotateX(90deg) translateY(-50%);
-}
-#full-name:after {
-  background: var(--secondary_color);
-  color: var(--main_color);
-
-  transform-origin: bottom;
-  transform: rotateX(0deg) translateY(0%);
-}
-
-#profession:before {
-  background: var(--secondary_color);
-  color: var(--main_color);
-
-  transform-origin: bottom;
-  transform: rotateX(90deg) translateY(50%);
-}
-
-#profession:after {
-  background: var(--main_color);
-  color: var(--secondary_color);
-
-  transform-origin: top;
-  transform: rotateX(0deg) translateY(0%);
-}
-
-#hello-title:hover #full-name:before {
-  transform: rotateX(0deg) translateY(0%);
-}
-#hello-title:hover #full-name:after {
-  transform: rotateX(90deg) translateY(50%);
-}
-
-#hello-title:hover #profession:before {
-  transform: rotateX(0deg) translateY(0%);
-}
-#hello-title:hover #profession:after {
-  transform: rotateX(90deg) translateY(-50%);
 }
 
 @media (max-width: 768px) {

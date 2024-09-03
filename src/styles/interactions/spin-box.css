@@ -15,10 +15,12 @@
 .spin-down:after,
 .spin-up:before {
   background: var(--secondary_color);
+  color: var(--main_color);
 }
 .spin-down:before,
 .spin-up:after {
   background: var(--main_color);
+  color: var(--secondary_color);
 }
 
 .spin-down:before,
