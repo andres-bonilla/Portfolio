@@ -17,4 +17,39 @@
   font-size: var(--about_text);
   line-height: 1.5;
   color: var(--secondary_color);
+
+  animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+  opacity: 0; /*animacion de prueba*/
+}
+
+@keyframes show {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.about-button {
+  --delay: 0.2s;
+}
+
+.text-container-show,
+.text-container-hide {
+  width: var(--content_width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 2px solid var(--main_color);
+  transition: all 3s; /*No funciona*/
+}
+
+.text-container-show + .about-button .left-bar:after {
+  transform-origin: center center;
+  transform: rotate(-70deg);
+}
+
+.text-container-show + .about-button .right-bar:after {
+  transform-origin: center center;
+  transform: rotate(70deg);
 }

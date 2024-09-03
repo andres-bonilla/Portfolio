@@ -1,5 +1,4 @@
 import "../styles/components/nav-section.css";
-import "../styles/interactions/nav-section-links.css";
 import "../styles/interactions/spin-box.css";
 import "../styles/interactions/tooltip.css";
 
@@ -12,12 +11,10 @@ export const NavSection = () => {
         <li key={i}>
           <a
             href={`#${element}`}
-            className="nav-link cancel-link-style tooltip-hover"
+            className="nav-link cancel-link-style spin-hover tooltip-hover"
           >
             <span className="nav-tip tooltip">{element}</span>
-            <span className="nav-square-box spin-hover">
-              <span className="nav-square spin-down" />
-            </span>
+            <span className="nav-square spin-down" />
           </a>
         </li>
       );

@@ -11,10 +11,27 @@
 }
 
 .nav-link {
-  color: var(--secondary_color);
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 2rem;
+  margin: 4px 0px;
+  padding-right: 16px;
 }
 
-.nav-link:hover {
-  color: var(--main_color);
+.nav-square,
+.nav-square:before,
+.nav-square:after {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-square:before,
+.nav-square:after {
+  content: "";
+}
+
+.nav-tip {
+  top: -4px;
+  right: 34px;
 }

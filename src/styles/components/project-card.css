@@ -8,6 +8,13 @@
   animation: rolling 0.6s;
 }
 
+.info-button {
+  --delay: 0.45s;
+  z-index: 2;
+  position: absolute;
+  left: calc(50% - 20px);
+}
+
 article:has(.info-button:active) .project-info {
   animation: none;
 }
@@ -66,6 +73,18 @@ article:has(.info-button:active) .project-info {
 .project-info-show + .project-img + .info-button {
   margin-top: calc(var(--project_width) * 3 / 8 + var(--project_title_height));
   transition: margin 0.18s 0.42s;
+}
+
+.project-info-show + .project-img + .info-button .left-bar:after {
+  transform-origin: center center;
+  transform: rotate(-70deg);
+  transition-delay: 0.75s;
+}
+
+.project-info-show + .project-img + .info-button .right-bar:after {
+  transform-origin: center center;
+  transform: rotate(70deg);
+  transition-delay: 0.75s;
 }
 
 /*

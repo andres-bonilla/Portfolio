@@ -1,18 +1,12 @@
-.info-button {
-  z-index: 2;
-  position: absolute;
-  left: calc(50% - 20px);
-}
-
-.info-button-tooltip {
+.arrow-button-tip {
   top: 40px;
   left: calc(50% - 4px);
   transform: translateX(-50%);
 }
 
-.arrow-icon {
+.arrow-button {
   --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
-  --duration: 0.3s 0.45s;
+  --duration: 0.3s var(--delay);
   --base_size: 40px;
 
   display: flex;
@@ -63,16 +57,4 @@
   background: var(--main_color);
 
   transition: all var(--duration) var(--easing);
-}
-
-.project-info-show + .project-img + .info-button .left-bar:after {
-  transform-origin: center center;
-  transform: rotate(-70deg);
-  transition-delay: 0.75s;
-}
-
-.project-info-show + .project-img + .info-button .right-bar:after {
-  transform-origin: center center;
-  transform: rotate(70deg);
-  transition-delay: 0.75s;
 }

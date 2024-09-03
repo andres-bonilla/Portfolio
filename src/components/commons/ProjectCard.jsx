@@ -1,29 +1,17 @@
 import "../../styles/components/project-card.css";
-import "../../styles/interactions/info-button.css";
-import "../../styles/interactions/tooltip.css";
 
 import React, { useState } from "react";
+import { ArrowButton } from "./ArrowButton";
 
 export const ProjectCard = ({ data, lang }) => {
   const [hideShowClass, setHideShowClass] = useState("project-info-hide");
-  const [tooltipValue, setTooltipValue] = useState("Show");
-  let timeOutId;
 
-  const handleClic = (e) => {
-    e.preventDefault();
-    clearTimeout(timeOutId);
-
+  const setHeaderClass = () =>
     setHideShowClass(
       hideShowClass === "project-info-hide"
         ? "project-info-show"
         : "project-info-hide"
     );
-
-    timeOutId = setTimeout(
-      () => setTooltipValue(tooltipValue === "Hide" ? "Show" : "Hide"),
-      500
-    );
-  };
 
   return (
     <article>
@@ -35,15 +23,7 @@ export const ProjectCard = ({ data, lang }) => {
 
       <img src={data.img} alt={"ejemplo"} className="project-img" />
 
-      <button
-        onClick={handleClic}
-        className="info-button arrow-icon tooltip-hover"
-      >
-        <span className="info-button-tooltip tooltip">{tooltipValue}</span>
-
-        <span className="left-bar"></span>
-        <span className="right-bar"></span>
-      </button>
+      <ArrowButton setParentState={setHeaderClass} buttonClass="info-button" />
     </article>
   );
 };

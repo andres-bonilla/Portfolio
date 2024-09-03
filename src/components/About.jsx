@@ -2,14 +2,12 @@ import "../styles/components/about.css";
 
 import React, { useState } from "react";
 import { SkillCard } from "./commons/SkillCard";
+import { ArrowButton } from "./commons/ArrowButton";
 
 export const About = ({ aboutText, skills }) => {
   const [showMore, setShowMore] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    setShowMore(!showMore);
-  };
+  const setTipText = () => setShowMore(!showMore);
 
   const mapParagraphs = (list) =>
     list.map((text, i) => {
@@ -35,11 +33,11 @@ export const About = ({ aboutText, skills }) => {
 
       {mapParagraphs(aboutText.summary)}
 
-      {showMore && mapParagraphs(aboutText.complete)}
+      <div className={`text-container-${showMore ? "show" : "hide"}`}>
+        {showMore && mapParagraphs(aboutText.complete)}
+      </div>
 
-      <button onClick={handleClick} style={{ color: "#d8415a" }}>
-        {showMore ? "Less" : "More"}
-      </button>
+      <ArrowButton setParentState={setTipText} buttonClass="about-button" />
 
       <ul id="skills-list">{mapSkills(skills)}</ul>
     </section>
