@@ -1,4 +1,13 @@
-.skill {
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 80px;
+}
+
+.skill-card {
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
@@ -22,6 +31,13 @@
   text-align: center;
   font-weight: 500;
 
+  color: var(--back_color);
+  border-bottom: 2px solid var(--back_color);
+
+  transition: color 0.3s, border 0.3s;
+}
+
+.skill-card:hover .tech-name {
   color: var(--main_color);
   border-bottom: 2px solid var(--main_color);
 }

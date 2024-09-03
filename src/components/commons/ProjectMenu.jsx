@@ -1,4 +1,6 @@
 import "../../styles/components/ProjectMenu.css";
+
+import React from "react";
 import { ReactComponent as LinkLogo } from "../../assets/icons/link2.svg";
 import { ReactComponent as CodeLogo } from "../../assets/icons/code3.svg";
 import { ReactComponent as InfoLogo } from "../../assets/icons/info.svg";

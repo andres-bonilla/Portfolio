@@ -4,7 +4,7 @@
   --about_text: clamp(1rem, 2.1vw, 1.4rem);
   --project_title: clamp(1.9rem, 3.2vw, 2.3rem);
   --project_text: clamp(1rem, 1.65vw, 1.25rem);
-  --text_label: clamp(1rem, 1vw, 1.1rem);
+  --text_tooltip: 1.2rem;
 
   --content_width: clamp(328px, 70vw, 980px);
   --project_width: clamp(328px, calc(var(--content_width) / 2 - 4px), 486px);

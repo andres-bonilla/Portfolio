@@ -3,16 +3,18 @@ import "../styles/interactions/nav-section-links.css";
 import "../styles/interactions/spin-box.css";
 import "../styles/interactions/tooltip.css";
 
+import React from "react";
+
 export const NavSection = () => {
   const mapLinks = (list) =>
     list.map((element, i) => {
       return (
-        <li key={i * 5}>
+        <li key={i}>
           <a
             href={`#${element}`}
             className="nav-link cancel-link-style tooltip-hover"
           >
-            <span className="nav-text tooltip">{element}</span>
+            <span className="nav-tip tooltip">{element}</span>
             <span className="nav-square-box spin-hover">
               <span className="nav-square spin-down" />
             </span>

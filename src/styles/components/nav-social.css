@@ -4,7 +4,7 @@
   gap: 8px;
 }
 
-.social-text {
+.social-tip {
   top: 38px;
   left: calc(50% - 4px);
   transform: translateX(-50%);
@@ -48,4 +48,8 @@
 }
 .social-logo:after {
   background-color: var(--back_secondary_color);
+}
+
+.social-link:hover .social-logo:after {
+  background-color: var(--main_color);
 }

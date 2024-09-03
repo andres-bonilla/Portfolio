@@ -5,18 +5,16 @@ import { SkillCard } from "./commons/SkillCard";
 
 export const About = ({ aboutText, skills }) => {
   const [showMore, setShowMore] = useState(false);
-  const [buttonText, setButtonText] = useState("More");
 
   const handleClick = (e) => {
     e.preventDefault();
     setShowMore(!showMore);
-    setButtonText(buttonText === "More" ? "Less" : "More");
   };
 
   const mapParagraphs = (list) =>
     list.map((text, i) => {
       return (
-        <p key={i * 50} className="about-text">
+        <p key={i} className="about-text">
           {text}
         </p>
       );
@@ -25,7 +23,7 @@ export const About = ({ aboutText, skills }) => {
   const mapSkills = (list) =>
     list.map((skill, i) => {
       return (
-        <li key={i * 5}>
+        <li key={i}>
           <SkillCard skill={skill} />
         </li>
       );
@@ -40,7 +38,7 @@ export const About = ({ aboutText, skills }) => {
       {showMore && mapParagraphs(aboutText.complete)}
 
       <button onClick={handleClick} style={{ color: "#d8415a" }}>
-        {buttonText}
+        {showMore ? "Less" : "More"}
       </button>
 
       <ul id="skills-list">{mapSkills(skills)}</ul>

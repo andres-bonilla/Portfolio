@@ -2,21 +2,21 @@ import "../styles/components/nav-social.css";
 import "../styles/interactions/spin-box.css";
 import "../styles/interactions/tooltip.css";
 import { socialData } from "../data/paths.json";
-import { useSvgImport } from "./utils/useSvgImport";
+
+import React from "react";
+
 export const NavSocial = () => {
   const mapSocialLinks = (list) =>
     list.map((element, i) => {
-      /*
-      const { SvgLogo } = useSvgImport(element.path);*/
       return (
-        <li key={i * 5} className="spin-hover">
+        <li key={i} className="spin-hover">
           <a
             href={element.link}
-            className="social-link cancel-link-style spin-down spin-hover tooltip-hover"
             style={{ "--url": `url(${element.path})` }}
+            className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
           >
-            <span className="social-text tooltip">{element.network}</span>
-            <span className="spin-down social-logo" />
+            <span className="social-tip tooltip">{element.network}</span>
+            <span className="social-logo spin-down" />
           </a>
         </li>
       );

@@ -1,29 +1,38 @@
 {
   "skillsData": [
-    { "tech": "React", "file-name": "react" },
-    { "tech": "Redux", "file-name": "redux" },
-    { "tech": "React Router", "file-name": "react-router" },
-    { "tech": "React Native", "file-name": "react-native" },
-    { "tech": "Expo", "file-name": "expo" },
-    { "tech": "Node.js", "file-name": "node" },
-    { "tech": "Express", "file-name": "express" },
-    { "tech": "Axios", "file-name": "axios" },
-    { "tech": "Git", "file-name": "git" },
-    { "tech": "JS", "file-name": "js" },
-    { "tech": "TS", "file-name": "ts" },
-    { "tech": "HTML", "file-name": "html" },
-    { "tech": "CSS", "file-name": "css" },
-    { "tech": "Sass", "file-name": "sass" },
-    { "tech": "Sequelize", "file-name": "sequelize" },
-    { "tech": "SQLite", "file-name": "sqlite" },
-    { "tech": "PostgreSQL", "file-name": "postgresql" },
-    { "tech": "MongoDB", "file-name": "mongodb" },
-    { "tech": "Mongoose", "file-name": "mongoose" },
-    { "tech": "Passport.js", "file-name": "passport" },
-    { "tech": "JWT", "file-name": "jwt" },
-    { "tech": "Docker", "file-name": "docker" },
-    { "tech": "Socket.IO", "file-name": "socketio" },
-    { "tech": "Mocha", "file-name": "mocha" },
-    { "tech": "Svelte", "file-name": "svelte" }
+    { "tech": "React", "source": "../../assets/tech-logos/react.svg" },
+    { "tech": "Redux", "source": "../../assets/tech-logos/redux.svg" },
+    {
+      "tech": "React Router",
+      "source": "../../assets/tech-logos/react-router.svg"
+    },
+    {
+      "tech": "React Native",
+      "source": "../../assets/tech-logos/react-native.svg"
+    },
+    { "tech": "Expo", "source": "../../assets/tech-logos/expo.svg" },
+    { "tech": "Node.js", "source": "../../assets/tech-logos/node.svg" },
+    { "tech": "Express", "source": "../../assets/tech-logos/express.svg" },
+    { "tech": "Axios", "source": "../../assets/tech-logos/axios.svg" },
+    { "tech": "Git", "source": "../../assets/tech-logos/git.svg" },
+    { "tech": "JS", "source": "../../assets/tech-logos/js.svg" },
+    { "tech": "TS", "source": "../../assets/tech-logos/ts.svg" },
+    { "tech": "HTML", "source": "../../assets/tech-logos/html.svg" },
+    { "tech": "CSS", "source": "../../assets/tech-logos/css.svg" },
+    { "tech": "Sass", "source": "../../assets/tech-logos/sass.svg" },
+    { "tech": "Sequelize", "source": "../../assets/tech-logos/sequelize.svg" },
+    { "tech": "SQLite", "source": "../../assets/tech-logos/sqlite.svg" },
+    {
+      "tech": "PostgreSQL",
+      "source": "../../assets/tech-logos/postgresql.svg"
+    },
+    { "tech": "MongoDB", "source": "../../assets/tech-logos/mongodb.svg" },
+    { "tech": "Mongoose", "source": "../../assets/tech-logos/mongoose.svg" },
+    { "tech": "JWT", "source": "../../assets/tech-logos/jwt.svg" },
+    { "tech": "Passport.js", "source": "../../assets/tech-logos/passport.svg" },
+    { "tech": "Docker", "source": "../../assets/tech-logos/docker.svg" },
+    { "tech": "Socket.IO", "source": "../../assets/tech-logos/socketio.svg" },
+    { "tech": "Mocha", "source": "../../assets/tech-logos/mocha.svg" },
+    { "tech": "Svelte", "source": "../../assets/tech-logos/svelte.svg" }
   ]
 }

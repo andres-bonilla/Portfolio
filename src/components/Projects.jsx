@@ -1,11 +1,13 @@
 import "../styles/components/projects.css";
+
+import React from "react";
 import { ProjectCard } from "./commons/ProjectCard";
 
 export const Projects = ({ projects, lang }) => {
   const mapProjects = (list) =>
     list.map((data, i) => {
       return (
-        <li key={i * 15} className="project-item">
+        <li key={i} className="project-item">
           <ProjectCard data={data} lang={lang} />
         </li>
       );

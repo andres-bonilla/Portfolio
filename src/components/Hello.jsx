@@ -3,6 +3,8 @@ import "../styles/interactions/hello-title.css";
 import "../styles/interactions/cv-button.css";
 import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";
 
+import React from "react";
+
 export const Hello = ({ slogan }) => {
   return (
     <section id="hello">

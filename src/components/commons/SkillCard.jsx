@@ -1,16 +1,14 @@
-import "../../styles/components/about-skill-card.css";
+import "../../styles/components/about-skills.css";
 
 import React from "react";
 import { ReactComponent as WaitingLogo } from "../../assets/tech-logos/axios.svg";
 import { useSvgImport } from "../utils/useSvgImport";
 
 export const SkillCard = ({ skill }) => {
-  const { isLoading, SvgLogo } = useSvgImport(
-    `../../assets/tech-logos/${skill["file-name"]}.svg`
-  );
+  const { isLoading, SvgLogo } = useSvgImport(skill.source);
 
   return (
-    <figure className="skill">
+    <figure className="skill-card">
       {isLoading && <WaitingLogo className="tech-logo" />}
       {SvgLogo && <SvgLogo className="tech-logo" />}
 

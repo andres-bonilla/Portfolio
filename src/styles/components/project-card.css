@@ -28,7 +28,7 @@ article:has(.info-button:active) .project-info {
   border-bottom: 2px solid var(--main_color);
 }
 
-.project-text {
+.project-description {
   margin: 0;
   padding: 16px;
 
@@ -57,13 +57,13 @@ article:has(.info-button:active) .project-info {
   transition: margin 0.18s;
 }
 
-.project-info-expose {
+.project-info-show {
   z-index: 2;
   transition: z-index 0.1s 0.3s;
 }
 
-.project-info-expose + .project-img,
-.project-info-expose + .project-img + .info-button {
+.project-info-show + .project-img,
+.project-info-show + .project-img + .info-button {
   margin-top: calc(var(--project_width) * 3 / 8 + var(--project_title_height));
   transition: margin 0.18s 0.42s;
 }

@@ -18,12 +18,3 @@
   line-height: 1.5;
   color: var(--secondary_color);
 }
-
-#skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-
-  margin-top: 80px;
-}
