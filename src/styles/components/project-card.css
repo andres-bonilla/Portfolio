@@ -31,6 +31,13 @@ article:has(.info-button:active) .project-info {
   font-weight: 400;
   text-align: center;
 
+  color: var(--back_color);
+  border-bottom: 2px solid var(--back_color);
+
+  transition: color 0.3s, border 0.3s;
+}
+
+article:hover .project-title {
   color: var(--main_color) !important;
   border-bottom: 2px solid var(--main_color);
 }
@@ -87,6 +94,12 @@ article:has(.info-button:active) .project-info {
   transition-delay: 0.75s;
 }
 
+article:not(:hover) .left-bar:after,
+article:not(:hover) .right-bar:after {
+  background: var(--back_color);
+
+  transition: background 0.3s;
+}
 /*
 .project-grid:has(.project-item:hover) .project-item:not(:hover) {
   filter: grayscale(80%) brightness(50%) opacity(40%);

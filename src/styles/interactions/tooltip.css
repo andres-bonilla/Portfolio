@@ -30,5 +30,6 @@
 .tooltip-hover:hover .tooltip {
   visibility: visible;
   opacity: 1;
+
   transition: opacity 0.3s;
 }
