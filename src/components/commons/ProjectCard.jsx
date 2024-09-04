@@ -23,7 +23,11 @@ export const ProjectCard = ({ data, lang }) => {
 
       <img src={data.img} alt={"ejemplo"} className="project-img" />
 
-      <ArrowButton setParentState={setHeaderClass} buttonClass="info-button" />
+      <ArrowButton
+        setParentState={setHeaderClass}
+        buttonClass="info-button"
+        tipValues={["Show", "Hide"]}
+      />
     </article>
   );
 };

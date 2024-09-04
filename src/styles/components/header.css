@@ -22,6 +22,7 @@ header {
 
 .header-colorful {
   background: var(--back_color);
+  border-bottom: 1px solid var(--back_secondary_color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   transition: background 0.5s, box-shadow 0.5s;

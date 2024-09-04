@@ -83,6 +83,11 @@ h2 {
   text-align: center;
   font-weight: 400;
 
+  text-shadow: -1px 1px 0 var(--back_secondary_color),
+    1px 1px 0 var(--back_secondary_color),
+    1px -1px 0 var(--back_secondary_color),
+    -1px -1px 0 var(--back_secondary_color);
+
   background: var(--main_color);
   color: var(--secondary_color);
 }

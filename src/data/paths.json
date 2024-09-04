@@ -1,11 +1,6 @@
 {
   "socialData": [
     {
-      "network": "Github",
-      "path": "./src/assets/social-logos/github.svg",
-      "link": "#"
-    },
-    {
       "network": "Gmail",
       "path": "./src/assets/social-logos/gmail.svg",
       "link": "#"
@@ -13,6 +8,11 @@
     {
       "network": "LinkedIn",
       "path": "./src/assets/social-logos/linkedin.svg",
+      "link": "#"
+    },
+    {
+      "network": "Github",
+      "path": "./src/assets/social-logos/github.svg",
       "link": "#"
     }
   ]

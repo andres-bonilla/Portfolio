@@ -47,7 +47,7 @@
   background-color: var(--secondary_color);
 }
 .social-logo:after {
-  background-color: var(--back_secondary_color);
+  background-color: var(--back_color);
 }
 
 .social-link:hover .social-logo:after {

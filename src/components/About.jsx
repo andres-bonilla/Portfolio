@@ -37,7 +37,11 @@ export const About = ({ aboutText, skills }) => {
         {showMore && mapParagraphs(aboutText.complete)}
       </div>
 
-      <ArrowButton setParentState={setTipText} buttonClass="about-button" />
+      <ArrowButton
+        setParentState={setTipText}
+        buttonClass="about-button"
+        tipValues={["More", "Less"]}
+      />
 
       <ul id="skills-list">{mapSkills(skills)}</ul>
     </section>

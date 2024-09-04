@@ -1,7 +1,6 @@
 import "../../styles/components/about-skills.css";
 
 import React from "react";
-import { ReactComponent as WaitingLogo } from "../../assets/tech-logos/axios.svg";
 import { useSvgImport } from "../utils/useSvgImport";
 
 export const SkillCard = ({ skill }) => {
@@ -9,7 +8,7 @@ export const SkillCard = ({ skill }) => {
 
   return (
     <figure className="skill-card">
-      {isLoading && <WaitingLogo className="tech-logo" />}
+      {isLoading && <p>loading...</p>}
       {SvgLogo && <SvgLogo className="tech-logo" />}
 
       <figcaption className="tech-name">{skill.tech}</figcaption>

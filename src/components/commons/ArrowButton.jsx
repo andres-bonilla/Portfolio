@@ -3,8 +3,8 @@ import "../../styles/interactions/tooltip.css";
 
 import React, { useState } from "react";
 
-export const ArrowButton = ({ setParentState, buttonClass }) => {
-  const [tooltipValue, setTooltipValue] = useState("Show");
+export const ArrowButton = ({ setParentState, buttonClass, tipValues }) => {
+  const [tooltipValue, setTooltipValue] = useState(tipValues[0]);
   let timeOutId;
 
   const handleClic = (e) => {
@@ -14,7 +14,10 @@ export const ArrowButton = ({ setParentState, buttonClass }) => {
     setParentState();
 
     timeOutId = setTimeout(
-      () => setTooltipValue(tooltipValue === "Hide" ? "Show" : "Hide"),
+      () =>
+        setTooltipValue(
+          tooltipValue === tipValues[1] ? tipValues[0] : tipValues[1]
+        ),
       500
     );
   };
