@@ -3,6 +3,8 @@
 }
 
 .tooltip {
+  position: absolute;
+  z-index: 10;
   width: fit-content;
   margin: 4px;
   padding: 0px 5px;
@@ -19,8 +21,6 @@
 }
 
 .tooltip {
-  position: absolute;
-
   visibility: hidden;
   opacity: 0;
 

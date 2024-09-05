@@ -53,3 +53,9 @@
 .social-link:hover .social-logo:after {
   background-color: var(--main_color);
 }
+
+@media (max-width: 768px) {
+  #nav-social {
+    margin-right: 25px;
+  }
+}

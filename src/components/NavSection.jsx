@@ -21,6 +21,18 @@ export const NavSection = () => {
     });
 
   return (
-    <ul id="nav-section">{mapLinks(["top", "projects", "about", "works"])}</ul>
+    <>
+      <div id="nav-burguer" className="tooltip-hover">
+        <span className="burguer-tip tooltip" />
+        <input type="checkbox" id="check-burguer" />
+        <div className="burguer-square-box">
+          <span className="burguer-square" />
+          <span className="burguer-square" />
+          <span className="burguer-square" />
+        </div>
+      </div>
+
+      <ul id="nav-section">{mapLinks(["top", "projects", "about"])}</ul>
+    </>
   );
 };
