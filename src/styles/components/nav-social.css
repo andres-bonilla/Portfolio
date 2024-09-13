@@ -44,14 +44,14 @@
 }
 
 .social-logo:before {
-  background-color: var(--secondary_color);
+  background: var(--secondary_color) !important;
 }
 .social-logo:after {
-  background-color: var(--back_color);
+  background: var(--back_color) !important;
 }
 
 .social-link:hover .social-logo:after {
-  background-color: var(--main_color);
+  background: var(--main_color) !important;
 }
 
 @media (max-width: 768px) {

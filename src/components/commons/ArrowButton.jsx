@@ -1,6 +1,3 @@
-import "../../styles/interactions/arrow-button.css";
-import "../../styles/interactions/tooltip.css";
-
 import React, { useState } from "react";
 
 export const ArrowButton = ({ setParentState, buttonClass, tipValues }) => {

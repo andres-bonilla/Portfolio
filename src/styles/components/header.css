@@ -1,4 +1,4 @@
-header {
+#head {
   z-index: 9;
   position: sticky;
   top: -1px;
@@ -38,8 +38,15 @@ header {
   color: var(--secondary_color);
 }
 
-#main-logo {
-  width: 64px;
+#link-main-logo {
+  display: flex;
+  align-items: center;
   height: 64px;
-  background: var(--secondary_color);
+}
+
+#main-logo {
+  width: 52px;
+  height: 52px;
+  padding: 2px;
+  fill: var(--main_color);
 }

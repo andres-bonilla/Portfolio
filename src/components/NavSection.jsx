@@ -1,7 +1,3 @@
-import "../styles/components/nav-section.css";
-import "../styles/interactions/spin-box.css";
-import "../styles/interactions/tooltip.css";
-
 import React from "react";
 
 export const NavSection = () => {
@@ -22,13 +18,13 @@ export const NavSection = () => {
 
   return (
     <>
-      <div id="nav-burguer" className="tooltip-hover">
-        <span className="burguer-tip tooltip" />
-        <input type="checkbox" id="check-burguer" />
-        <div className="burguer-square-box">
-          <span className="burguer-square" />
-          <span className="burguer-square" />
-          <span className="burguer-square" />
+      <div id="nav-burguer">
+        <input type="checkbox" id="burguer-check" />
+
+        <div className="burguer-box">
+          <div className="burguer-point" />
+          <div className="burguer-point" />
+          <div className="burguer-point" />
         </div>
       </div>
 

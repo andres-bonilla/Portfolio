@@ -1,9 +1,6 @@
-import "../styles/components/hello.css";
-import "../styles/interactions/hello-title.css";
-import "../styles/interactions/cv-button.css"; /*
-import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";*/
-
 import React from "react";
+
+import { CVButton } from "./CVButton";
 
 export const Hello = ({ slogan }) => {
   return (
@@ -17,13 +14,11 @@ export const Hello = ({ slogan }) => {
           Full Stack Dev.
         </span>
       </h1>
+      <div id="slogan-box">
+        <p id="slogan">{slogan}</p>
 
-      <p>{slogan}</p>
-      {/*
-      <button id="cv-button">
-        <DownloadLogo id="download-logo" />
-        <span>CV</span>
-      </button>*/}
+        <CVButton />
+      </div>
     </section>
   );
 };

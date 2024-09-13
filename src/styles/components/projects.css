@@ -7,8 +7,8 @@
 
 .project-item {
   width: var(--project_width);
-  height: calc(var(--project_width) * 3 / 4 + var(--project_title_height));
 
+  height: calc(var(--project_width) / 1.28 + var(--project_title_height));
   position: relative;
   overflow: hidden;
   border-radius: 3px;

@@ -1,0 +1,130 @@
+#nav-burguer {
+  display: none;
+}
+
+/* Initial state */
+@media (max-width: 768px) {
+  #nav-burguer {
+    --divider_color: transparent 0 33%, #ffffff80 33% 67%, transparent 67% 100%;
+    position: absolute;
+    top: 1px;
+    right: max(8px, calc(50vw - 8px - var(--content_width) / 2));
+
+    display: block;
+    height: 64px;
+    width: 25px;
+
+    border-left: 1px solid;
+    border-image: linear-gradient(to top, var(--divider_color)) 1;
+    cursor: pointer;
+  }
+
+  #burguer-check {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    cursor: default;
+  }
+
+  .burguer-box {
+    z-index: -1;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 8px;
+  }
+
+  .burguer-point {
+    background: var(--secondary_color);
+  }
+
+  /*Checked animation*/
+  #burguer-check:checked {
+    cursor: default;
+    animation: move-out 0.4s step-start 0.1s;
+  }
+
+  .burguer-box {
+    top: 15px;
+    right: 0;
+    gap: 5px;
+  }
+  #nav-burguer:has(#burguer-check:checked) .burguer-box {
+    top: 64px;
+    right: 0;
+    gap: 4px;
+
+    transition: width 0.15s, height 0.15s, top 0.15s;
+  }
+
+  .burguer-point {
+    width: 8px;
+    height: 8px;
+    margin: 0px;
+    border-radius: 2px;
+  }
+  #nav-burguer:has(#burguer-check:checked) .burguer-point {
+    width: 18px;
+    height: 18px;
+    margin: calc(1rem - 9px + 4px) 0px;
+    border-radius: 3px;
+
+    transition: width 0.6s 0.1s, height 0.6s 0.1s, margin 0.15s 0.1s;
+  }
+
+  #nav-section {
+    visibility: hidden;
+    opacity: 0;
+
+    transform-origin: calc(7.63rem - 12px) -32px;
+    transform: scale(0);
+
+    transition: opacity 0.6s 0.15s, visibility 0.6s 0.15s, transform 0.3s;
+  }
+  #nav-burguer:has(#burguer-check:checked) + #nav-section {
+    visibility: visible;
+    opacity: 1;
+
+    transform-origin: calc(7.63rem - 12px) -32px;
+    transform: scale(1);
+
+    transition: opacity 0.6s 0.15s, transform 0.3s, border-top 0.2s 0.7s;
+  }
+
+  /*Hover animation*/
+  .burguer-point:first-child,
+  .burguer-point:last-child {
+    visibility: visible;
+    opacity: 1;
+    translate: 0px 0px;
+    transition: opacity 0.05s 0.09s,
+      translate 0.18s cubic-bezier(0.14, 0.68, 0.51, 0.94) 0.1s;
+  }
+  #burguer-check:hover + .burguer-box .burguer-point:first-child {
+    visibility: hidden;
+    opacity: 0;
+    translate: 0px 10px;
+    transition: translate 0.18s cubic-bezier(0.14, 0.68, 0.51, 0.94),
+      opacity 0.3s, visibility 0.1s 0.2s;
+  }
+  #burguer-check:hover + .burguer-box .burguer-point:last-child {
+    visibility: hidden;
+    opacity: 0;
+    translate: 0px -10px;
+    transition: translate 0.18s cubic-bezier(0.14, 0.68, 0.51, 0.94),
+      opacity 0.3s, visibility 0.1s 0.2s;
+  }
+
+  .burguer-point:nth-child(2) {
+    animation: debunce-out 0.2s cubic-bezier(0.14, 0.68, 0.51, 0.94);
+  }
+  #burguer-check:hover + .burguer-box .burguer-point:nth-child(2) {
+    animation: debunce-in 0.2s cubic-bezier(0.14, 0.68, 0.51, 0.94) 0.1s;
+  }
+}

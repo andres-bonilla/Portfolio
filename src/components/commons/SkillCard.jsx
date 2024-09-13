@@ -1,6 +1,5 @@
-import "../../styles/components/about-skills.css";
-
 import React from "react";
+
 import { useSvgImport } from "../utils/useSvgImport";
 
 export const SkillCard = ({ skill }) => {

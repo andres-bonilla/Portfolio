@@ -1,32 +1,36 @@
-import "../../styles/components/project-card.css";
-
 import React, { useState } from "react";
-import { ArrowButton } from "./ArrowButton";
 
-export const ProjectCard = ({ data, lang }) => {
-  const [hideShowClass, setHideShowClass] = useState("project-info-hide");
+import { ProjectSkill } from "./ProjectSkill";
+import { CardFoot } from "./CardFoot";
 
-  const setHeaderClass = () =>
-    setHideShowClass(
-      hideShowClass === "project-info-hide"
-        ? "project-info-show"
-        : "project-info-hide"
-    );
+export const ProjectCard = ({ data, skills, lang }) => {
+  const [showInfo, setShowInfo] = useState(false);
+
+  const setInfoClass = () => setShowInfo(!showInfo);
+
+  const mapProjectSkills = (list) =>
+    list.map((element, i) => {
+      return (
+        <li key={i} className="project-skill tooltip-hover">
+          <ProjectSkill skill={skills[element]} />
+        </li>
+      );
+    });
 
   return (
     <article>
-      <div className={`project-info ${hideShowClass}`}>
+      <header className="project-header">
         <h3 className="project-title">{data.name}</h3>
-
+      </header>
+      <main className={`project-info ${showInfo ? "show-info" : ""}`}>
         <p className="project-description">{data.description[lang]}</p>
-      </div>
+        <ul className="project-skill-list">{mapProjectSkills(data.skills)}</ul>
+      </main>
 
-      <img src={data.img} alt={"ejemplo"} className="project-img" />
-
-      <ArrowButton
-        setParentState={setHeaderClass}
-        buttonClass="info-button"
-        tipValues={["Show", "Hide"]}
+      <CardFoot
+        setInfoClass={setInfoClass}
+        imgArr={data.img}
+        imgType={data.imgType}
       />
     </article>
   );

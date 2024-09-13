@@ -3,17 +3,17 @@
     {
       "network": "Gmail",
       "path": "./src/assets/social-logos/gmail.svg",
-      "link": "#"
+      "link": "mailto:x.andresbonilla@gmail.com"
     },
     {
       "network": "LinkedIn",
       "path": "./src/assets/social-logos/linkedin.svg",
-      "link": "#"
+      "link": "https://linkedin.com/in/andresbonilla-dev"
     },
     {
       "network": "Github",
       "path": "./src/assets/social-logos/github.svg",
-      "link": "#"
+      "link": "https://github.com/andres-bonilla"
     }
   ]
 }

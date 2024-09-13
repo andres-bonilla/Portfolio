@@ -2,31 +2,44 @@
   "projectsData": [
     {
       "name": "Match Maker",
-      "company": "Ballon Group Argentina",
+      "company": "Ballon Group - Argentina",
       "description": {
-        "esp": "Aplicación Android para la organización de competencias, creación de ligas y gestión de puntajes.",
-        "eng": ""
+        "esp": "Aplicación móvil para la organización de competencias y gestión de puntajes desarrollada para Balloon Group.",
+        "eng": "Mobile app to organise competitions, create leagues and manage scores developed for Balloon Group."
       },
-      "img": "/website3.jpeg",
-      "skills": [3, 4, 14, 17, 18]
+      "img": ["/phone0.png", "/phone1.png", "/phone2.png"],
+      "imgType": "phone",
+      "skills": [3, 1, 4, 5, 18]
     },
     {
       "name": "Movie BASE",
       "description": {
         "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
-        "eng": ""
+        "eng": "Website developed by consuming the TMDB API."
       },
-      "img": "/website2.jpeg",
-      "skills": [1, 2, 3]
+      "img": ["/movie-base.png"],
+      "imgType": "web",
+      "skills": [0, 1, 2, 8, 15]
+    },
+    {
+      "name": "Simple TO-DO",
+      "description": {
+        "esp": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar.",
+        "eng": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar."
+      },
+      "img": ["/to-do.png"],
+      "imgType": "web",
+      "skills": [25, 10, 14, 13, 6]
     },
     {
       "name": "Guitar React",
       "description": {
-        "esp": "Tienda online donde se ofrece como producto principal guitarras eléctricas.",
-        "eng": ""
+        "esp": "Tienda online donde se ofrece una amplia selección de guitarras eléctricas como producto principal.",
+        "eng": "Online store where a wide selection of electric guitars are offered as main product."
       },
-      "img": "/website1.png",
-      "skills": [1, 2, 3]
+      "img": ["/guitar-react.png"],
+      "imgType": "web",
+      "skills": [0, 1, 7, 17, 21]
     }
   ]
 }

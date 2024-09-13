@@ -1,0 +1,42 @@
+/*--------  show-info  -------------*/
+@keyframes jumping {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(calc(var(--project_title_height) / (-6)));
+  }
+}
+
+/*--------  nav-burguer  -------------*/
+@keyframes move-out {
+  from {
+    translate: 200px;
+  }
+  to {
+    translate: 200px;
+  }
+}
+
+@keyframes debunce-out {
+  0%,
+  100% {
+    scale: 1;
+  }
+  40%,
+  60% {
+    scale: 0.7;
+  }
+}
+
+@keyframes debunce-in {
+  0%,
+  100% {
+    scale: 1;
+  }
+  40%,
+  60% {
+    scale: 0.7;
+  }
+}

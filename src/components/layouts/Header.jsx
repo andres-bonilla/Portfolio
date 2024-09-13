@@ -1,17 +1,22 @@
-import "../../styles/components/header.css";
-
 import React from "react";
-import { Nav } from "../Nav";
+
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+
+import { NavSocial } from "../NavSocial";
+import { NavSection } from "../NavSection";
 
 export const Header = ({ headerClass }) => {
   return (
-    <header className={headerClass}>
+    <header id="head" className={headerClass}>
       <div id="header-box">
-        <a href="#" className="cancel-link-style">
-          <div id="main-logo"></div>
+        <a id="link-main-logo" href="#" className="cancel-link-style">
+          <Logo id="main-logo" />
         </a>
 
-        <Nav />
+        <nav>
+          <NavSocial />
+          <NavSection />
+        </nav>
       </div>
     </header>
   );

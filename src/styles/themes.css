@@ -10,8 +10,8 @@
   --project_width: clamp(328px, calc(var(--content_width) / 2 - 4px), 486px);
   --project_title_height: calc(var(--project_title) * 1.7);
 
-  /*------------------------------Colors---------------------------bb342f-ffa62b-f02d3a-e7aa4b-9e2a2b-e09f3e-cc3e40-----*/
-  --main_color: #26547c;
+  /*-----------------#e09f3e-------------Colors---------------------------bb342f-ffa62b-f02d3a-e7aa4b-9e2a2b-e09f3e-cc3e40---#26547c-hsl(358, 53%, 45%)-*/
+  --main_color: #f02d3a;
   --secondary_color: hsl(350, 66%, 99%);
   --back_color: #191b22;
   --back_secondary_color: #20222a;

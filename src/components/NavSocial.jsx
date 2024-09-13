@@ -1,9 +1,6 @@
-import "../styles/components/nav-social.css";
-import "../styles/interactions/spin-box.css";
-import "../styles/interactions/tooltip.css";
-import { socialData } from "../data/paths.json";
-
 import React from "react";
+
+import { socialData } from "../data/paths.json";
 
 export const NavSocial = () => {
   const mapSocialLinks = (list) =>

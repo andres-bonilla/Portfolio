@@ -1,10 +1,8 @@
-import "../styles/main.css";
+import React, { useState, useEffect } from "react";
 
 import { slogan, aboutData } from "../data/text-data.json";
 import { projectsData } from "../data/projects.json";
 import { skillsData } from "../data/skills.json";
-
-import React, { useState, useEffect } from "react";
 
 import { Header } from "./layouts/Header";
 import { Hello } from "./Hello";
@@ -30,9 +28,12 @@ export const App = () => {
   return (
     <>
       <Header headerClass={headerClass} />
-      <main>
+      <main id="content">
         <Hello slogan={slogan["eng"]} />
-        <Projects projects={projectsData} lang={"esp"} />
+        <Projects
+          data={{ projects: projectsData, skills: skillsData }}
+          lang={"eng"}
+        />
         <About aboutText={aboutData["esp"]} skills={skillsData} />
       </main>
       <Footer />

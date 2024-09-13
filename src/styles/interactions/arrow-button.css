@@ -2,6 +2,7 @@
   --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
   --duration: 0.3s var(--delay);
   --base_size: 40px;
+  --arrow_color: var(--main_color);
 
   display: flex;
   align-items: center;
@@ -54,7 +55,7 @@
   width: calc(0.5 * var(--base_size));
   height: calc(0.1 * var(--base_size));
 
-  background: var(--main_color);
+  background: var(--arrow_color);
 
   transition: transform var(--duration) var(--easing);
 }

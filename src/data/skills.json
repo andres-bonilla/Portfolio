@@ -10,6 +10,10 @@
       "tech": "React Native",
       "source": "../../assets/tech-logos/react-native.svg"
     },
+    {
+      "tech": "React Nav...",
+      "source": "../../assets/tech-logos/react-navigation.svg"
+    },
     { "tech": "Expo", "source": "../../assets/tech-logos/expo.svg" },
     { "tech": "Node.js", "source": "../../assets/tech-logos/node.svg" },
     { "tech": "Express", "source": "../../assets/tech-logos/express.svg" },
