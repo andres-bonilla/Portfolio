@@ -1,0 +1,30 @@
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+}
+
+#about-title {
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: var(--content_width);
+  height: fit-content;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--main_color);
+}
+
+.about-text {
+  width: calc(100% - 16px);
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-size: var(--about_text);
+  line-height: 1.5;
+  color: var(--secondary_color);
+}

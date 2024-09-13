@@ -1,16 +1,54 @@
 :root {
-  /*------------Colors--------------*/
+  /*------------------------------Sizes---------------------------------------*/
+  --section_title: clamp(2.8rem, 5.85vw, 3.82rem);
+  --about_text: clamp(1rem, 2.1vw, 1.4rem);
+  --project_title: clamp(1.9rem, 3.2vw, 2.3rem);
+  --project_text: clamp(1rem, 1.65vw, 1.25rem);
+  --text_tooltip: 1.2rem;
 
-  --main_color: #d8415a;
-  --text_color: hsl(350, 66%, 97%);
-  --text_reverse_color: #191b22;
-  --back_strong_color: #191b22;
-  --back_color: #23252f;
+  --content_width: clamp(328px, 70vw, 980px);
+  --project_width: clamp(328px, calc(var(--content_width) / 2 - 4px), 486px);
+  --project_title_height: calc(var(--project_title) * 1.7);
 
-  /*------------Sizes--------------*/
+  /*-----------------#e09f3e-------------Colors---------------------------bb342f-ffa62b-f02d3a-e7aa4b-9e2a2b-e09f3e-cc3e40---#26547c-hsl(358, 53%, 45%)-*/
+  --main_color: #f02d3a;
+  --secondary_color: hsl(350, 66%, 99%);
+  --back_color: #191b22;
+  --back_secondary_color: #20222a;
+
+  /*------------------------------Background Patron---------------------------*/
+  --s: 48px; /*size*/
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, var(--back_secondary_color) 68% 70%, #0000 72%;
+  --background_patron: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s)
+      var(--s) / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--back_color) 0 25%, #0000 0 50%) 0 0 /
+      var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s)
+      var(--back_color);
+
+  /*------------------------------Fonts---------------------------------------*/
+  --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+@media (max-width: 950px) {
+  :root {
+    --project_title: clamp(1.9rem, 6.4vw, 2.3rem);
+    --project_text: clamp(1rem, 3.3vw, 1.25rem);
+
+    --project_width: clamp(328px, var(--content_width), 486px);
+  }
 }
 /*
-
-   #FFFDED;
-  #EDF2F4
+ Originals backup
+  --main_color: #d8415a;
+  --secondary_color: hsl(350, 66%, 99%);
+  --back_color: #191b22;
+  --back_secondary_color: #20222a;
 */

@@ -1,0 +1,96 @@
+#hello-title {
+  display: flex;
+}
+
+#full-name,
+#full-name:before,
+#full-name:after {
+  width: calc(var(--content_width) / 100 * 65.35 - 6);
+  padding: 0px calc(var(--content_width) / 100 * 1.18);
+  margin: 0;
+  margin-right: 12px;
+  border-radius: 3px;
+  /*Prueba*/
+  background: none;
+  /*Prueba*/
+  font-size: calc(var(--content_width) / 100 * 18.11);
+  line-height: calc(var(--content_width) / 100 * 18.11);
+  font-weight: 500;
+  white-space: wrap;
+  text-align: right;
+  text-shadow: -1px 1px 0 var(--back_secondary_color),
+    1px 1px 0 var(--back_secondary_color),
+    1px -1px 0 var(--back_secondary_color),
+    -1px -1px 0 var(--back_secondary_color);
+}
+#full-name,
+#profession {
+  color: transparent;
+}
+
+/*Prueba*/
+#full-name:before {
+  outline: 2px solid var(--secondary_color);
+}
+#profession:after {
+  outline: 2px solid var(--secondary_color);
+}
+#full-name:after {
+  outline: 2px solid var(--main_color);
+}
+#profession:before {
+  outline: 2px solid var(--main_color);
+}
+/*Prueba*/
+#profession,
+#profession:before,
+#profession:after {
+  width: calc(var(--content_width) / 100 * 34.65 - 6);
+  padding: calc(var(--content_width) / 100 * 1.18);
+  margin: 0;
+  border-radius: 3px;
+  /*Prueba*/
+  background: none;
+  /*Prueba*/
+  font-size: calc(var(--content_width) / 100 * 11.285);
+  line-height: calc(var(--content_width) / 100 * 11.285);
+  font-weight: 500;
+  white-space: wrap;
+  text-shadow: -1px 1px 0 var(--back_secondary_color),
+    1px 1px 0 var(--back_secondary_color),
+    1px -1px 0 var(--back_secondary_color),
+    -1px -1px 0 var(--back_secondary_color);
+}
+
+#full-name:before,
+#full-name:after,
+#profession:before,
+#profession:after {
+  content: attr(data-attr);
+}
+
+@media (max-width: 768px) {
+  #full-name,
+  #full-name:after,
+  #full-name:before {
+    width: var(--content_width);
+    padding: 0px calc(var(--content_width) / 100 * 1.83);
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-size: calc(var(--content_width) / 100 * 28.05);
+    line-height: calc(var(--content_width) / 100 * 28.05);
+    text-align: center;
+  }
+
+  #profession,
+  #profession:before,
+  #profession:after {
+    width: var(--content_width);
+    padding: calc(var(--content_width) / 100 * 1.83);
+
+    font-size: calc(var(--content_width) / 100 * 13.57);
+    line-height: calc(var(--content_width) / 100 * 13.57);
+    text-align: center;
+  }
+}

@@ -1,0 +1,61 @@
+.arrow-button {
+  --easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  --duration: 0.3s var(--delay);
+  --base_size: 40px;
+  --arrow_color: var(--main_color);
+
+  display: flex;
+  align-items: center;
+  height: var(--base_size);
+  width: var(--base_size);
+}
+
+.arrow-button-tip {
+  top: 40px;
+  left: calc(50% - 4px);
+  transform: translateX(-50%);
+}
+
+.left-bar,
+.right-bar {
+  position: relative;
+  display: block;
+  width: calc(0.5 * var(--base_size));
+  height: calc(0.1 * var(--base_size));
+
+  background-color: transparent;
+  border-radius: calc(0.025 * var(--base_size));
+}
+
+.left-bar {
+  left: calc(0.085 * var(--base_size));
+  transform: rotate(35deg);
+}
+
+.right-bar {
+  right: calc(0.085 * var(--base_size));
+  transform: rotate(-35deg);
+}
+
+.left-bar:after {
+  border-radius: calc(0.05 * var(--base_size)) calc(0.1 * var(--base_size))
+    calc(0.1 * var(--base_size)) calc(0.05 * var(--base_size));
+}
+
+.right-bar:after {
+  border-radius: calc(0.1 * var(--base_size)) calc(0.05 * var(--base_size))
+    calc(0.05 * var(--base_size)) calc(0.1 * var(--base_size));
+}
+
+.left-bar:after,
+.right-bar:after {
+  content: "";
+
+  display: block;
+  width: calc(0.5 * var(--base_size));
+  height: calc(0.1 * var(--base_size));
+
+  background: var(--arrow_color);
+
+  transition: transform var(--duration) var(--easing);
+}

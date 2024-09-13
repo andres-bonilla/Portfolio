@@ -1,0 +1,68 @@
+.spin-hover {
+  display: flex;
+  align-items: center;
+}
+
+.spin-down,
+.spin-up {
+  position: relative;
+  margin: 0;
+  border-radius: 3px;
+
+  transition: transform 0.3s;
+}
+
+.spin-down:after,
+.spin-up:before {
+  background: var(--secondary_color);
+  color: var(--main_color);
+}
+.spin-down:before,
+.spin-up:after {
+  background: var(--main_color);
+  color: var(--secondary_color);
+}
+
+.spin-down:before,
+.spin-down:after,
+.spin-up:before,
+.spin-up:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+  border-radius: 3px;
+
+  transition: transform 0.3s;
+}
+
+.spin-down:before {
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-50%);
+}
+.spin-down:after {
+  transform-origin: bottom;
+  transform: rotateX(0deg) translateY(0%);
+}
+.spin-up:before {
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+}
+.spin-up:after {
+  transform-origin: top;
+  transform: rotateX(0deg) translateY(0%);
+}
+
+.spin-hover:hover .spin-down:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+.spin-hover:hover .spin-down:after {
+  transform: rotateX(90deg) translateY(50%);
+}
+.spin-hover:hover .spin-up:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+.spin-hover:hover .spin-up:after {
+  transform: rotateX(90deg) translateY(-50%);
+}

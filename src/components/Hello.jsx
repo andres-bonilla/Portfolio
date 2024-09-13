@@ -1,18 +1,24 @@
-import "../styles/Hello.css";
-import { ReactComponent as DownloadLogo } from "../assets/icons/download.svg";
+import React from "react";
 
-export const Hello = () => {
+import { CVButton } from "./CVButton";
+
+export const Hello = ({ slogan }) => {
   return (
     <section id="hello">
-      <div id="titles">
-        <h1 id="full-name">Andrés Bonilla</h1>
-        <h2 id="profession">Full Stack Dev.</h2>
+      <h1 id="hello-title" className="spin-hover">
+        <span id="full-name" className="spin-down" data-attr="Andrés Bonilla">
+          Andrés Bonilla
+        </span>
+        <span style={{ display: "none" }}> - </span>
+        <span id="profession" className="spin-up" data-attr="Full Stack Dev.">
+          Full Stack Dev.
+        </span>
+      </h1>
+      <div id="slogan-box">
+        <p id="slogan">{slogan}</p>
+
+        <CVButton />
       </div>
-      <p>I'm prepared and excited to have new adventures.</p>
-      <button id="cv-button">
-        <DownloadLogo id="download-logo" />
-        <span>CV</span>
-      </button>
     </section>
   );
 };

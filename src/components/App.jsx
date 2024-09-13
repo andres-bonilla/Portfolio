@@ -1,17 +1,21 @@
-import "../styles/App.css";
-import { Header } from "./Header";
+import React, { useState, useEffect } from "react";
+
+import { slogan, aboutData } from "../data/text-data.json";
+import { projectsData } from "../data/projects.json";
+import { skillsData } from "../data/skills.json";
+
+import { Header } from "./layouts/Header";
 import { Hello } from "./Hello";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import { Work } from "./Work";
-import { Footer } from "./Footer";
-import { useState, useEffect } from "react";
+import { Footer } from "./layouts/Footer";
 
 export const App = () => {
   const [headerClass, setHeaderClass] = useState("header-colorless");
 
   const listenScroll = () => {
-    if (window.scrollY > 1) setHeaderClass("header-colorful");
+    if (window.scrollY > 48) setHeaderClass("header-colorful");
     else setHeaderClass("header-colorless");
   };
 
@@ -24,11 +28,13 @@ export const App = () => {
   return (
     <>
       <Header headerClass={headerClass} />
-      <main className="pattern-background">
-        <Hello />
-        <Projects />
-        <About />
-        {/*<Work />*/}
+      <main id="content">
+        <Hello slogan={slogan["eng"]} />
+        <Projects
+          data={{ projects: projectsData, skills: skillsData }}
+          lang={"eng"}
+        />
+        <About aboutText={aboutData["esp"]} skills={skillsData} />
       </main>
       <Footer />
     </>

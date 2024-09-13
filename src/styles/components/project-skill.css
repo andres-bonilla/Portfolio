@@ -1,0 +1,18 @@
+.project-skill-list {
+  display: flex;
+  gap: 8px;
+  margin-left: 14px;
+}
+
+.project-skill {
+  height: fit-content;
+}
+
+.project-skill-logo {
+  width: 24px;
+  height: 24px;
+
+  margin: 2px;
+
+  fill: var(--back_secondary_color);
+}

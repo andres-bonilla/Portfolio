@@ -1,0 +1,17 @@
+#foot {
+  --shadow_large: rgba(0, 0, 0, 0.56) 0px 22px 70px;
+  box-shadow: var(--shadow_large) 4px;
+
+  width: 100%;
+  padding: 16px;
+  padding-right: 32px;
+
+  background-color: var(--back_secondary_color);
+  color: var(--main_color);
+  border-top: 2px solid var(--main_color);
+}
+
+#foot p {
+  margin: 0;
+  text-align: end;
+}
