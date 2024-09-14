@@ -8,7 +8,7 @@ export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
       return (
         <div key={i} className="img-box">
           <img
-            src={element}
+            src={`../src/assets/images/${element}`}
             alt={"ejemplo"}
             className="project-img project-img-phone"
           />
@@ -25,7 +25,7 @@ export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
       />
       {imgType === "web" && (
         <img
-          src={imgArr[0]}
+          src={`../src/assets/images/${imgArr[0]}`}
           alt={"ejemplo"}
           className="project-img project-img-web"
         />

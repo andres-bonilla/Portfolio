@@ -7,7 +7,7 @@
         "esp": "Aplicación móvil para la organización de competencias y gestión de puntajes desarrollada para Balloon Group.",
         "eng": "Mobile app to organise competitions, create leagues and manage scores developed for Balloon Group."
       },
-      "img": ["/phone0.png", "/phone1.png", "/phone2.png"],
+      "img": ["mm0.png", "mm1.png", "mm2.png"],
       "imgType": "phone",
       "skills": [3, 1, 4, 5, 18]
     },
@@ -17,7 +17,7 @@
         "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
         "eng": "Website developed by consuming the TMDB API."
       },
-      "img": ["/movie-base.png"],
+      "img": ["movie-base.png"],
       "imgType": "web",
       "skills": [0, 1, 2, 8, 15]
     },
@@ -27,7 +27,7 @@
         "esp": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar.",
         "eng": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar."
       },
-      "img": ["/to-do.png"],
+      "img": ["to-do.png"],
       "imgType": "web",
       "skills": [25, 10, 14, 13, 6]
     },
@@ -37,7 +37,7 @@
         "esp": "Tienda online donde se ofrece una amplia selección de guitarras eléctricas como producto principal.",
         "eng": "Online store where a wide selection of electric guitars are offered as main product."
       },
-      "img": ["/guitar-react.png"],
+      "img": ["guitar-react.png"],
       "imgType": "web",
       "skills": [0, 1, 7, 17, 21]
     }
