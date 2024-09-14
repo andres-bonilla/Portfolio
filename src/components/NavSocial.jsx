@@ -9,6 +9,7 @@ export const NavSocial = () => {
         <li key={i} className="spin-hover">
           <a
             href={element.link}
+            target="_blank"
             style={{ "--url": `url(${element.path})` }}
             className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
           >

@@ -29,7 +29,7 @@ export const App = () => {
     <>
       <Header headerClass={headerClass} />
       <main id="content">
-        <Hello slogan={slogan["eng"]} />
+        <Hello slogan={slogan} lang={"esp"} />
         <Projects
           data={{ projects: projectsData, skills: skillsData }}
           lang={"eng"}
