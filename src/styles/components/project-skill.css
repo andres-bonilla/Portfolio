@@ -1,18 +1,45 @@
+.project-info-foot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  margin-bottom: 12px;
+}
+
 .project-skill-list {
+  height: 32px;
   display: flex;
   gap: 8px;
-  margin-left: 14px;
+  width: fit-content;
 }
 
 .project-skill {
-  height: fit-content;
+  height: 32px;
 }
 
 .project-skill-logo {
   width: 24px;
   height: 24px;
 
-  margin: 2px;
+  margin: 4px 2px;
 
   fill: var(--back_secondary_color);
+}
+
+.project-skill-tip {
+  top: 42px;
+  left: calc(50% - 4px);
+  transform: translateX(-50%);
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-button {
+  height: 34px;
+  padding: 0px 6px;
+  font-size: var(--project_text);
 }

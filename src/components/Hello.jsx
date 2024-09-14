@@ -19,7 +19,7 @@ export const Hello = ({ slogan, lang }) => {
 
         <a
           id="cv-button"
-          className="cancel-link-style tooltip-hover"
+          className="link-button cancel-link-style tooltip-hover"
           href={`../src/assets/cv-${lang}.pdf`}
           target="_blank"
         >

@@ -21,8 +21,8 @@
 
 /* Interactions */
 @import url("./interactions/arrow-button.css");
-@import url("./interactions/cv-button.css");
 @import url("./interactions/hello-title.css");
+@import url("./interactions/link-button.css");
 @import url("./interactions/more-text.css");
 @import url("./interactions/nav-burguer.css");
 @import url("./interactions/show-info.css");
