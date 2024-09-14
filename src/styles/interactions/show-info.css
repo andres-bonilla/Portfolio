@@ -24,13 +24,13 @@ article:has(.info-button:active) .project-header {
 }
 
 .project-description,
-.project-skill-list {
+.project-info-foot {
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.06s, transform 0.2s 0.06s;
 }
 .show-info .project-description,
-.show-info .project-skill-list {
+.show-info .project-info-foot {
   transform: scale(1);
   opacity: 1;
   transition: opacity 0.2s 0.53s, transform 0.2s 0.4s;

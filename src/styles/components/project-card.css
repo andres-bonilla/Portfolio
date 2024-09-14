@@ -37,13 +37,6 @@
   line-height: 1.4;
 }
 
-.project-skill-list {
-  display: flex;
-  gap: 8px;
-  margin-left: 16px;
-  margin-bottom: 10px;
-}
-
 .project-footer {
   height: calc(var(--project_width) / 1.28);
   padding: calc(var(--project_width) / 100 * 8.7);
