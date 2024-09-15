@@ -17,7 +17,7 @@ export const CardContent = ({
         </li>
       );
     });
-  console.log(links);
+
   return (
     <main className={`project-info ${showInfo ? "show-info" : ""}`}>
       <p className="project-description">{description}</p>

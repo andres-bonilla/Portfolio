@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const NavSection = () => {
+  const [activeSection, setActiveSection] = useState(0);
+  const changeSection = (section) => {
+    setActiveSection(section);
+  };
   const mapLinks = (list) =>
     list.map((element, i) => {
       return (
         <li key={i}>
           <a
             href={`#${element}`}
-            className="nav-link cancel-link-style spin-hover tooltip-hover"
+            onClick={() => changeSection(i)}
+            className={`nav-link cancel-link-style spin-hover tooltip-hover ${
+              i === activeSection ? "active-link" : ""
+            }`}
           >
             <span className="nav-tip tooltip">{element}</span>
             <span className="nav-square spin-down" />

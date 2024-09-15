@@ -1,0 +1,129 @@
+#lang-container {
+  width: 43px;
+  height: 34px;
+  padding-left: 8px;
+  border-left: 1px solid;
+  border-image: linear-gradient(to top, var(--head_divider_color)) 1;
+}
+
+#lang-check {
+  z-index: 15;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+#lang-switcher {
+  width: 34px;
+  height: 34px;
+}
+#lang-slider {
+  position: relative;
+  overflow: hidden;
+  width: 34px;
+  height: 17px;
+  border-radius: 2px;
+  background: var(--secondary_color);
+}
+.not-selected,
+.selected {
+  display: block;
+  height: 17px;
+  width: 34px;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+}
+.not-selected {
+  color: var(--secondary_color);
+}
+.selected {
+  position: relative;
+}
+
+#lang-slider {
+  top: -34px;
+  transition: top 0.3s;
+}
+#lang-check:checked + #lang-switcher #lang-slider {
+  top: -17px;
+}
+
+.selected {
+  top: 0px;
+  transition: top 0.3s;
+}
+#lang-check:checked + #lang-switcher .selected {
+  top: -17px;
+  transition: top 0.3s;
+}
+
+@media (max-width: 768px) {
+  #lang-container {
+    width: 52px;
+    padding-right: 8px;
+    margin-right: 17px;
+    border-right: 1px solid;
+  }
+} /*
+#lang-check:hover .selected {
+  color: var(--main_color);
+  transition: color 1s;
+}
+#lang-check:not(:hover) .selected {
+  color: var(--back_color);
+  transition: color 1s;
+}
+
+#lang-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ Hide the browser's default checkbox 
+#lang-check {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}*/
+
+/* Create a custom checkbox 
+#lang-switcher {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}*/
+
+/*
+#lang-slider {
+  position: relative;
+  overflow: hidden;
+  width: 34px;
+  height: 17px;
+  border-radius: 2px;
+  background: white;
+  color: var(--seconary_color);
+}
+.selected {
+  position: relative;
+}
+
+
+
+
+
+*/

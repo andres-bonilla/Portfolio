@@ -31,11 +31,23 @@
   content: "";
 }
 
+.active-link .spin-down:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+.active-link .spin-down:after {
+  transform: rotateX(90deg) translateY(50%);
+}
+.active-link:hover .spin-down:before {
+  transform: none;
+}
+.active-link:hover .spin-down:after {
+  transform: none;
+}
+
 .nav-tip {
   top: -4px;
   right: 38px;
 }
-
 @media (max-width: 768px) {
   #nav-section {
     position: absolute;

@@ -4,35 +4,26 @@ import { slogan, aboutData } from "../data/text-data.json";
 import { projectsData } from "../data/projects.json";
 import { skillsData } from "../data/skills.json";
 
-import { Header } from "./layouts/Header";
+import { Header } from "./Header";
 import { Hello } from "./Hello";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import { Work } from "./Work";
-import { Footer } from "./layouts/Footer";
+import { Footer } from "./Footer";
 
 export const App = () => {
-  const [headerClass, setHeaderClass] = useState("header-colorless");
-
-  const listenScroll = () => {
-    if (window.scrollY > 48) setHeaderClass("header-colorful");
-    else setHeaderClass("header-colorless");
+  const [lang, setLang] = useState("eng");
+  const switchLang = () => {
+    setLang(lang === "eng" ? "esp" : "eng");
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", listenScroll);
-
-    return () => window.removeEventListener("scroll", listenScroll);
-  }, []);
-
   return (
     <>
-      <Header headerClass={headerClass} />
+      <Header switchLang={switchLang} />
       <main id="content">
-        <Hello slogan={slogan} lang={"esp"} />
+        <Hello slogan={slogan} lang={lang} />
         <Projects
           data={{ projects: projectsData, skills: skillsData }}
-          lang={"eng"}
+          lang={lang}
         />
         <About aboutText={aboutData["esp"]} skills={skillsData} />
       </main>

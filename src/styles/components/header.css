@@ -4,6 +4,7 @@
   top: -1px;
 
   display: flex;
+  gap: 8px;
   justify-content: center;
   align-items: center;
 
@@ -33,9 +34,14 @@
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  width: var(--content_width);
+  width: calc(var(--content_width) - 16px - 35px);
 
   color: var(--secondary_color);
+}
+@media (max-width: 768px) {
+  #header-box {
+    width: calc(var(--content_width) - 16px - 36px - 25px);
+  }
 }
 
 #link-main-logo {
