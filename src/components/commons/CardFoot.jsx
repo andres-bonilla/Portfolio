@@ -2,7 +2,7 @@ import React from "react";
 
 import { ArrowButton } from "./ArrowButton";
 
-export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
+export const CardFoot = ({ setInfoClass, imgFiles, imgType, lang }) => {
   const mapImgPhone = (list) =>
     list.map((element, i) => {
       return (
@@ -21,17 +21,17 @@ export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
       <ArrowButton
         setParentState={setInfoClass}
         buttonClass="info-button"
-        tipValues={["Show", "Hide"]}
+        tipValues={["Hide", "Show", "Ocultar", "Mostrar"]}
+        lang={lang}
       />
-      {imgType === "web" && (
+      {imgType === "web" ? (
         <img
-          src={`../src/assets/images/${imgArr[0]}`}
+          src={`../src/assets/images/${imgFiles[0]}`}
           alt={"ejemplo"}
           className="project-img project-img-web"
         />
-      )}
-      {imgType === "phone" && (
-        <div className="img-phone-container">{mapImgPhone(imgArr)}</div>
+      ) : (
+        <div className="img-phone-container">{mapImgPhone(imgFiles)}</div>
       )}
     </footer>
   );

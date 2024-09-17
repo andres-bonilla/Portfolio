@@ -3,7 +3,7 @@ import React from "react";
 import { AboutText } from "./AboutText";
 import { SkillCard } from "./commons/SkillCard";
 
-export const About = ({ aboutText, skills }) => {
+export const About = ({ aboutText, skills, lang }) => {
   const mapSkills = (list) =>
     list.map((skill, i) => {
       if (25 === i) return;
@@ -16,9 +16,13 @@ export const About = ({ aboutText, skills }) => {
 
   return (
     <section id="about">
-      <h2 id="about-title">About Me</h2>
+      <h2 id="about-title">{lang === "eng" ? "About Me" : "Sobre Mi"}</h2>
 
-      <AboutText summary={aboutText.summary} complete={aboutText.complete} />
+      <AboutText
+        summary={aboutText[lang].summary}
+        complete={aboutText[lang].complete}
+        lang={lang}
+      />
 
       <ul id="skills-list">{mapSkills(skills)}</ul>
     </section>

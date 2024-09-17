@@ -20,12 +20,14 @@ export const ProjectCard = ({ data, skills, lang }) => {
         links={data.links}
         skillsIndex={data.skills}
         skills={skills}
+        lang={lang}
       />
 
       <CardFoot
         setInfoClass={setInfoClass}
-        imgArr={data.img}
-        imgType={data.imgType}
+        imgFiles={data.img.files}
+        imgType={data.img.type}
+        lang={lang}
       />
     </article>
   );

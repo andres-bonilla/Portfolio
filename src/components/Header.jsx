@@ -4,20 +4,15 @@ import { ReactComponent as Logo } from "../assets/logo43.svg";
 
 import { NavSocial } from "./NavSocial";
 import { NavSection } from "./NavSection";
+import { useScrollBin } from "./utils/useScrollBin";
 
-export const Header = ({ switchLang }) => {
+export const Header = ({ switchLang, lang }) => {
   const [headerClass, setHeaderClass] = useState("header-colorless");
-
-  const listenScroll = () => {
-    if (window.scrollY > 48) setHeaderClass("header-colorful");
-    else setHeaderClass("header-colorless");
-  };
+  const { scrollBin } = useScrollBin();
 
   useEffect(() => {
-    window.addEventListener("scroll", listenScroll);
-
-    return () => window.removeEventListener("scroll", listenScroll);
-  }, []);
+    setHeaderClass(scrollBin > 0 ? "header-colorful" : "header-colorless");
+  }, [scrollBin]);
 
   return (
     <header id="head" className={headerClass}>
@@ -28,7 +23,7 @@ export const Header = ({ switchLang }) => {
 
         <nav>
           <NavSocial />
-          <NavSection />
+          <NavSection lang={lang} />
         </nav>
       </div>
       <div id="lang-container">

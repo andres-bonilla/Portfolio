@@ -27,7 +27,11 @@
 }
 
 .tech-name {
+  width: 130px;
   padding: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   font-size: 17px;
   text-align: center;

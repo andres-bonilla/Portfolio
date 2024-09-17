@@ -8,9 +8,11 @@
         "eng": "Mobile app to organise competitions, create leagues and manage scores developed for Balloon Group."
       },
       "links": ["https://github.com/andres-bonilla/Match-Maker", "No Demo"],
-      "skills": [3, 4, 5, 18],
-      "img": ["mm0.png", "mm1.png", "mm2.png"],
-      "imgType": "phone"
+      "skills": [3, 5, 4, 18],
+      "img": {
+        "type": "phone",
+        "files": ["match0.png", "match1.png", "match2.png"]
+      }
     },
     {
       "name": "Movie BASE",
@@ -18,21 +20,19 @@
         "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
         "eng": "Website developed by consuming the TMDB API."
       },
-      "links": ["https://github.com/andres-bonilla/TMDB", "https://google.com"],
+      "links": ["https://github.com/andres-bonilla/TMDB", "No Demo"],
       "skills": [0, 1, 2, 8],
-      "img": ["movie-base.png"],
-      "imgType": "web"
+      "img": { "type": "web", "files": ["movie-base.png"] }
     },
     {
       "name": "Simple TO-DO",
       "description": {
-        "esp": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar.",
-        "eng": "Sencilla web app desarrollada con Svelte que permite gestionar una lista tareas a realizar."
+        "esp": "Web desarrollada con Svelte para gestionar una lista de tareas pendientes.",
+        "eng": "Web developed with Svelte to manage a to-do list."
       },
       "links": ["https://github.com/andres-bonilla/Simple-To-Do", "No Demo"],
       "skills": [25, 14, 10, 6],
-      "img": ["to-do.png"],
-      "imgType": "web"
+      "img": { "type": "web", "files": ["to-do.png"] }
     },
     {
       "name": "Guitar React",
@@ -42,8 +42,7 @@
       },
       "skills": [0, 1, 7, 17],
       "links": ["https://github.com/andres-bonilla/Guitar-React", "No Demo"],
-      "img": ["guitar-react.png"],
-      "imgType": "web"
+      "img": { "type": "web", "files": ["guitar-react.png"] }
     }
   ]
 }

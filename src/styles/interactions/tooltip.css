@@ -15,9 +15,11 @@
   font-weight: 500;
   text-align: right;
   text-transform: capitalize;
+  text-wrap: nowrap;
 
   background: var(--secondary_color);
   color: var(--main_color);
+  outline: 1px solid var(--back_color);
 }
 
 .tooltip {

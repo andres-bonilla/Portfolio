@@ -57,7 +57,7 @@
     display: flex;
     gap: 4px;
     height: fit-content;
-    width: 7.63rem;
+    width: 140px; /*7.63rem*/
     border-radius: 0px 0px 3px 3px;
 
     background-color: var(--back_color);

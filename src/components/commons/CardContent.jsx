@@ -8,6 +8,7 @@ export const CardContent = ({
   links,
   skillsIndex,
   skills,
+  lang,
 }) => {
   const mapProjectSkills = (list) =>
     list.map((element, i) => {
@@ -39,7 +40,7 @@ export const CardContent = ({
             target="_blank"
             className="project-button link-button cancel-link-style"
           >
-            Code
+            {lang === "eng" ? "Code" : "Código"}
           </a>
         </div>
       </div>

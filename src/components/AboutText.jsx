@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { ArrowButton } from "./commons/ArrowButton";
 
-export const AboutText = ({ summary, complete }) => {
+export const AboutText = ({ summary, complete, lang }) => {
   const [showMore, setShowMore] = useState(false);
 
   const setTipText = () => setShowMore(!showMore);
@@ -27,7 +27,8 @@ export const AboutText = ({ summary, complete }) => {
       <ArrowButton
         setParentState={setTipText}
         buttonClass="about-button"
-        tipValues={["More", "Less"]}
+        tipValues={["More", "Less", "Más", "Menos"]}
+        lang={lang}
       />
     </>
   );

@@ -23,7 +23,9 @@ export const Hello = ({ slogan, lang }) => {
           href={`../src/assets/cv-${lang}.pdf`}
           target="_blank"
         >
-          <span className="cv-tip tooltip">Download</span>
+          <span className="cv-tip tooltip">
+            {lang === "eng" ? "Download" : "Descargar"}
+          </span>
           <span id="cv-button-text">C.V</span>
           <DownloadIcon id="download-logo" />
         </a>

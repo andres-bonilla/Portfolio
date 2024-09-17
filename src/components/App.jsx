@@ -18,14 +18,14 @@ export const App = () => {
   };
   return (
     <>
-      <Header switchLang={switchLang} />
+      <Header switchLang={switchLang} lang={lang} />
       <main id="content">
         <Hello slogan={slogan} lang={lang} />
         <Projects
           data={{ projects: projectsData, skills: skillsData }}
           lang={lang}
         />
-        <About aboutText={aboutData["esp"]} skills={skillsData} />
+        <About aboutText={aboutData} skills={skillsData} lang={lang} />
       </main>
       <Footer />
     </>

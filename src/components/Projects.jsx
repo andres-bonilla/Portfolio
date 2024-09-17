@@ -14,7 +14,7 @@ export const Projects = ({ data, lang }) => {
 
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>{lang === "eng" ? "Projects" : "Proyectos"}</h2>
 
       {/*<p>
         Here are some of my projects. If you have any advice, I'll be eager to receive your

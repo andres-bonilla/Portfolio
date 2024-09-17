@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import { useScrollBin } from "./utils/useScrollBin";
 
-export const NavSection = () => {
-  const [activeSection, setActiveSection] = useState(0);
-  const changeSection = (section) => {
-    setActiveSection(section);
-  };
+export const NavSection = ({ lang }) => {
+  const { scrollBin } = useScrollBin();
+
   const mapLinks = (list) =>
     list.map((element, i) => {
       return (
         <li key={i}>
           <a
-            href={`#${element}`}
-            onClick={() => changeSection(i)}
+            href={`#${element[0]}`}
             className={`nav-link cancel-link-style spin-hover tooltip-hover ${
-              i === activeSection ? "active-link" : ""
+              i + 2 === scrollBin ? "active-link" : ""
             }`}
           >
-            <span className="nav-tip tooltip">{element}</span>
+            <span className="nav-tip tooltip">
+              {element[lang === "eng" ? 0 : 1]}
+            </span>
             <span className="nav-square spin-down" />
           </a>
         </li>
@@ -27,15 +27,21 @@ export const NavSection = () => {
     <>
       <div id="nav-burguer">
         <input type="checkbox" id="burguer-check" />
-
         <div className="burguer-box">
-          <div className="burguer-point" />
-          <div className="burguer-point" />
-          <div className="burguer-point" />
+          <span className="burguer-point" />
+          <span className="burguer-point" />
+          <span className="burguer-point" />
         </div>
+        <span id="burguer-cross">x</span>
       </div>
 
-      <ul id="nav-section">{mapLinks(["top", "projects", "about"])}</ul>
+      <ul id="nav-section">
+        {mapLinks([
+          ["top", "inicio"],
+          ["projects", "proyectos"],
+          ["about", "sobre mi"],
+        ])}
+      </ul>
     </>
   );
 };

@@ -27,6 +27,23 @@
     cursor: default;
   }
 
+  #burguer-cross {
+    z-index: -1;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+
+    transition: opacity 0.1s, transform 0.1s;
+  }
+
   .burguer-box {
     z-index: -1;
     position: absolute;
@@ -45,6 +62,13 @@
   #burguer-check:checked {
     cursor: default;
     animation: move-out 0.4s step-start 0.1s;
+  }
+
+  #nav-burguer:has(#burguer-check:checked) #burguer-cross {
+    opacity: 1;
+    transform: scale(1);
+
+    transition: opacity 0.2s 0.2s, transform 0.15s 0.2s;
   }
 
   .burguer-box {
@@ -79,7 +103,7 @@
     visibility: hidden;
     opacity: 0;
 
-    transform-origin: calc(7.63rem - 12px) -32px;
+    transform-origin: calc(140px - 12px) -32px;
     transform: scale(0);
 
     transition: opacity 0.6s 0.15s, visibility 0.6s 0.15s, transform 0.3s;
@@ -88,7 +112,7 @@
     visibility: visible;
     opacity: 1;
 
-    transform-origin: calc(7.63rem - 12px) -32px;
+    transform-origin: calc(140px - 12px) -32px;
     transform: scale(1);
 
     transition: opacity 0.6s 0.15s, transform 0.3s, border-top 0.2s 0.7s;
