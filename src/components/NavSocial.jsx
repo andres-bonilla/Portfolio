@@ -10,7 +10,7 @@ export const NavSocial = () => {
         <li key={i} className="spin-hover">
           {i === 0 ? (
             <div
-              style={{ "--url": `url("./social-logos/s-${item.file}")` }}
+              style={{ "--url": `url("./social-logos/s-${item.file}.svg")` }}
               className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
             >
               <EmailTip email={item.link} />
@@ -21,7 +21,7 @@ export const NavSocial = () => {
             <a
               href={item.link}
               target="_blank"
-              style={{ "--url": `url("./social-logos/s-${item.file}")` }}
+              style={{ "--url": `url("./social-logos/s-${item.file}.svg")` }}
               className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
             >
               <span className="social-tip tooltip">{item.network}</span>
