@@ -1,0 +1,40 @@
+{
+  "slogan": {
+    "esp": "Estoy listo y emocionado de tener nuevas aventuras.",
+    "eng": "I'm prepared and excited to have new adventures."
+  },
+  "about": {
+    "esp": {
+      "summary": [
+        "Mi nombre es Andrés, soy una persona tranquila y alegre a la que le apasiona la tecnología.",
+
+        "Siempre estoy en busca de nuevos desafíos y oportunidades que me permitan crecer tanto personal como profesionalmente. Gracias a esto he tenido la oportunidad de vivir en varios países, disfrutar de distintas culturas y adquirir experiencia en distintos sectores laborales.",
+
+        "Como se puede ver en mi stack a continuación, tengo experiencia en diversas tecnologías aplicadas tanto al desarrollo web como móvil. Poseo una gran capacidad de adaptabilidad y estoy abierto al aprendizaje de nuevas tecnologías y/o metodologías de trabajo."
+      ],
+      "complete": [
+        "Además de mis habilidades técnicas, también cuento con experiencia en liderazgo, planificación y trabajo en equipo. Habilidades que he adquirido gracias a mis experiencias en distintos ámbitos y países. Como en Nueva Zelanda, donde aprendí un nuevo idioma y desempeñé múltiples roles laborales, o Berlín donde fui parte de grandes compañías de comercio online como Take Away y Delivery Hero.",
+
+        "También he contribuido en el ámbito educativo, impartiendo clases de programación, lógica y matemáticas en la UTU (educación pública). Además hablo español e inglés fluidamente, lo que me permite colaborar en proyectos y entornos multiculturales.",
+
+        "Estoy listo para seguir creciendo y enfrentar nuevos desafíos en mi carrera. Así que si buscas un desarrollador versátil y con habilidades interpersonales, estaré encantado de ser parte de tu equipo."
+      ]
+    },
+    "eng": {
+      "summary": [
+        "My name is Andres, I am a peaceful and friendly person who is passionate about technology.",
+
+        "I am always looking for new challenges and opportunities that allow me to grow both personally and professionally. Thanks to this I have had the opportunity to live in several countries, enjoy different cultures and gain experience in different work environment.",
+
+        "As you can see in my stack below, I have experience in various technologies applied to both web and mobile development. I have a great capacity for adaptability and I am open to learn new technologies and/or work methodologies."
+      ],
+      "complete": [
+        "In addition to my technical skills, I also have experience in leadership, planning and teamwork. Skills that I have acquired thanks to my experiences in different ambits and countries. Like in New Zealand, where I learned a new language and performed multiple job roles, or Berlin where I was part of large e-commerce companies like Take Away and Delivery Hero.",
+
+        "I have also contributed in the educational field, teaching programming, logic and mathematics at UTU (public education). I am fluent in Spanish and English, which allows me to collaborate in multicultural projects and environments.",
+
+        "I am ready to keep growing and face new challenges in my career. So if you are looking for a versatile developer with interpersonal skills, I will be happy to be part of your team."
+      ]
+    }
+  }
+}

@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { CardContent } from "./CardContent";
 import { CardFoot } from "./CardFoot";
 
-export const ProjectCard = ({ data, skills, lang }) => {
-  const [showInfo, setShowInfo] = useState(true);
+export const ProjectCard = ({ data, skills }) => {
+  const [isHide, setIsHide] = useState(false);
 
-  const setInfoClass = () => setShowInfo(!showInfo);
+  const setInfoState = () => setIsHide(!isHide);
 
   return (
     <article>
@@ -14,19 +14,9 @@ export const ProjectCard = ({ data, skills, lang }) => {
         <h3 className="project-title">{data.name}</h3>
       </header>
 
-      <CardContent
-        showInfo={showInfo}
-        description={data.description[lang]}
-        links={data.links}
-        skillsIndex={data.skills}
-        skills={skills}
-      />
+      <CardContent hideInfo={isHide} data={data} skills={skills} />
 
-      <CardFoot
-        setInfoClass={setInfoClass}
-        imgArr={data.img}
-        imgType={data.imgType}
-      />
+      <CardFoot setInfo={setInfoState} img={data.img} />
     </article>
   );
 };

@@ -1,42 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import { slogan, aboutData } from "../data/text-data.json";
-import { projectsData } from "../data/projects.json";
-import { skillsData } from "../data/skills.json";
+import { slogan, about } from "../data/about.json";
+import { projects } from "../data/projects.json";
+import { skills } from "../data/skills.json";
 
-import { Header } from "./layouts/Header";
+import { LangProvider } from "./utils/LangProvider";
+
+import { Header } from "./Header";
 import { Hello } from "./Hello";
 import { Projects } from "./Projects";
 import { About } from "./About";
-import { Work } from "./Work";
-import { Footer } from "./layouts/Footer";
+import { Footer } from "./Footer";
 
 export const App = () => {
-  const [headerClass, setHeaderClass] = useState("header-colorless");
-
-  const listenScroll = () => {
-    if (window.scrollY > 48) setHeaderClass("header-colorful");
-    else setHeaderClass("header-colorless");
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", listenScroll);
-
-    return () => window.removeEventListener("scroll", listenScroll);
-  }, []);
-
   return (
-    <>
-      <Header headerClass={headerClass} />
+    <LangProvider>
+      <Header />
       <main id="content">
-        <Hello slogan={slogan} lang={"esp"} />
-        <Projects
-          data={{ projects: projectsData, skills: skillsData }}
-          lang={"eng"}
-        />
-        <About aboutText={aboutData["esp"]} skills={skillsData} />
+        <Hello slogan={slogan} />
+        <Projects projects={projects} skills={skills} />
+        <About about={about} skills={skills} />
       </main>
       <Footer />
-    </>
+    </LangProvider>
   );
 };

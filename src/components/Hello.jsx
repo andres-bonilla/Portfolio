@@ -2,7 +2,11 @@ import React from "react";
 
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 
-export const Hello = ({ slogan, lang }) => {
+import { useLang } from "./utils/LangProvider";
+
+export const Hello = ({ slogan }) => {
+  const { lang } = useLang();
+
   return (
     <section id="hello">
       <h1 id="hello-title" className="spin-hover">
@@ -23,7 +27,9 @@ export const Hello = ({ slogan, lang }) => {
           href={`../src/assets/cv-${lang}.pdf`}
           target="_blank"
         >
-          <span className="cv-tip tooltip">Download</span>
+          <span className="cv-tip tooltip">
+            {lang === "eng" ? "Download" : "Descargar"}
+          </span>
           <span id="cv-button-text">C.V</span>
           <DownloadIcon id="download-logo" />
         </a>

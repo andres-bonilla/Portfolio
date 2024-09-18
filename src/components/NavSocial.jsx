@@ -1,24 +1,37 @@
 import React from "react";
 
-import { socialData } from "../data/paths.json";
+import { social } from "../data/social.json";
+import { EmailTip } from "./EmailTip";
 
 export const NavSocial = () => {
   const mapSocialLinks = (list) =>
-    list.map((element, i) => {
+    list.map((item, i) => {
       return (
         <li key={i} className="spin-hover">
-          <a
-            href={element.link}
-            target="_blank"
-            style={{ "--url": `url(${element.path})` }}
-            className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
-          >
-            <span className="social-tip tooltip">{element.network}</span>
-            <span className="social-logo spin-down" />
-          </a>
+          {i === 0 ? (
+            <div
+              style={{ "--url": `url(${item.path})` }}
+              className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
+            >
+              <EmailTip email={item.link} />
+
+              <span className="social-logo spin-down" />
+            </div>
+          ) : (
+            <a
+              href={item.link}
+              target="_blank"
+              style={{ "--url": `url(${item.path})` }}
+              className="social-link cancel-link-style spin-hover spin-down tooltip-hover"
+            >
+              <span className="social-tip tooltip">{item.network}</span>
+
+              <span className="social-logo spin-down" />
+            </a>
+          )}
         </li>
       );
     });
 
-  return <ul id="nav-social">{mapSocialLinks(socialData)}</ul>;
+  return <ul id="nav-social">{mapSocialLinks(social)}</ul>;
 };

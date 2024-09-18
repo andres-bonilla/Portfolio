@@ -9,7 +9,7 @@ export const ProjectSkill = ({ skill }) => {
     <>
       <span className="project-skill-tip tooltip">{skill.tech}</span>
 
-      {isLoading && <p>...</p>}
+      {isLoading && <span>...</span>}
       {SvgLogo && <SvgLogo className="project-skill-logo" />}
     </>
   );

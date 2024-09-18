@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { ArrowButton } from "./commons/ArrowButton";
 
 export const AboutText = ({ summary, complete }) => {
-  const [showMore, setShowMore] = useState(false);
+  const [show, setShow] = useState(false);
 
-  const setTipText = () => setShowMore(!showMore);
+  const setMoreText = () => setShow(!show);
 
   const mapParagraphs = (list) =>
     list.map((text, i) => {
@@ -20,14 +20,14 @@ export const AboutText = ({ summary, complete }) => {
     <>
       {mapParagraphs(summary)}
 
-      <div className={`text-container ${showMore ? "more-text" : ""}`}>
+      <div className={`text-container ${show ? "more-text" : ""}`}>
         {mapParagraphs(complete)}
       </div>
 
       <ArrowButton
-        setParentState={setTipText}
+        setParentState={setMoreText}
         buttonClass="about-button"
-        tipValues={["More", "Less"]}
+        tipValues={{ eng: ["More", "Less"], esp: ["Más", "Menos"] }}
       />
     </>
   );

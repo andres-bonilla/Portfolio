@@ -8,19 +8,19 @@
 }
 
 .project-skill-list {
-  height: 32px;
+  height: calc(var(--project_text) * 1.5 + 8px);
   display: flex;
   gap: 8px;
   width: fit-content;
 }
 
 .project-skill {
-  height: 32px;
+  height: calc(var(--project_text) * 1.5 + 8px);
 }
 
 .project-skill-logo {
-  width: 24px;
-  height: 24px;
+  width: calc(var(--project_text) * 1.5);
+  height: calc(var(--project_text) * 1.5);
 
   margin: 4px 2px;
 
@@ -28,9 +28,14 @@
 }
 
 .project-skill-tip {
-  top: 42px;
+  top: calc(var(--project_text) * 1.5 + 12px);
   left: calc(50% - 4px);
   transform: translateX(-50%);
+}
+
+.project-skill:first-child .project-skill-tip {
+  left: -12px;
+  transform: translateX(0%);
 }
 
 .project-links {

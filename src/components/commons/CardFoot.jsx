@@ -2,13 +2,13 @@ import React from "react";
 
 import { ArrowButton } from "./ArrowButton";
 
-export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
+export const CardFoot = ({ setInfo, img }) => {
   const mapImgPhone = (list) =>
-    list.map((element, i) => {
+    list.map((file, i) => {
       return (
         <div key={i} className="img-box">
           <img
-            src={`../src/assets/images/${element}`}
+            src={`../src/assets/images/${file}`}
             alt={"ejemplo"}
             className="project-img project-img-phone"
           />
@@ -19,19 +19,18 @@ export const CardFoot = ({ setInfoClass, imgArr, imgType }) => {
   return (
     <footer className="project-footer">
       <ArrowButton
-        setParentState={setInfoClass}
+        setParentState={setInfo}
         buttonClass="info-button"
-        tipValues={["Show", "Hide"]}
+        tipValues={{ eng: ["Hide", "Show"], esp: ["Ocultar", "Mostrar"] }}
       />
-      {imgType === "web" && (
+      {img.type === "web" ? (
         <img
-          src={`../src/assets/images/${imgArr[0]}`}
+          src={`../src/assets/images/${img.files[0]}`}
           alt={"ejemplo"}
           className="project-img project-img-web"
         />
-      )}
-      {imgType === "phone" && (
-        <div className="img-phone-container">{mapImgPhone(imgArr)}</div>
+      ) : (
+        <div className="img-phone-container">{mapImgPhone(img.files)}</div>
       )}
     </footer>
   );

@@ -31,11 +31,23 @@
   content: "";
 }
 
+.active-link .spin-down:before {
+  transform: rotateX(0deg) translateY(0%);
+}
+.active-link .spin-down:after {
+  transform: rotateX(90deg) translateY(50%);
+}
+.active-link:hover .spin-down:before {
+  transform: none;
+}
+.active-link:hover .spin-down:after {
+  transform: none;
+}
+
 .nav-tip {
   top: -4px;
   right: 38px;
 }
-
 @media (max-width: 768px) {
   #nav-section {
     position: absolute;
@@ -45,7 +57,7 @@
     display: flex;
     gap: 4px;
     height: fit-content;
-    width: 7.63rem;
+    width: 140px; /*7.63rem*/
     border-radius: 0px 0px 3px 3px;
 
     background-color: var(--back_color);

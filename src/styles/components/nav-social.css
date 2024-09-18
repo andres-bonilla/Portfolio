@@ -4,6 +4,21 @@
   gap: 8px;
 }
 
+.email-tip {
+  display: flex;
+  gap: 8px;
+  background: transparent !important;
+  cursor: pointer;
+}
+
+.email-button {
+  padding: 0px 6px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border-radius: 3px !important;
+}
+
 .social-tip {
   top: 38px;
   left: calc(50% - 4px);
@@ -12,6 +27,7 @@
 
 .social-link {
   display: flex;
+  cursor: pointer;
 }
 
 .social-link,
@@ -52,10 +68,4 @@
 
 .social-link:hover .social-logo:after {
   background: var(--main_color) !important;
-}
-
-@media (max-width: 768px) {
-  #nav-social {
-    margin-right: 25px;
-  }
 }
