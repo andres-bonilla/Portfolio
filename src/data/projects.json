@@ -11,7 +11,7 @@
       "skillIndex": [3, 5, 4, 18],
       "img": {
         "type": "phone",
-        "files": ["match0.png", "match1.png", "match2.png"]
+        "files": ["match0", "match1", "match2"]
       }
     },
     {
@@ -22,7 +22,7 @@
       },
       "links": ["https://github.com/andres-bonilla/TMDB", "No Demo"],
       "skillIndex": [0, 1, 2, 8],
-      "img": { "type": "web", "files": ["movie-base.png"] }
+      "img": { "type": "web", "files": ["movie-base"] }
     },
     {
       "name": "Simple TO-DO",
@@ -32,7 +32,7 @@
       },
       "links": ["https://github.com/andres-bonilla/Simple-To-Do", "No Demo"],
       "skillIndex": [25, 14, 10, 6],
-      "img": { "type": "web", "files": ["to-do.png"] }
+      "img": { "type": "web", "files": ["to-do"] }
     },
     {
       "name": "Guitar React",
@@ -42,7 +42,7 @@
       },
       "skillIndex": [0, 1, 7, 17],
       "links": ["https://github.com/andres-bonilla/Guitar-React", "No Demo"],
-      "img": { "type": "web", "files": ["guitar-react.png"] }
+      "img": { "type": "web", "files": ["guitar-react"] }
     }
   ]
 }

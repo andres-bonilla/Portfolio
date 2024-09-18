@@ -8,7 +8,7 @@ export const CardFoot = ({ setInfo, img }) => {
       return (
         <div key={i} className="img-box">
           <img
-            src={`../src/assets/images/${file}`}
+            src={`../src/assets/images/img-${file}.png`}
             alt={"ejemplo"}
             className="project-img project-img-phone"
           />
@@ -25,7 +25,7 @@ export const CardFoot = ({ setInfo, img }) => {
       />
       {img.type === "web" ? (
         <img
-          src={`../src/assets/images/${img.files[0]}`}
+          src={`../src/assets/images/img-${img.files[0]}.png`}
           alt={"ejemplo"}
           className="project-img project-img-web"
         />
