@@ -2,7 +2,11 @@ import React from "react";
 
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 
-export const Hello = ({ slogan, lang }) => {
+import { useLang } from "./utils/LangProvider";
+
+export const Hello = ({ slogan }) => {
+  const { lang } = useLang();
+
   return (
     <section id="hello">
       <h1 id="hello-title" className="spin-hover">

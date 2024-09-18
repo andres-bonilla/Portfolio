@@ -1,21 +1,23 @@
 import React from "react";
 import { useScrollBin } from "./utils/useScrollBin";
+import { useLang } from "./utils/LangProvider";
 
-export const NavSection = ({ lang }) => {
+export const NavSection = () => {
+  const { lang } = useLang();
   const { scrollBin } = useScrollBin();
 
-  const mapLinks = (list) =>
-    list.map((element, i) => {
+  const mapNavLinks = (list) =>
+    list.map((link, i) => {
       return (
         <li key={i}>
           <a
-            href={`#${element[0]}`}
+            href={`#${link[0]}`}
             className={`nav-link cancel-link-style spin-hover tooltip-hover ${
               i + 2 === scrollBin ? "active-link" : ""
             }`}
           >
             <span className="nav-tip tooltip">
-              {element[lang === "eng" ? 0 : 1]}
+              {link[lang === "eng" ? 0 : 1]}
             </span>
             <span className="nav-square spin-down" />
           </a>
@@ -36,7 +38,7 @@ export const NavSection = ({ lang }) => {
       </div>
 
       <ul id="nav-section">
-        {mapLinks([
+        {mapNavLinks([
           ["top", "inicio"],
           ["projects", "proyectos"],
           ["about", "sobre mi"],

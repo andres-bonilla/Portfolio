@@ -1,34 +1,33 @@
 import React from "react";
 
 import { ProjectSkill } from "./ProjectSkill";
+import { useLang } from "../utils/LangProvider";
 
-export const CardContent = ({
-  showInfo,
-  description,
-  links,
-  skillsIndex,
-  skills,
-  lang,
-}) => {
+export const CardContent = ({ hideInfo, data, skills }) => {
+  const { lang } = useLang();
+
   const mapProjectSkills = (list) =>
-    list.map((element, i) => {
+    list.map((index, i) => {
       return (
         <li key={i} className="project-skill tooltip-hover">
-          <ProjectSkill skill={skills[element]} />
+          <ProjectSkill skill={skills[index]} />
         </li>
       );
     });
 
   return (
-    <main className={`project-info ${showInfo ? "show-info" : ""}`}>
-      <p className="project-description">{description}</p>
+    <main className={`project-info ${hideInfo ? "" : "show-info"}`}>
+      <p className="project-description">{data.description[lang]}</p>
+
       <div className="project-info-foot">
-        <ul className="project-skill-list">{mapProjectSkills(skillsIndex)}</ul>
+        <ul className="project-skill-list">
+          {mapProjectSkills(data.skillIndex)}
+        </ul>
 
         <div className="project-links">
-          {links[1] !== "No Demo" && (
+          {data.links[1] !== "No Demo" && (
             <a
-              href={links[1]}
+              href={data.links[1]}
               target="_blank"
               className="project-button link-button cancel-link-style"
             >
@@ -36,7 +35,7 @@ export const CardContent = ({
             </a>
           )}
           <a
-            href={links[0]}
+            href={data.links[0]}
             target="_blank"
             className="project-button link-button cancel-link-style"
           >

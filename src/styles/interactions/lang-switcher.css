@@ -37,10 +37,15 @@
   text-align: center;
 }
 .not-selected {
+  border-radius: 2px;
   color: var(--secondary_color);
+  background: transparent;
+  transition: background 0.2s;
 }
 .selected {
   position: relative;
+  color: var(--back_color);
+  transition: color 0.2s;
 }
 
 #lang-slider {
@@ -60,6 +65,14 @@
   transition: top 0.3s;
 }
 
+#lang-container:hover .selected {
+  color: var(--main_color);
+}
+
+#lang-container:hover .not-selected {
+  background: var(--main_color);
+}
+
 @media (max-width: 768px) {
   #lang-container {
     width: 52px;
@@ -67,63 +80,4 @@
     margin-right: 17px;
     border-right: 1px solid;
   }
-} /*
-#lang-check:hover .selected {
-  color: var(--main_color);
-  transition: color 1s;
 }
-#lang-check:not(:hover) .selected {
-  color: var(--back_color);
-  transition: color 1s;
-}
-
-#lang-container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
- Hide the browser's default checkbox 
-#lang-check {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}*/
-
-/* Create a custom checkbox 
-#lang-switcher {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}*/
-
-/*
-#lang-slider {
-  position: relative;
-  overflow: hidden;
-  width: 34px;
-  height: 17px;
-  border-radius: 2px;
-  background: white;
-  color: var(--seconary_color);
-}
-.selected {
-  position: relative;
-}
-
-
-
-
-
-*/

@@ -1,5 +1,5 @@
 {
-  "socialData": [
+  "social": [
     {
       "network": "Gmail",
       "path": "./src/assets/social-logos/gmail.svg",

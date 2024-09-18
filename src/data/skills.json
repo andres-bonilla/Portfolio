@@ -1,5 +1,5 @@
 {
-  "skillsData": [
+  "skills": [
     { "tech": "React", "source": "../../assets/tech-logos/react.svg" },
     { "tech": "Redux", "source": "../../assets/tech-logos/redux.svg" },
     {

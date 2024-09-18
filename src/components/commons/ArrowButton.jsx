@@ -1,12 +1,10 @@
 import React, { useState } from "react";
+import { useLang } from "../utils/LangProvider";
 
-export const ArrowButton = ({
-  setParentState,
-  buttonClass,
-  tipValues,
-  lang,
-}) => {
-  const [tooltipValue, setTooltipValue] = useState(0);
+export const ArrowButton = ({ setParentState, buttonClass, tipValues }) => {
+  const { lang } = useLang();
+
+  const [value, setValue] = useState(0);
   let timeOutId;
 
   const handleClic = (e) => {
@@ -15,10 +13,7 @@ export const ArrowButton = ({
 
     setParentState();
 
-    timeOutId = setTimeout(
-      () => setTooltipValue(tooltipValue === 0 ? 1 : 0),
-      500
-    );
+    timeOutId = setTimeout(() => setValue(value === 0 ? 1 : 0), 500);
   };
 
   return (
@@ -26,9 +21,7 @@ export const ArrowButton = ({
       onClick={handleClic}
       className={`${buttonClass} arrow-button tooltip-hover`}
     >
-      <span className="arrow-button-tip tooltip">
-        {tipValues[lang === "eng" ? tooltipValue : tooltipValue + 2]}
-      </span>
+      <span className="arrow-button-tip tooltip">{tipValues[lang][value]}</span>
 
       <span className="left-bar"></span>
       <span className="right-bar"></span>

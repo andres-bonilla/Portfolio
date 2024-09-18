@@ -7,7 +7,7 @@
   margin-top: 80px;
 }
 
-.skill-card {
+.skill-tile {
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
@@ -45,11 +45,11 @@
   transition: color 0.3s, border 0.3s;
 }
 
-.skill-card:hover .tech-name {
+.skill-tile:hover .tech-name {
   color: var(--main_color);
   border-bottom: 2px solid var(--main_color);
 }
 
-.skill-card:hover .tech-logo {
+.skill-tile:hover .tech-logo {
   fill: var(--main_color);
 }

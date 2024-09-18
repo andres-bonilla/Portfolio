@@ -1,5 +1,5 @@
 {
-  "projectsData": [
+  "projects": [
     {
       "name": "Match Maker",
       "company": "Ballon Group - Argentina",
@@ -8,7 +8,7 @@
         "eng": "Mobile app to organise competitions, create leagues and manage scores developed for Balloon Group."
       },
       "links": ["https://github.com/andres-bonilla/Match-Maker", "No Demo"],
-      "skills": [3, 5, 4, 18],
+      "skillIndex": [3, 5, 4, 18],
       "img": {
         "type": "phone",
         "files": ["match0.png", "match1.png", "match2.png"]
@@ -21,7 +21,7 @@
         "eng": "Website developed by consuming the TMDB API."
       },
       "links": ["https://github.com/andres-bonilla/TMDB", "No Demo"],
-      "skills": [0, 1, 2, 8],
+      "skillIndex": [0, 1, 2, 8],
       "img": { "type": "web", "files": ["movie-base.png"] }
     },
     {
@@ -31,7 +31,7 @@
         "eng": "Web developed with Svelte to manage a to-do list."
       },
       "links": ["https://github.com/andres-bonilla/Simple-To-Do", "No Demo"],
-      "skills": [25, 14, 10, 6],
+      "skillIndex": [25, 14, 10, 6],
       "img": { "type": "web", "files": ["to-do.png"] }
     },
     {
@@ -40,7 +40,7 @@
         "esp": "Tienda online donde se ofrece una amplia selección de guitarras eléctricas como producto principal.",
         "eng": "Online store where a wide selection of electric guitars are offered as main product."
       },
-      "skills": [0, 1, 7, 17],
+      "skillIndex": [0, 1, 7, 17],
       "links": ["https://github.com/andres-bonilla/Guitar-React", "No Demo"],
       "img": { "type": "web", "files": ["guitar-react.png"] }
     }

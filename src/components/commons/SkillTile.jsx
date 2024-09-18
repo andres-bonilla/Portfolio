@@ -2,12 +2,12 @@ import React from "react";
 
 import { useSvgImport } from "../utils/useSvgImport";
 
-export const SkillCard = ({ skill }) => {
+export const SkillTile = ({ skill }) => {
   const { isLoading, SvgLogo } = useSvgImport(skill.source);
 
   return (
-    <figure className="skill-card">
-      {isLoading && <p>loading...</p>}
+    <figure className="skill-tile">
+      {isLoading && <span>loading...</span>}
       {SvgLogo && <SvgLogo className="tech-logo" />}
 
       <figcaption className="tech-name">{skill.tech}</figcaption>

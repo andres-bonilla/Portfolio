@@ -5,10 +5,13 @@ import { ReactComponent as Logo } from "../assets/logo43.svg";
 import { NavSocial } from "./NavSocial";
 import { NavSection } from "./NavSection";
 import { useScrollBin } from "./utils/useScrollBin";
+import { useLang } from "./utils/LangProvider";
 
-export const Header = ({ switchLang, lang }) => {
-  const [headerClass, setHeaderClass] = useState("header-colorless");
+export const Header = () => {
+  const { toggleLang } = useLang();
   const { scrollBin } = useScrollBin();
+
+  const [headerClass, setHeaderClass] = useState("header-colorless");
 
   useEffect(() => {
     setHeaderClass(scrollBin > 0 ? "header-colorful" : "header-colorless");
@@ -23,11 +26,11 @@ export const Header = ({ switchLang, lang }) => {
 
         <nav>
           <NavSocial />
-          <NavSection lang={lang} />
+          <NavSection />
         </nav>
       </div>
       <div id="lang-container">
-        <input type="checkbox" id="lang-check" onClick={switchLang} />
+        <input type="checkbox" id="lang-check" onClick={toggleLang} />
         <div id="lang-switcher">
           <span className="not-selected">EN</span>
           <span className="not-selected">ES</span>
