@@ -55,4 +55,10 @@
   height: 52px;
   padding: 2px;
   fill: var(--secondary_color);
+
+  transition: fill 0.3s;
+}
+
+#main-logo:hover {
+  fill: var(--main_color);
 }

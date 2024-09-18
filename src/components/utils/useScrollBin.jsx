@@ -26,5 +26,6 @@ export const useScrollBin = () => {
 
     return () => window.removeEventListener("scroll", listenScroll);
   }, []);
+
   return { scrollBin: bin };
 };
