@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { ReactComponent as Logo } from "../assets/logo43.svg";
+import { ReactComponent as Logo } from "../assets/logo.svg";
 
 import { NavSocial } from "./NavSocial";
 import { NavSection } from "./NavSection";
