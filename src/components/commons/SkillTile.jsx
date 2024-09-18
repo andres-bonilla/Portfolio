@@ -3,7 +3,7 @@ import React from "react";
 import { useSvgImport } from "../utils/useSvgImport";
 
 export const SkillTile = ({ skill }) => {
-  const { isLoading, SvgLogo } = useSvgImport(skill.source);
+  const { isLoading, SvgLogo } = useSvgImport(skill.file);
 
   return (
     <figure className="skill-tile">
