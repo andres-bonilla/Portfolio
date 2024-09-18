@@ -2,17 +2,17 @@
   "social": [
     {
       "network": "Gmail",
-      "path": "./src/assets/social-logos/gmail.svg",
+      "file": "gmail",
       "link": "x.andresbonilla@gmail.com"
     },
     {
       "network": "LinkedIn",
-      "path": "./src/assets/social-logos/linkedin.svg",
+      "file": "linkedin",
       "link": "https://linkedin.com/in/andresbonilla-dev"
     },
     {
       "network": "Github",
-      "path": "./src/assets/social-logos/github.svg",
+      "file": "github",
       "link": "https://github.com/andres-bonilla"
     }
   ]
