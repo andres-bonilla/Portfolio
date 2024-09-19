@@ -14,6 +14,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@rollup/plugin-dynamic-import-vars": "^2.1.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -22,7 +23,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "vite": "^4.4.5",
-    "vite-plugin-svgr": "^3.2.0",
-    "vite-plugin-dynamic-import-module": "^0.2.1"
+    "vite-plugin-svgr": "^3.2.0"
   }
 }
