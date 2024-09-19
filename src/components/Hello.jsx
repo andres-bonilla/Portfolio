@@ -1,8 +1,11 @@
 import React from "react";
 
-import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
+import cvEsp from "./../assets/cv-esp.pdf";
+import cvEng from "./../assets/cv-eng.pdf";
 
 import { useLang } from "./utils/LangProvider";
+
+import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 
 export const Hello = ({ slogan }) => {
   const { lang } = useLang();
@@ -24,7 +27,7 @@ export const Hello = ({ slogan }) => {
         <a
           id="cv-button"
           className="link-button cancel-link-style tooltip-hover"
-          href={`../src/assets/cv-${lang}.pdf`}
+          href={`${lang === "eng" ? cvEng : cvEsp}`}
           target="_blank"
         >
           <span className="cv-tip tooltip">

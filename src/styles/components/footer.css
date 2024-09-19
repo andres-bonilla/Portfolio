@@ -6,7 +6,7 @@
   padding: 16px;
   padding-right: 32px;
 
-  background-color: var(--back_secondary_color);
+  background-color: var(--back_color);
   color: var(--main_color);
   border-top: 2px solid var(--main_color);
 }
@@ -14,4 +14,5 @@
 #foot p {
   margin: 0;
   text-align: center;
+  font-size: 1.1rem;
 }
