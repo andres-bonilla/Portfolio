@@ -11,15 +11,11 @@ export const useSvgImport = (logoFile) => {
       setIsLoading(true);
 
       const importSvgLogo = async () => {
-        /*svgFiles["../../assets/tech-logos/react.svg"]().then((mod) => {
-          console.log("../../assets/tech-logos/react.svg", mod.ReactComponent);
-        });*/
         try {
           logoRef.current = (
-            await svgFiles["../../assets/tech-logos/react.svg"]()
+            await svgFiles[`../../assets/tech-logos/${logoFile}.svg`]()
           ).ReactComponent;
         } finally {
-          console.log("here", logoRef.current);
           setIsLoading(false);
         }
       };

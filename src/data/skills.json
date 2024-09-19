@@ -1,9 +1,10 @@
 {
   "skills": [
-    { "tech": "React", "file": "../../assets/tech-logos/react.jsx" },
+    { "tech": "React", "file": "react" },
     { "tech": "Redux", "file": "redux" },
     { "tech": "React Router", "file": "react-router" },
     { "tech": "React Native", "file": "react-native" },
+
     { "tech": "React Navigation", "file": "react-navigation" },
     { "tech": "Expo", "file": "expo" },
     { "tech": "Node.js", "file": "node" },
