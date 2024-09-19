@@ -5,19 +5,21 @@ export const useSvgImport = (logoFile) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true);
+    if (logoFile) {
+      setIsLoading(true);
 
-    const importSvgLogo = async () => {
-      try {
-        logoRef.current = (
-          await import(`/public/tech-logos/t-${logoFile}.svg`)
-        ).ReactComponent;
-      } finally {
-        setIsLoading(false);
-      }
-    };
+      const importSvgLogo = async () => {
+        try {
+          logoRef.current = (
+            await import(`/public/tech-logos/t-${logoFile}.svg`)
+          ).ReactComponent;
+        } finally {
+          setIsLoading(false);
+        }
+      };
 
-    importSvgLogo();
+      importSvgLogo();
+    }
   }, [logoFile]);
 
   return { isLoading, SvgLogo: logoRef.current };
