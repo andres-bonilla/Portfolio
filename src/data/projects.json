@@ -21,7 +21,7 @@
         "esp": "Pagina desarrollada a través del consumo de la API de TMDB.",
         "eng": "Website developed by consuming the TMDB API."
       },
-      "links": ["https://github.com/andres-bonilla/TMDB", "No Demo"],
+      "links": ["https://github.com/andres-bonilla/TMDB", "https://moviebase-cph2.onrender.com"],
       "skillIndex": [0, 1, 2, 8],
       "img": { "type": "web", "files": ["movie-base"] }
     },
